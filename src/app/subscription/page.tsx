@@ -26,7 +26,9 @@ export default function SubscriptionPage() {
                 </div>
             </section>
 
-            <Subscription />
+            <div className="bg-[#1a1a1a]">
+                <Subscription />
+            </div>
 
             {/* Testimonial or Note */}
             <section className="py-24 bg-white">
