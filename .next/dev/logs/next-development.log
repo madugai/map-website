@@ -1,0 +1,63 @@
+[00:00:25.649] Server  LOG     ✓ Ready in 18.1s
+[00:04:43.878] Server  LOG     ○ Compiling / ...
+[00:04:48.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:48.001] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[00:04:48.240] Browser WARN    [locatorjs]: ok
+[00:04:48.536] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:53.134] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:53.134] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:53.134] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:53.134] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:11.290] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/others/play.png" "received" null
+[00:15:18.897] Browser WARN    Image with src "/images/internal.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:18.897] Browser WARN    Image with src "/images/report.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:22.614] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/others/play.png" "received" null
+[00:15:31.429] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/others/play.png" "received" null
+[00:16:21.766] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/others/play.png" "received" null
+[00:16:31.175] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/images/others/play.png" "received" null
+[00:22:29.380] Server  LOG     ✓ Compiled in 6.5s
+[00:28:45.021] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:45.021] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[00:28:45.769] Browser WARN    [locatorjs]: ok
+[00:28:53.710] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:53.710] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[00:28:54.545] Browser WARN    [locatorjs]: ok
+[00:29:03.072] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:03.072] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[00:29:04.032] Browser WARN    [locatorjs]: ok
+[00:29:06.332] Server  LOG     ✓ Compiled in 116ms
+[00:30:04.748] Server  LOG     ✓ Compiled in 184ms
+[00:30:15.536] Server  LOG     ✓ Compiled in 101ms
+[00:32:55.816] Server  LOG     ✓ Compiled in 72ms
+[00:33:10.363] Server  LOG     ✓ Compiled in 129ms
+[00:33:22.182] Server  LOG     ✓ Compiled in 84ms
+[00:34:19.451] Server  LOG     ✓ Compiled in 286ms
+[00:38:27.058] Server  LOG     ✓ Compiled in 94ms
+[00:38:35.687] Server  LOG     ✓ Compiled in 400ms
+[00:39:02.402] Server  LOG     ✓ Compiled in 130ms
+[00:40:17.466] Browser WARN    Image with src "/images/internal.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:17.466] Browser WARN    Image with src "/images/report.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:37.370] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:37.370] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:37.370] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:37.370] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:40:49.339] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:46:38.043] Server  LOG     ✓ Compiled in 474ms
+[00:46:45.549] Server  LOG     ✓ Compiled in 226ms
+[00:48:22.387] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:22.387] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[00:48:23.196] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:23.196] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:23.196] Browser WARN    [locatorjs]: ok
+[00:48:23.196] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:23.196] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:23.196] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:59.061] Server  LOG     ✓ Compiled in 122ms
+[00:49:07.712] Server  LOG     ✓ Compiled in 77ms
+[00:49:14.707] Server  LOG     ✓ Compiled in 170ms
+[00:49:23.455] Server  LOG     ✓ Compiled in 94ms
+[00:49:31.007] Server  LOG     ✓ Compiled in 104ms
+[00:50:22.564] Server  LOG     ✓ Compiled in 103ms
+[00:50:29.447] Server  LOG     ✓ Compiled in 178ms
+[00:57:33.829] Server  LOG     ✓ Compiled in 137ms
+[00:57:35.843] Server  LOG     ✓ Compiled in 92ms

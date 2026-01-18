@@ -1,0 +1,29 @@
+# Migration Plan: static to Next.js (Uzhavarbumi)
+
+1. Initialization:
+- Next.js + TypeScript + Tailwind CSS
+- Setup project structure (components, hooks, lib)
+
+2. Assets:
+- Move all images to public/images/
+- Setup fonts and global styles
+
+3. Implementation (Components):
+- Navbar (Responsive)
+- Hero Section (Banner)
+- Features (Affordable, Accessible, Assured)
+- About Us Section
+- Products Section (Cards)
+- Stats Section
+- App Download Section (with SMS link)
+- Reviews/Testimonials
+- Footer
+
+4. SEO & Scripts:
+- Migrate all meta tags
+- Integrate GTM and Clarity
+
+5. Verification:
+- Build check
+- Responsive testing
+- Social sharing check (OpenGraph)
