@@ -100,40 +100,81 @@ export default function Navbar() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        className="lg:hidden fixed inset-0 bg-white z-40 pt-24"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="lg:hidden fixed inset-0 bg-white z-[100] overflow-y-auto"
                     >
-                        <div className="flex flex-col space-y-2 p-8">
-                            <Link
-                                href="/"
-                                className="text-2xl font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                Home
+                        {/* Mobile Header */}
+                        <div className="flex items-center justify-between p-4 border-b border-zinc-100">
+                            <Link href="/" onClick={() => setIsOpen(false)}>
+                                <Image
+                                    src="/images/others/logo.png"
+                                    alt="Madugai Logo"
+                                    width={140}
+                                    height={46}
+                                    className="h-12 w-auto"
+                                />
                             </Link>
-                            {navLinks.map((link) => (
+                            <button
+                                className="p-2 text-zinc-900"
+                                onClick={() => setIsOpen(false)}
+                                aria-label="Close Menu"
+                            >
+                                <X size={28} />
+                            </button>
+                        </div>
+
+                        {/* Mobile Links */}
+                        <div className="flex flex-col p-6">
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.1 }}
+                            >
                                 <Link
-                                    key={link.name}
-                                    href={link.href}
-                                    target={link.external ? "_blank" : undefined}
-                                    rel={link.external ? "noopener noreferrer" : undefined}
-                                    className="text-2xl font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100 flex items-center justify-between"
+                                    href="/"
+                                    className="block text-lg font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100"
                                     onClick={() => setIsOpen(false)}
                                 >
-                                    {link.name}
+                                    Home
                                 </Link>
+                            </motion.div>
+                            {navLinks.map((link, index) => (
+                                <motion.div
+                                    key={link.name}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.1 + (index + 1) * 0.05 }}
+                                >
+                                    <Link
+                                        href={link.href}
+                                        target={link.external ? "_blank" : undefined}
+                                        rel={link.external ? "noopener noreferrer" : undefined}
+                                        className="block text-lg font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100"
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        {link.name}
+                                        {link.external && (
+                                            <span className="text-xs text-[#4f6f19] ml-2">↗</span>
+                                        )}
+                                    </Link>
+                                </motion.div>
                             ))}
-                            <div className="pt-8">
+                            <motion.div
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.5 }}
+                                className="pt-6"
+                            >
                                 <Link
                                     href="/contact"
-                                    className="bg-zinc-900 text-white font-bold py-5 px-12 block text-center text-xl"
+                                    className="bg-[#4f6f19] text-white font-bold py-4 px-8 block text-center text-base rounded-none"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     Contact Us
                                 </Link>
-                            </div>
+                            </motion.div>
                         </div>
                     </motion.div>
                 )}

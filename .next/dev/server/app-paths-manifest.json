@@ -4,5 +4,6 @@
   "/faq/page": "app/faq/page.js",
   "/map-standard/page": "app/map-standard/page.js",
   "/page": "app/page.js",
+  "/subscription/page": "app/subscription/page.js",
   "/transparency/page": "app/transparency/page.js"
 }
