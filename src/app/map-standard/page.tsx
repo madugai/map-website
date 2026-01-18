@@ -50,13 +50,13 @@ export default function MAPStandardPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-24 bg-[#fafafa]">
+            <section className="pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-24 bg-[#1a1a1a] text-white">
                 <div className="container px-8">
                     <div className="max-w-4xl mx-auto text-center">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="inline-flex items-center gap-2 px-6 py-2.5 bg-black text-white text-[10px] font-black uppercase tracking-[0.3em] mb-10"
+                            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#4f6f19] text-white text-[10px] font-black uppercase tracking-[0.3em] mb-10"
                         >
                             Internal Operating Discipline
                         </motion.div>
@@ -64,7 +64,7 @@ export default function MAPStandardPage() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
-                            className="text-5xl md:text-7xl font-black text-gray-900 mb-10 leading-none tracking-tight"
+                            className="text-5xl md:text-7xl font-black text-white mb-10 leading-none tracking-tight"
                         >
                             The <span className="text-[#4f6f19]">MAP</span> Standard
                         </motion.h1>
@@ -72,10 +72,10 @@ export default function MAPStandardPage() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
-                            className="text-gray-500 text-lg md:text-2xl leading-relaxed max-w-3xl mx-auto font-medium"
+                            className="text-white/60 text-lg md:text-2xl leading-relaxed max-w-3xl mx-auto font-medium"
                         >
                             The MAP Standard defines how milk and food products are handled at Madugai.
-                            It is an internal operating discipline — <span className="text-gray-900 border-b-2 border-[#4f6f19]/30 italic">not a marketing claim.</span>
+                            It is an internal operating discipline — <span className="text-white border-b-2 border-[#4f6f19]/30 italic">not a marketing claim.</span>
                         </motion.p>
                     </div>
                 </div>

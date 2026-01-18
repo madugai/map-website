@@ -37,6 +37,13 @@ export default function Footer() {
                         <p className="text-white/70 font-montserrat leading-relaxed mb-6">
                             Madugai exists to provide pure, unadulterated cow milk without industrial shortcuts. We believe in quality, integrity, and the sacred promise of purity.
                         </p>
+                        <Image
+                            src="/images/footer_brand_logo.png"
+                            alt="Milk, made right"
+                            width={150}
+                            height={50}
+                            className="h-12 w-auto mb-2"
+                        />
                         <div className="text-[#a4d45d] font-bold text-lg font-montserrat italic">
                             "Milk, made right."
                         </div>
@@ -101,10 +108,10 @@ export default function Footer() {
                         {/* App Store Links */}
                         <div className="flex gap-3 mb-6">
                             <Link href="https://play.google.com/store/apps/details?id=com.madugai.app" target="_blank" className="hover:scale-105 transition-transform">
-                                <Image src="/images/others/play_logo.png" alt="Play Store" width={120} height={36} className="h-10 w-auto" />
+                                <Image src="/images/get-it-on-google-play.png" alt="Get it on Google Play" width={135} height={40} className="h-10 w-auto" />
                             </Link>
                             <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-105 transition-transform">
-                                <Image src="/images/others/ios.jpg" alt="App Store" width={120} height={36} className="h-10 w-auto" />
+                                <Image src="/images/download_on_the_app_store_badge-logo_brandlogos.net_zyp2x.png" alt="Download on App Store" width={120} height={40} className="h-10 w-auto" />
                             </Link>
                         </div>
 
@@ -136,13 +143,7 @@ export default function Footer() {
                             <Link href="/legal/refund" className="hover:text-white transition-colors">Refund Policy</Link>
                         </div>
                     </div>
-                    <div className="text-center mt-4">
-                        <p className="text-white/40 text-xs">
-                            Built with ❤️ by{" "}
-                            <Link href="https://simplestweb.in" className="text-[#4f6f19] hover:underline">SimplestWeb.in</Link>
-                        </p>
-                    </div>
-                </div>
+                                    </div>
             </div>
         </footer>
     );

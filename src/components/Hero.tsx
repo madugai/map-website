@@ -15,6 +15,47 @@ export default function Hero() {
         gsap.registerPlugin(ScrollTrigger);
 
         const ctx = gsap.context(() => {
+            // Pin Hero Section
+            if (sectionRef.current) {
+                ScrollTrigger.create({
+                    trigger: sectionRef.current,
+                    start: "top top",
+                    end: "bottom top",
+                    pin: true,
+                    pinSpacing: false
+                });
+            }
+
+            // Parallax effect for video
+            if (videoRef.current) {
+                gsap.to(videoRef.current, {
+                    yPercent: 15,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: sectionRef.current,
+                        start: "top top",
+                        end: "bottom top",
+                        scrub: true
+                    }
+                });
+            }
+
+            // Content Fade on Scroll
+            if (contentRef.current) {
+                gsap.to(contentRef.current, {
+                    opacity: 0,
+                    scale: 0.95,
+                    y: -50,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: sectionRef.current,
+                        start: "top top",
+                        end: "bottom top",
+                        scrub: true
+                    }
+                });
+            }
+
             // Text stagger entrance
             gsap.from(".hero-animate", {
                 opacity: 0,
