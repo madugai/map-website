@@ -73,19 +73,12 @@ export default function Hero() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Left Content */}
                     <div ref={contentRef} className="order-2 lg:order-1">
-                        {/* Badge */}
-                        <div className="overflow-hidden mb-6">
-                            <div className="hero-animate inline-flex items-center gap-2 px-4 py-2 bg-[#89b441] text-white text-[10px] font-bold uppercase tracking-widest">
-                                <Leaf className="w-3.5 h-3.5 text-white" />
-                                Freshness Guaranteed
-                            </div>
-                        </div>
+
 
                         {/* Heading */}
                         <div className="overflow-hidden mb-8">
-                            <h1 className="hero-animate text-4xl md:text-5xl lg:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
-                                Cow Milk.
-                                <br />
+                            <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+                                Cow Milk. 
                                 <span className="text-[#4f6f19]">
                                     Without Industrial Shortcuts.
                                 </span>
@@ -116,7 +109,7 @@ export default function Hero() {
                             <div className="hero-animate">
                                 <Link
                                     href="/contact"
-                                    className="bg-[#4f6f19] text-white font-bold py-4 px-8 hover:bg-[#324a10] transition-all flex items-center justify-center gap-3 text-sm uppercase tracking-widest"
+                                    className="bg-[#4f6f19] text-white font-bold py-4  px-8 hover:bg-[#324a10] transition-all flex items-center justify-center gap-3 xl:text-sm text-xs uppercase tracking-widest"
                                 >
                                     Request a Sample
                                     <ChevronRight className="w-4 h-4" />
@@ -125,7 +118,7 @@ export default function Hero() {
                             <div className="hero-animate">
                                 <Link
                                     href="/subscription"
-                                    className="bg-gray-900 text-white font-bold py-4 px-8 hover:bg-gray-800 transition-all flex items-center justify-center text-sm uppercase tracking-widest"
+                                    className="bg-gray-900 text-white font-bold py-4 px-8 hover:bg-gray-800 transition-all flex items-center justify-center xl:text-sm text-xs uppercase tracking-widest"
                                 >
                                     Subscribe
                                 </Link>

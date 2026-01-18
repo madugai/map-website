@@ -47,13 +47,13 @@ export default function Home() {
             <Navbar />
             <Hero />
             <div className="relative z-10 bg-white"><div className="reveal-section"><Features /></div></div>
-            <div className="relative z-10 bg-white"><div className="reveal-section"><AboutSection /></div></div>
+            <div className="relative z-10 bg-[#f8f9fa]"><div className="reveal-section"><AboutSection /></div></div>
             <div className="relative z-10 bg-white"><div className="reveal-section"><Products /></div></div>
-            <div className="relative z-10 bg-white"><div className="reveal-section"><HowWeWork /></div></div>
+            <div className="relative z-10 bg-[#f8f9fa]"><div className="reveal-section"><HowWeWork /></div></div>
             <div className="relative z-10 bg-white"><div className="reveal-section"><Subscription /></div></div>
-            <div className="relative z-10 bg-white"><div className="reveal-section"><PuritySection /></div></div>
+            <div className="relative z-10 bg-[#4f6f19]"><div className="reveal-section"><PuritySection /></div></div>
             <div className="relative z-10 bg-white"><div className="reveal-section"><AppPromo /></div></div>
-            <div className="relative z-10 bg-white"><div className="reveal-section"><Reviews /></div></div>
+            <div className="relative z-10 bg-[#f8f9fa]"><div className="reveal-section"><Reviews /></div></div>
             <div className="relative z-10 bg-white"><div className="reveal-section"><FAQ /></div></div>
             <div className="relative z-10 bg-white"><Footer /></div>
         </main>

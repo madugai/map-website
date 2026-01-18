@@ -9,10 +9,10 @@ const navLinks = [
     { name: "The MAP Standard", href: "/map-standard" },
     { name: "Products", href: "/products" },
     { name: "How We Work", href: "/how-we-work" },
-    { name: "Subscription", href: "/subscription" },
+    { name: "Shop", href: "https://madugai.trakop.com/", external: true },
     { name: "Transparency", href: "/transparency" },
     { name: "FAQ", href: "/faq" },
-    { name: "Shop", href: "https://madugai.trakop.com/", external: true },
+    { name: "Subscription", href: "/subscription" },
 ];
 
 export default function Navbar() {

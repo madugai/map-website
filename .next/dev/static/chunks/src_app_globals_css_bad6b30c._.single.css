@@ -1323,6 +1323,10 @@
     background-color: lab(79.6829% -30.1013 52.3682 / .05);
   }
 
+  .bg-\[\#f8f9fa\] {
+    background-color: #f8f9fa;
+  }
+
   .bg-\[\#fafafa\] {
     background-color: #fafafa;
   }
@@ -2351,12 +2355,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-\[\#3d5614\]:hover {
-      background-color: #3d5614;
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-\[\#4f6f19\]:hover {
       background-color: #4f6f19;
     }
@@ -2911,8 +2909,36 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:text-\[42px\] {
       font-size: 42px;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:text-6xl {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .xl\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
 
