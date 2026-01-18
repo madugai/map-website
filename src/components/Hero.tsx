@@ -78,7 +78,7 @@ export default function Hero() {
                         {/* Heading */}
                         <div className="overflow-hidden mb-8">
                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
-                                Cow Milk. 
+                                Cow Milk.
                                 <span className="text-[#4f6f19]">
                                     Without Industrial Shortcuts.
                                 </span>
@@ -139,7 +139,7 @@ export default function Hero() {
                                 playsInline
                                 className="w-full h-auto"
                             >
-                                <source src="/vids/header_3.mp4" type="video/mp4" />
+                                <source src="/vids/madugai.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>

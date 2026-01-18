@@ -1,11 +1,15 @@
 {
-  "name": "Madugai - Cow Milk. Without Industrial Shortcuts.",
+  "name": "Madugai - Farm Fresh Cow Milk | Pure Milk Delivery",
   "short_name": "Madugai",
-  "theme_color": "#77a533",
-  "background_color": "#6c6c6c",
+  "description": "Farm-fresh cow milk delivered in eco-friendly glass bottles. No dilution, no preservatives.",
+  "theme_color": "#4f6f19",
+  "background_color": "#ffffff",
   "display": "standalone",
-  "Scope": "/",
+  "scope": "/",
   "start_url": "/",
+  "orientation": "portrait-primary",
+  "categories": ["food", "shopping"],
+  "lang": "en-IN",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

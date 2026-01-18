@@ -484,6 +484,10 @@
     right: 25%;
   }
 
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+
   .-bottom-1 {
     bottom: calc(var(--spacing) * -1);
   }
@@ -2252,6 +2256,18 @@
   @media (hover: hover) {
     .group-hover\:bg-white:is(:where(.group):hover *) {
       background-color: var(--color-white);
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\:bg-white\/20:is(:where(.group):hover *) {
+      background-color: #fff3;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .group-hover\:bg-white\/20:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+      }
     }
   }
 

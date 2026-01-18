@@ -81,52 +81,211 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SmoothS
 ;
 ;
 const viewport = {
-    themeColor: "#4f6f19"
+    themeColor: "#4f6f19",
+    width: "device-width",
+    initialScale: 1
 };
 const metadata = {
-    title: "Madugai - Cow Milk. Without Industrial Shortcuts.",
-    description: "Madugai provides pure, unadulterated cow milk collected daily from local farms and delivered fresh in glass bottles. No dilution, no preservatives.",
-    keywords: "madugai, fresh cow milk, fresh milk in chennai, pure milk, glass bottle milk",
+    metadataBase: new URL("https://madugaimilk.in"),
+    title: {
+        default: "Madugai - Farm Fresh Cow Milk | Pure Milk Delivery in Tamil Nadu",
+        template: "%s | Madugai Milk"
+    },
+    description: "Madugai Agro Product delivers hygienically handled, farm-fresh cow milk directly from local farmers in eco-friendly glass bottles. No dilution, no preservatives, no industrial shortcuts. Fresh milk delivery in Chennai, Ranipet, Vellore, Walajapet & Arcot. சென்னை மற்றும் அருகிலுள்ள பகுதிகளில் பசுமை பண்ணை பால்.",
+    keywords: [
+        "Madugai",
+        "Madugai Milk",
+        "Madugai Agro Product",
+        "fresh milk Chennai",
+        "farm fresh milk",
+        "glass bottle milk delivery",
+        "organic milk Tamil Nadu",
+        "local farmers milk",
+        "cow milk",
+        "fresh cow milk",
+        "raw cow milk",
+        "pure milk",
+        "fresh milk Ranipet",
+        "fresh milk Vellore",
+        "fresh milk Walajapet",
+        "fresh milk Arcot",
+        "milk delivery Chennai",
+        "daily milk delivery",
+        "A2 milk",
+        "பசும்பால்",
+        "பண்ணை பால்",
+        "சென்னை பால் டெலிவரி",
+        "milk subscription",
+        "organic dairy",
+        "natural milk",
+        "unadulterated milk",
+        "preservative free milk",
+        "farm to home milk"
+    ],
     authors: [
         {
-            name: "Madugai"
+            name: "Madugai Agro Product"
         }
     ],
+    creator: "Madugai Agro Product",
+    publisher: "Madugai Agro Product",
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false
+    },
+    alternates: {
+        canonical: "https://madugaimilk.in",
+        languages: {
+            "en-IN": "https://madugaimilk.in",
+            "ta-IN": "https://madugaimilk.in"
+        }
+    },
     openGraph: {
-        title: "Madugai - Cow Milk. Without Industrial Shortcuts.",
-        description: "Madugai provides pure, unadulterated cow milk collected daily from local farms and delivered fresh in glass bottles.",
-        url: "https://madugai.com",
-        siteName: "madugai.com",
+        title: "Madugai - Farm Fresh Cow Milk | Pure Milk Delivery in Tamil Nadu",
+        description: "Being Elite – Just the Way Nature Made It! Premium dairy delivering farm-fresh milk in eco-friendly glass bottles, directly to your doorstep. No dilution, no preservatives.",
+        url: "https://madugaimilk.in",
+        siteName: "Madugai Milk",
         images: [
             {
-                url: "https://madugai.com/images/og-image.png"
+                url: "https://madugaimilk.in/images/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Madugai - Farm Fresh Cow Milk"
             }
         ],
-        locale: "en",
+        locale: "en_IN",
         type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Madugai - Farm Fresh Cow Milk | Pure Milk Delivery",
+        description: "Fresh milk sourced from Tamil Nadu's farmers. Delivered hygienically in glass bottles. No dilution, no preservatives.",
+        images: [
+            "https://madugaimilk.in/images/og-image.png"
+        ],
+        creator: "@madugai"
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
+        }
+    },
+    verification: {
+        google: "your-google-verification-code"
+    },
+    category: "Food & Beverage",
+    other: {
+        "facebook-domain-verification": "s0r1sn5t2mokhgsaahibnk5a4cpora"
     }
 };
 ;
+// JSON-LD Structured Data
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Madugai Agro Product",
+    image: "https://madugaimilk.in/images/og-image.png",
+    description: "Farm-fresh cow milk delivered in eco-friendly glass bottles. No dilution, no preservatives.",
+    address: {
+        "@type": "PostalAddress",
+        streetAddress: "No.176A, Padasalai Street, Padiyampakkam",
+        addressLocality: "Walajapet",
+        addressRegion: "Tamil Nadu",
+        postalCode: "632513",
+        addressCountry: "IN"
+    },
+    telephone: "+91-8903535222",
+    email: "support@madugaimilk.in",
+    url: "https://madugaimilk.in",
+    priceRange: "$$",
+    openingHours: "Mo-Su 06:00-20:00",
+    sameAs: [
+        "https://facebook.com/Madugai",
+        "https://instagram.com/madugai",
+        "https://twitter.com/Madugai",
+        "https://linkedin.com/company/madugai",
+        "https://youtube.com/c/Madugai"
+    ],
+    areaServed: [
+        "Chennai",
+        "Ranipet",
+        "Vellore",
+        "Walajapet",
+        "Arcot",
+        "Tamil Nadu"
+    ]
+};
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
         lang: "en",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
-            className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$montserrat_c325bee6$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} font-montserrat antialiased`,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SmoothScroll$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                children: children
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("head", {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
+                        rel: "icon",
+                        href: "/images/favicon.png"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/layout.tsx",
+                        lineNumber: 135,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
+                        rel: "apple-touch-icon",
+                        href: "/images/icons/icon-192x192.png"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/layout.tsx",
+                        lineNumber: 136,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
+                        rel: "manifest",
+                        href: "/manifest.json"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/layout.tsx",
+                        lineNumber: 137,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                        type: "application/ld+json",
+                        dangerouslySetInnerHTML: {
+                            __html: JSON.stringify(jsonLd)
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/layout.tsx",
+                        lineNumber: 138,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/layout.tsx",
+                lineNumber: 134,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
+                className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$montserrat_c325bee6$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} font-montserrat antialiased`,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SmoothScroll$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/src/app/layout.tsx",
+                    lineNumber: 146,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 47,
-                columnNumber: 9
+                lineNumber: 143,
+                columnNumber: 7
             }, this)
-        }, void 0, false, {
-            fileName: "[project]/src/app/layout.tsx",
-            lineNumber: 44,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 43,
+        lineNumber: 133,
         columnNumber: 5
     }, this);
 }
