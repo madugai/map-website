@@ -107,19 +107,7 @@ export default function HowWeWork({ showHeader = true }: { showHeader?: boolean 
                 }
             });
 
-            // Connecting line animation (for visual flow)
-            gsap.from(".step-connector", {
-                scaleX: 0,
-                duration: 1.5,
-                ease: "power2.inOut",
-                scrollTrigger: {
-                    trigger: ".steps-container",
-                    start: "top 80%",
-                    toggleActions: "play none none none"
-                }
-            });
-
-        }, sectionRef);
+            }, sectionRef);
 
         return () => ctx.revert();
     }, []);

@@ -24,31 +24,21 @@ export default function Footer() {
 
             {/* Main Footer */}
             <div className="container py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* About Column */}
                     <div>
-                        <h5 className="text-white text-lg font-bold font-montserrat mb-6 flex items-center gap-2">
-                            <span className="w-8 h-1 bg-gradient-to-r from-[#4f6f19] to-[#a4d45d]" />
-                            About Us
-                        </h5>
+                        <Image
+                            src="/images/others/logo.png"
+                            alt="Madugai Logo"
+                            width={180}
+                            height={60}
+                            className="h-16 w-auto mb-6"
+                        />
                         <p className="text-white/70 font-montserrat leading-relaxed mb-6">
                             Madugai exists to provide pure, unadulterated cow milk without industrial shortcuts. We believe in quality, integrity, and the sacred promise of purity.
                         </p>
-                        <div className="text-[#a4d45d] font-bold text-lg font-montserrat mb-6 italic">
+                        <div className="text-[#a4d45d] font-bold text-lg font-montserrat italic">
                             "Milk, made right."
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <Image
-                                src="/images/others/logo.png"
-                                alt="Madugai Logo"
-                                width={150}
-                                height={50}
-                                className="h-12 w-auto grayscale brightness-200"
-                            />
-                            <div>
-                                <div className="font-bold text-white font-montserrat text-xl">Madugai</div>
-                                <div className="text-sm text-[#a4d45d]">Purity First</div>
-                            </div>
                         </div>
                     </div>
 
@@ -73,35 +63,6 @@ export default function Footer() {
                                         className="text-white/70 hover:text-white hover:pl-2 transition-all inline-flex items-center gap-2"
                                     >
                                         {link.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Support */}
-                    <div>
-                        <h5 className="text-white text-lg font-bold font-montserrat mb-6 flex items-center gap-2">
-                            <span className="w-8 h-1 bg-gradient-to-r from-[#4f6f19] to-[#a4d45d]" />
-                            Support
-                        </h5>
-                        <ul className="space-y-3 font-montserrat text-sm">
-                            {[
-                                { name: "FAQ", href: "/faq" },
-                                { name: "Contact Us", href: "/contact" },
-                                { name: "Shop Online", href: "https://madugai.trakop.com/", external: true },
-                            ].map((link) => (
-                                <li key={link.name}>
-                                    <Link
-                                        href={link.href}
-                                        target={link.external ? "_blank" : undefined}
-                                        rel={link.external ? "noopener noreferrer" : undefined}
-                                        className="text-white/70 hover:text-white hover:pl-2 transition-all inline-flex items-center gap-2"
-                                    >
-                                        {link.name}
-                                        {link.external && (
-                                            <span className="text-xs text-[#a4d45d]">↗</span>
-                                        )}
                                     </Link>
                                 </li>
                             ))}

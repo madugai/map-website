@@ -1099,3 +1099,11 @@ It can also happen if the client has a browser extension installed which messes 
 
 [05:13:25.779] Browser WARN    GSAP target .step-connector not found. https://gsap.com
 [05:13:25.779] Browser WARN    GSAP target  not found. https://gsap.com
+[05:47:45.068] Server  LOG     ✓ Compiled in 99ms
+[05:47:51.840] Server  LOG     ✓ Compiled in 109ms
+[05:48:01.160] Server  LOG     ✓ Compiled in 88ms
+[05:51:14.358] Server  LOG     ✓ Compiled in 88ms
+[05:51:25.239] Server  LOG     ✓ Compiled in 84ms
+[05:51:53.673] Server  LOG     ✓ Compiled in 80ms
+[05:54:22.488] Server  LOG     ✓ Compiled in 120ms
+[05:54:23.739] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'insertBefore' on 'Node': The node before which the new node is to be inserted is not a child of this node.

@@ -17,10 +17,8 @@ const navLinks = [
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        setMounted(true);
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
         };
@@ -29,7 +27,6 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Prevent body scroll when menu is open
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -41,18 +38,20 @@ export default function Navbar() {
         };
     }, [isOpen]);
 
+    const closeMenu = () => setIsOpen(false);
+
     return (
-        <>
+        <div>
             <nav
                 className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
-                    mounted && scrolled ? "bg-white/95 backdrop-blur-md shadow-md py-2" : "bg-white py-4"
+                    scrolled ? "bg-white/95 backdrop-blur-md shadow-md py-2" : "bg-white py-4"
                 }`}
             >
                 <div className="container">
                     <div className="flex items-center justify-between">
                         {/* Mobile Logo & Menu Button */}
                         <div className="lg:hidden flex items-center justify-between w-full">
-                            <Link href="/" className="inline-block transition-transform duration-300 hover:scale-105">
+                            <Link href="/" className="inline-block">
                                 <Image
                                     src="/images/others/logo.png"
                                     alt="Madugai Logo"
@@ -63,26 +62,32 @@ export default function Navbar() {
                                 />
                             </Link>
                             <button
+                                type="button"
                                 className="p-3 text-zinc-900 bg-white rounded-md shadow-sm"
                                 onClick={() => setIsOpen(true)}
-                                aria-label="Open Menu"
                             >
                                 <Menu size={28} />
                             </button>
                         </div>
 
-                        {/* Desktop Navigation - CENTERED LOGO LAYOUT */}
+                        {/* Desktop Navigation */}
                         <div className="hidden lg:flex items-center justify-between w-full">
-                            {/* Left Side Links */}
                             <div className="flex items-center bg-zinc-100/50 rounded-full p-1.5 border border-zinc-200/50">
                                 {navLinks.slice(0, 4).map((link) => (
-                                    <NavLink key={link.name} link={link} />
+                                    <Link
+                                        key={link.name}
+                                        href={link.href}
+                                        target={link.external ? "_blank" : undefined}
+                                        rel={link.external ? "noopener noreferrer" : undefined}
+                                        className="font-montserrat font-bold text-[13px] text-zinc-800 px-5 py-2 hover:bg-white hover:shadow-sm rounded-full transition-all whitespace-nowrap"
+                                    >
+                                        {link.name}
+                                    </Link>
                                 ))}
                             </div>
 
-                            {/* Center Logo */}
                             <div className="flex-shrink-0 mx-8">
-                                <Link href="/" className="inline-block transition-transform duration-300 hover:scale-105">
+                                <Link href="/" className="inline-block">
                                     <Image
                                         src="/images/others/logo.png"
                                         alt="Madugai Logo"
@@ -94,11 +99,16 @@ export default function Navbar() {
                                 </Link>
                             </div>
 
-                            {/* Right Side Links & CTA */}
                             <div className="flex items-center gap-6">
                                 <div className="flex items-center bg-zinc-100/50 rounded-full p-1.5 border border-zinc-200/50">
                                     {navLinks.slice(4).map((link) => (
-                                        <NavLink key={link.name} link={link} />
+                                        <Link
+                                            key={link.name}
+                                            href={link.href}
+                                            className="font-montserrat font-bold text-[13px] text-zinc-800 px-5 py-2 hover:bg-white hover:shadow-sm rounded-full transition-all whitespace-nowrap"
+                                        >
+                                            {link.name}
+                                        </Link>
                                     ))}
                                 </div>
                                 <Link
@@ -113,12 +123,11 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            {/* Mobile Nav Overlay */}
+            {/* Mobile Menu Overlay */}
             {isOpen && (
-                <div className="lg:hidden fixed inset-0 bg-white z-[99999] overflow-y-auto">
-                    {/* Mobile Header */}
+                <div className="lg:hidden fixed inset-0 bg-white z-[99999]" style={{ overflow: 'auto' }}>
                     <div className="flex items-center justify-between p-4 border-b border-zinc-100">
-                        <Link href="/" onClick={() => setIsOpen(false)}>
+                        <Link href="/" onClick={closeMenu}>
                             <Image
                                 src="/images/others/logo.png"
                                 alt="Madugai Logo"
@@ -128,20 +137,19 @@ export default function Navbar() {
                             />
                         </Link>
                         <button
+                            type="button"
                             className="p-3 text-zinc-900"
-                            onClick={() => setIsOpen(false)}
-                            aria-label="Close Menu"
+                            onClick={closeMenu}
                         >
                             <X size={28} />
                         </button>
                     </div>
 
-                    {/* Mobile Links */}
-                    <div className="flex flex-col p-6">
+                    <div className="p-6">
                         <Link
                             href="/"
                             className="block text-lg font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100"
-                            onClick={() => setIsOpen(false)}
+                            onClick={closeMenu}
                         >
                             Home
                         </Link>
@@ -152,7 +160,7 @@ export default function Navbar() {
                                 target={link.external ? "_blank" : undefined}
                                 rel={link.external ? "noopener noreferrer" : undefined}
                                 className="block text-lg font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100"
-                                onClick={() => setIsOpen(false)}
+                                onClick={closeMenu}
                             >
                                 {link.name}
                                 {link.external && (
@@ -164,7 +172,7 @@ export default function Navbar() {
                             <Link
                                 href="/contact"
                                 className="bg-[#4f6f19] text-white font-bold py-4 px-8 block text-center text-base"
-                                onClick={() => setIsOpen(false)}
+                                onClick={closeMenu}
                             >
                                 Contact Us
                             </Link>
@@ -172,19 +180,6 @@ export default function Navbar() {
                     </div>
                 </div>
             )}
-        </>
-    );
-}
-
-function NavLink({ link }: { link: { name: string; href: string; external?: boolean } }) {
-    return (
-        <Link
-            href={link.href}
-            target={link.external ? "_blank" : undefined}
-            rel={link.external ? "noopener noreferrer" : undefined}
-            className="group relative font-montserrat font-bold text-[13px] text-zinc-800 px-5 py-2 hover:bg-white hover:shadow-sm rounded-full transition-all flex items-center gap-1.5 whitespace-nowrap"
-        >
-            {link.name}
-        </Link>
+        </div>
     );
 }

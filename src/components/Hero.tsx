@@ -15,41 +15,6 @@ export default function Hero() {
         gsap.registerPlugin(ScrollTrigger);
 
         const ctx = gsap.context(() => {
-            // Pin Hero Section for reveal effect
-            ScrollTrigger.create({
-                trigger: sectionRef.current,
-                start: "top top",
-                end: "bottom top",
-                pin: true,
-                pinSpacing: false
-            });
-
-            // Parallax effect for video
-            gsap.to(videoRef.current, {
-                yPercent: 15,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top top",
-                    end: "bottom top",
-                    scrub: true
-                }
-            });
-
-            // Content Fade and Slide on Scroll
-            gsap.to(contentRef.current, {
-                opacity: 0,
-                scale: 0.95,
-                y: -100,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: sectionRef.current,
-                    start: "top top",
-                    end: "bottom top",
-                    scrub: true
-                }
-            });
-
             // Text stagger entrance
             gsap.from(".hero-animate", {
                 opacity: 0,
@@ -123,7 +88,6 @@ export default function Hero() {
                                 muted
                                 playsInline
                                 className="w-full h-auto object-cover"
-                                poster="/images/others/hero-poster.jpg"
                             >
                                 <source src="https://ik.imagekit.io/bcol8qyjc/Untitled%20design%20(5).mp4" type="video/mp4" />
                                 Your browser does not support the video.
