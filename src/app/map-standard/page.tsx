@@ -50,7 +50,7 @@ export default function MAPStandardPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="pt-60 pb-24 bg-[#fafafa]">
+            <section className="pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-24 bg-[#fafafa]">
                 <div className="container px-8">
                     <div className="max-w-4xl mx-auto text-center">
                         <motion.div

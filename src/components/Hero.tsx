@@ -69,7 +69,7 @@ export default function Hero() {
             ref={sectionRef}
             className="hero-section relative min-h-[100vh] flex items-center overflow-hidden bg-white"
         >
-            <div className="container mx-auto px-6 md:px-8 py-12 md:py-0">
+            <div className="container mx-auto px-6 md:px-8 pt-24 pb-12 md:pt-0 md:pb-0">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Left Content */}
                     <div ref={contentRef} className="order-2 lg:order-1">
@@ -112,17 +112,18 @@ export default function Hero() {
                     </div>
 
                     {/* Right Video */}
-                    <div className="order-1 lg:order-2 relative flex items-center justify-center">
+                    <div className="order-1 lg:order-2 relative flex items-center justify-center w-full">
                         <div
                             ref={videoRef}
-                            className="relative w-full rounded-3xl overflow-hidden"
+                            className="relative w-full max-w-md lg:max-w-full rounded-3xl overflow-hidden"
                         >
                             <video
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
-                                className="w-full h-auto"
+                                className="w-full h-auto object-cover"
+                                poster="/images/others/hero-poster.jpg"
                             >
                                 <source src="https://ik.imagekit.io/bcol8qyjc/Untitled%20design%20(5).mp4" type="video/mp4" />
                                 Your browser does not support the video.

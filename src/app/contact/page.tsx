@@ -11,7 +11,7 @@ export default function ContactPage() {
             <Navbar />
 
             {/* Page Header */}
-            <section className="pt-60 pb-20 bg-[#fafafa] px-8">
+            <section className="pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-20 bg-[#fafafa] px-6 md:px-8">
                 <div className="container max-w-4xl mx-auto text-center">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}

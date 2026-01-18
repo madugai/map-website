@@ -32,7 +32,7 @@ const steps = [
     }
 ];
 
-export default function HowWeWork() {
+export default function HowWeWork({ showHeader = true }: { showHeader?: boolean }) {
     const sectionRef = useRef<HTMLElement>(null);
 
     useLayoutEffect(() => {
@@ -127,15 +127,17 @@ export default function HowWeWork() {
     return (
         <section ref={sectionRef} id="how-we-work" className="py-24 md:py-32 overflow-hidden">
             <div className="container">
-                <div className="text-center mb-20">
-                    <span className="hww-badge text-[#4f6f19] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">Our Process</span>
-                    <h2 className="hww-title text-4xl md:text-5xl font-montserrat font-black text-gray-900 leading-tight">
-                        How We <span className="text-[#4f6f19]">Work</span>
-                    </h2>
-                    <p className="hww-subtitle text-gray-500 font-montserrat mt-8 max-w-2xl mx-auto text-lg">
-                        A defined operating discipline Governed by the MAP Standard. Every single day.
-                    </p>
-                </div>
+                {showHeader && (
+                    <div className="text-center mb-20">
+                        <span className="hww-badge text-[#4f6f19] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">Our Process</span>
+                        <h2 className="hww-title text-4xl md:text-5xl font-montserrat font-black text-gray-900 leading-tight">
+                            How We <span className="text-[#4f6f19]">Work</span>
+                        </h2>
+                        <p className="hww-subtitle text-gray-500 font-montserrat mt-8 max-w-2xl mx-auto text-lg">
+                            A defined operating discipline Governed by the MAP Standard. Every single day.
+                        </p>
+                    </div>
+                )}
 
                 <div className="steps-container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
                     {steps.map((step, idx) => (

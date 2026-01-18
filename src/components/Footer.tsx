@@ -62,7 +62,7 @@ export default function Footer() {
                             {[
                                 { name: "Home", href: "/" },
                                 { name: "The MAP Standard", href: "/map-standard" },
-                                { name: "Our Milk", href: "/our-milk" },
+                                { name: "Our Products", href: "/our-products" },
                                 { name: "How We Work", href: "/how-we-work" },
                                 { name: "Subscription", href: "/subscription" },
                                 { name: "Transparency", href: "/transparency" },
@@ -79,31 +79,28 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Know Our Milk */}
+                    {/* Support */}
                     <div>
                         <h5 className="text-white text-lg font-bold font-montserrat mb-6 flex items-center gap-2">
                             <span className="w-8 h-1 bg-gradient-to-r from-[#4f6f19] to-[#a4d45d]" />
-                            Know Our Milk
+                            Support
                         </h5>
                         <ul className="space-y-3 font-montserrat text-sm">
                             {[
-                                { name: "Milk Meter", href: "/milk-meter" },
-                                { name: "Customer Awareness", href: "/customer-awareness-program" },
-                                { name: "Customer Policies", href: "/customer-policies" },
-                                { name: "Areas We Serve", href: "/areas-we-serve" },
-                                { name: "Refer & Earn", href: "/refer-and-earn" },
-                                { name: "Bulk Milk", href: "/forms/bulk-milk", badge: true },
+                                { name: "FAQ", href: "/faq" },
+                                { name: "Contact Us", href: "/contact" },
+                                { name: "Shop Online", href: "https://madugai.trakop.com/", external: true },
                             ].map((link) => (
                                 <li key={link.name}>
                                     <Link
                                         href={link.href}
+                                        target={link.external ? "_blank" : undefined}
+                                        rel={link.external ? "noopener noreferrer" : undefined}
                                         className="text-white/70 hover:text-white hover:pl-2 transition-all inline-flex items-center gap-2"
                                     >
                                         {link.name}
-                                        {link.badge && (
-                                            <span className="bg-[#4f6f19] text-white text-[10px] px-1.5 py-0.5 font-bold uppercase">
-                                                NEW
-                                            </span>
+                                        {link.external && (
+                                            <span className="text-xs text-[#a4d45d]">↗</span>
                                         )}
                                     </Link>
                                 </li>
