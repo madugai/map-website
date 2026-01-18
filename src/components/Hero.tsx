@@ -125,7 +125,7 @@ export default function Hero() {
                                 className="w-full h-auto"
                             >
                                 <source src="https://ik.imagekit.io/bcol8qyjc/Untitled%20design%20(5).mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
+                                Your browser does not support the video.
                             </video>
                         </div>
                     </div>

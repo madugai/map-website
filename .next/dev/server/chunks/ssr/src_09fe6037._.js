@@ -510,7 +510,7 @@ function Hero() {
                                             lineNumber: 127,
                                             columnNumber: 33
                                         }, this),
-                                        "Your browser does not support the video tag."
+                                        "Your browser does not support the video."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Hero.tsx",
