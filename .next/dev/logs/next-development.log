@@ -152,3 +152,339 @@ It can also happen if the client has a browser extension installed which messes 
 [02:23:27.303] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [02:23:27.303] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [02:23:27.303] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:24:46.016] Server  LOG     ✓ Compiled in 185ms
+[02:26:43.339] Server  LOG     ✓ Compiled in 177ms
+[02:26:54.757] Server  LOG     ✓ Compiled in 75ms
+[02:27:15.115] Server  LOG     ✓ Compiled in 60ms
+[02:27:20.586] Server  LOG     ✓ Compiled in 70ms
+[02:27:20.977] Server  LOG     ✓ Compiled in 71ms
+[02:27:28.685] Server  LOG     ✓ Compiled in 74ms
+[02:27:29.054] Server  LOG     ✓ Compiled in 61ms
+[02:27:29.496] Server  LOG     ✓ Compiled in 109ms
+[02:27:50.955] Server  LOG     ✓ Compiled in 87ms
+[02:28:09.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:10.197] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[02:28:10.522] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[02:28:10.522] Browser WARN    GSAP target  not found. https://gsap.com
+[02:28:10.523] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:28:11.193] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[02:28:14.189] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[02:28:17.181] Browser WARN    [locatorjs]: No valid renderers found.
+[02:28:21.188] Browser WARN    [locatorjs]: No valid renderers found.
+[02:29:36.476] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[02:29:36.477] Browser WARN    GSAP target  not found. https://gsap.com
+[02:29:36.477] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[02:29:36.477] Browser WARN    GSAP target  not found. https://gsap.com
+[02:29:37.409] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:29:37.409] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:29:37.409] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:29:37.409] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:20.657] Server  LOG     ✓ Compiled in 248ms
+[02:37:54.080] Server  LOG     ✓ Compiled in 68ms
+[02:37:55.656] Server  LOG     ✓ Compiled in 56ms
+[02:45:37.788] Server  LOG     ✓ Compiled in 464ms
+[02:45:46.597] Browser WARN    Image with src "/images/internal.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:45:46.597] Browser WARN    Image with src "/images/report.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:45:57.276] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[02:45:57.276] Browser WARN    GSAP target  not found. https://gsap.com
+[02:45:57.276] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[02:45:57.276] Browser WARN    GSAP target  not found. https://gsap.com
+[02:59:58.235] Server  LOG     ✓ Compiled in 72ms
+[03:04:07.480] Server  LOG     ✓ Compiled in 114ms
+[03:04:45.066] Server  LOG     ✓ Compiled in 71ms
+[03:04:58.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:04:58.850] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:04:58.850] Browser WARN    [locatorjs]: ok
+[03:04:59.839] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[03:04:59.839] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:04:59.840] Browser WARN    GSAP target  not found. https://gsap.com
+[03:04:59.840] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:05:15.514] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:05:15.514] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:05:16.191] Browser WARN    [locatorjs]: ok
+[03:05:16.413] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="loading: No valid renderers found."
+                          >
+                          ...
+                  ...
+
+[03:05:16.413] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:05:16.413] Browser WARN    GSAP target  not found. https://gsap.com
+[03:05:16.413] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:05:30.819] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:05:30.819] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:05:30.819] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:05:30.819] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:05:57.254] Server  LOG     ✓ Compiled in 55ms
+[03:06:02.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:06:02.229] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:06:02.229] Browser WARN    [locatorjs]: ok
+[03:06:03.454] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[03:06:03.454] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:06:03.454] Browser WARN    GSAP target  not found. https://gsap.com
+[03:06:03.454] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:06:21.785] Server  LOG     ✓ Compiled in 53ms
+[03:06:29.694] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:06:30.769] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:06:30.769] Browser WARN    GSAP target  not found. https://gsap.com
+[03:06:30.769] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:06:30.769] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:06:31.722] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:06:34.722] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:06:37.722] Browser WARN    [locatorjs]: No valid renderers found.
+[03:06:41.724] Browser WARN    [locatorjs]: No valid renderers found.
+[03:06:51.247] Server  LOG     ✓ Compiled in 61ms
+[03:06:55.768] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:06:55.768] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:06:56.445] Browser WARN    [locatorjs]: ok
+[03:06:57.273] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:06:57.273] Browser WARN    GSAP target  not found. https://gsap.com
+[03:06:57.273] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:08:19.354] Server  LOG     ✓ Compiled in 66ms
+[03:08:32.109] Server  LOG     ✓ Compiled in 59ms
+[03:08:36.217] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:08:36.217] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:08:39.046] Browser WARN    [locatorjs]: ok
+[03:08:39.046] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[03:08:39.046] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:08:39.046] Browser WARN    GSAP target  not found. https://gsap.com
+[03:08:39.046] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:08:39.974] Server  LOG     ✓ Compiled in 90ms
+[03:09:04.497] Server  LOG     ✓ Compiled in 108ms
+[03:09:10.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:09:11.613] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:09:11.674] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:09:11.674] Browser WARN    GSAP target  not found. https://gsap.com
+[03:09:11.674] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:09:12.272] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:09:15.273] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:09:18.273] Browser WARN    [locatorjs]: No valid renderers found.
+[03:09:22.275] Browser WARN    [locatorjs]: No valid renderers found.
+[03:09:55.012] Server  LOG     ✓ Compiled in 127ms
+[03:09:58.693] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:09:58.693] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:09:59.314] Browser WARN    [locatorjs]: ok
+[03:09:59.821] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:09:59.821] Browser WARN    GSAP target  not found. https://gsap.com
+[03:09:59.821] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:12:15.018] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:12:15.018] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:12:15.018] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:12:15.018] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:14:07.462] Server  LOG     ✓ Compiled in 60ms
+[03:16:10.085] Server  LOG     ✓ Compiled in 70ms
+[03:16:48.464] Server  LOG     ✓ Compiled in 60ms
+[03:16:49.895] Server  LOG     ✓ Compiled in 96ms
+[03:17:21.910] Server  LOG     ✓ Compiled in 119ms
+[03:17:42.083] Server  LOG     ✓ Compiled in 67ms
+[03:17:42.728] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[03:17:43.084] Server  LOG     ✓ Compiled in 67ms
+[03:17:50.811] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:17:50.811] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:17:50.811] Browser WARN    [locatorjs]: ok
+[03:17:51.731] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[03:17:51.731] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:17:51.731] Browser WARN    GSAP target  not found. https://gsap.com
+[03:17:51.731] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:18:06.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:18:07.572] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:18:07.572] Browser WARN    GSAP target  not found. https://gsap.com
+[03:18:07.572] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:18:07.572] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:18:08.634] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:18:12.726] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:18:15.732] Browser WARN    [locatorjs]: No valid renderers found.
+[03:18:18.566] Browser WARN    [locatorjs]: No valid renderers found.
+[03:18:25.074] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:18:25.074] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:18:25.074] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:18:25.074] Browser WARN    GSAP target  not found. https://gsap.com
+[03:18:25.074] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:25.074] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:25.074] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:25.277] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:25.277] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:18:25.653] Browser WARN    [locatorjs]: ok
+[03:18:41.823] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:18:42.127] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:18:42.127] Browser WARN    GSAP target  not found. https://gsap.com
+[03:18:42.127] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:42.127] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:42.127] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:42.127] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:18:42.127] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

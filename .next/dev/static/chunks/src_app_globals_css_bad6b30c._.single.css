@@ -1294,6 +1294,10 @@
     border-color: var(--color-zinc-950);
   }
 
+  .bg-\[\#1a1a1a\] {
+    background-color: #1a1a1a;
+  }
+
   .bg-\[\#4f6f19\] {
     background-color: #4f6f19;
   }
@@ -1313,6 +1317,11 @@
     background-color: lab(43.0545% -22.2412 40.7727 / .2);
   }
 
+  .bg-\[\#4f6f19\]\/30 {
+    background-color: #4f6f194d;
+    background-color: lab(43.0545% -22.2412 40.7727 / .3);
+  }
+
   .bg-\[\#77a533\]\/10 {
     background-color: #77a5331a;
     background-color: lab(62.7423% -29.2813 51.0332 / .1);
@@ -1327,8 +1336,20 @@
     background-color: lab(79.6829% -30.1013 52.3682 / .05);
   }
 
+  .bg-\[\#f5f5f5\] {
+    background-color: #f5f5f5;
+  }
+
   .bg-\[\#f8f9fa\] {
     background-color: #f8f9fa;
+  }
+
+  .bg-\[\#f8faf5\] {
+    background-color: #f8faf5;
+  }
+
+  .bg-\[\#faf8f5\] {
+    background-color: #faf8f5;
   }
 
   .bg-\[\#fafafa\] {
@@ -1351,6 +1372,10 @@
 
   .bg-foreground {
     background-color: var(--foreground);
+  }
+
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
 
   .bg-gray-900 {
@@ -1503,6 +1528,11 @@
 
   .to-\[\#1a2e0d\] {
     --tw-gradient-to: #1a2e0d;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .to-\[\#3d5614\] {
+    --tw-gradient-to: #3d5614;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -1717,6 +1747,10 @@
     padding-top: 200px;
   }
 
+  .pr-4 {
+    padding-right: calc(var(--spacing) * 4);
+  }
+
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
@@ -1922,6 +1956,10 @@
 
   .text-\[\#25D366\] {
     color: #25d366;
+  }
+
+  .text-\[\#89b441\] {
+    color: #89b441;
   }
 
   .text-\[\#a4d45d\] {
@@ -2377,6 +2415,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-\[\#89b441\]:hover {
+      background-color: #89b441;
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-\[\#324a10\]:hover {
       background-color: #324a10;
     }
@@ -2403,6 +2447,12 @@
       .hover\:bg-black\/\[\.04\]:hover {
         background-color: color-mix(in oklab, var(--color-black) 4%, transparent);
       }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-gray-200:hover {
+      background-color: var(--color-gray-200);
     }
   }
 

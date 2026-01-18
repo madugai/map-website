@@ -65,7 +65,7 @@ export default function Products() {
     }, []);
 
     return (
-        <section ref={containerRef} className="bg-white py-24 md:py-32 overflow-hidden">
+        <section ref={containerRef} className="py-24 md:py-32 overflow-hidden">
             <div className="container">
                 {/* Section Header */}
                 <div className="text-center mb-20">

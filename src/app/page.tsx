@@ -170,16 +170,35 @@ export default function Home() {
         <main ref={mainRef} className="min-h-screen relative overflow-hidden">
             <Navbar />
             <Hero />
-            <div className="relative z-10 bg-white"><div className="reveal-section"><Features /></div></div>
-            <div className="relative z-10 bg-[#f8f9fa]"><div className="reveal-section"><AboutSection /></div></div>
+            {/* Features - Green brand section */}
+            <div className="relative z-10"><div className="reveal-section"><Features /></div></div>
+
+            {/* About - Light gray */}
+            <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><AboutSection /></div></div>
+
+            {/* Products - White */}
             <div className="relative z-10 bg-white"><div className="reveal-section"><Products /></div></div>
-            <div className="relative z-10 bg-[#f8f9fa]"><div className="reveal-section"><HowWeWork /></div></div>
-            <div className="relative z-10 bg-white"><div className="reveal-section"><Subscription /></div></div>
-            <div className="relative z-10 bg-[#fafafa]"><div className="reveal-section"><PuritySection /></div></div>
-            <div className="relative z-10 bg-white"><div className="reveal-section"><AppPromo /></div></div>
-            <div className="relative z-10 bg-[#f8f9fa]"><div className="reveal-section"><Reviews /></div></div>
+
+            {/* How We Work - Cream/beige */}
+            <div className="relative z-10 bg-[#faf8f5]"><div className="reveal-section"><HowWeWork /></div></div>
+
+            {/* Subscription - Dark section */}
+            <div className="relative z-10 bg-[#1a1a1a]"><div className="reveal-section"><Subscription /></div></div>
+
+            {/* Purity/MAP Standard - Light section */}
+            <div className="relative z-10 bg-[#f8faf5]"><div className="reveal-section"><PuritySection /></div></div>
+
+            {/* App Promo - Dark section with internal styling */}
+            <div className="relative z-10"><div className="reveal-section"><AppPromo /></div></div>
+
+            {/* Reviews - Light gray */}
+            <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><Reviews /></div></div>
+
+            {/* FAQ - White */}
             <div className="relative z-10 bg-white"><div className="reveal-section"><FAQ /></div></div>
-            <div className="relative z-10 bg-white"><Footer /></div>
+
+            {/* Footer */}
+            <div className="relative z-10"><Footer /></div>
         </main>
     );
 }

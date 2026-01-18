@@ -35,8 +35,9 @@ const navLinks = [
         href: "/how-we-work"
     },
     {
-        name: "Subscription",
-        href: "/subscription"
+        name: "Shop",
+        href: "https://madugai.trakop.com/",
+        external: true
     },
     {
         name: "Transparency",
@@ -47,9 +48,8 @@ const navLinks = [
         href: "/faq"
     },
     {
-        name: "Shop",
-        href: "https://madugai.trakop.com/",
-        external: true
+        name: "Subscription",
+        href: "/subscription"
     }
 ];
 function Navbar() {

@@ -125,7 +125,7 @@ export default function HowWeWork() {
     }, []);
 
     return (
-        <section ref={sectionRef} id="how-we-work" className="bg-white py-24 md:py-32 overflow-hidden">
+        <section ref={sectionRef} id="how-we-work" className="py-24 md:py-32 overflow-hidden">
             <div className="container">
                 <div className="text-center mb-20">
                     <span className="hww-badge text-[#4f6f19] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">Our Process</span>

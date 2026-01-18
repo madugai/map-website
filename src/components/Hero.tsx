@@ -2,7 +2,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ChevronRight, Award, Leaf, Truck } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -78,30 +78,15 @@ export default function Hero() {
                         {/* Heading */}
                         <div className="overflow-hidden mb-8">
                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
-                                Cow Milk.
-                                <span className="text-[#4f6f19]">
-                                    Without Industrial Shortcuts.
-                                </span>
+                                Cow Milk. <span className="text-[#4f6f19]">Without Industrial Shortcuts.</span>
                             </h1>
                         </div>
 
-                        {/* Features */}
-                        <div className="space-y-4 mb-10">
-                            {[
-                                { text: "Collected daily from selected local farms.", icon: Award },
-                                { text: "Chilled immediately.", icon: Leaf },
-                                { text: "Delivered fresh every morning in glass bottles.", icon: Truck },
-                                { text: "No dilution. No preservatives. No mass processing.", icon: Award }
-                            ].map((item, idx) => (
-                                <div key={idx} className="overflow-hidden">
-                                    <div className="hero-animate flex items-center gap-4 text-gray-700 text-base md:text-lg font-montserrat font-medium">
-                                        <div className="flex-shrink-0 w-8 h-8 bg-[#89b441] flex items-center justify-center rounded-sm">
-                                            <item.icon className="w-4 h-4 text-white" />
-                                        </div>
-                                        {item.text}
-                                    </div>
-                                </div>
-                            ))}
+                        {/* Description */}
+                        <div className="hero-animate mb-10">
+                            <p className="text-gray-600 text-lg md:text-xl font-montserrat leading-relaxed">
+                                Collected daily. Chilled immediately. Delivered fresh in glass bottles. No dilution. No preservatives. No mass processing.
+                            </p>
                         </div>
 
                         {/* Buttons */}
@@ -139,7 +124,7 @@ export default function Hero() {
                                 playsInline
                                 className="w-full h-auto"
                             >
-                                <source src="/vids/madugai.mp4" type="video/mp4" />
+                                <source src="https://ik.imagekit.io/bcol8qyjc/Untitled%20design%20(5).mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>

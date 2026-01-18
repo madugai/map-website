@@ -28,24 +28,24 @@ const benefits = [
 
 export default function Subscription() {
     return (
-        <section id="subscription" className="bg-[#fafafa] py-24 md:py-32 overflow-hidden">
+        <section id="subscription" className="py-24 md:py-32 overflow-hidden">
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <div>
-                        <span className="text-[#4f6f19] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">Our Model</span>
-                        <h2 className="text-4xl md:text-5xl font-montserrat font-black text-gray-900 leading-tight mb-8">
-                            Why We Use <span className="text-[#4f6f19]">Subscription</span>
+                        <span className="text-[#89b441] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">Our Model</span>
+                        <h2 className="text-4xl md:text-5xl font-montserrat font-black text-white leading-tight mb-8">
+                            Why We Use <span className="text-[#89b441]">Subscription</span>
                         </h2>
-                        <p className="text-gray-500 font-montserrat text-lg leading-relaxed mb-10">
+                        <p className="text-white/70 font-montserrat text-lg leading-relaxed mb-10">
                             Madugai operates on a subscription model by design. This allows us to control sourcing, handling, and delivery without compromise. Quality cannot be maintained through spot buying or irregular demand.
                         </p>
 
-                        <div className="bg-black p-8 md:p-12 text-white">
-                            <h3 className="text-2xl font-bold mb-6">Limited Households</h3>
-                            <p className="text-white/70 mb-8 leading-relaxed">
+                        <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-8 md:p-12">
+                            <h3 className="text-2xl font-bold mb-6 text-white">Limited Households</h3>
+                            <p className="text-white/60 mb-8 leading-relaxed">
                                 Madugai serves a limited number of households. Not because we can't grow — but because we refuse to lower standards. When capacity is full, onboarding stops.
                             </p>
-                            <button className="bg-[#4f6f19] text-white font-bold py-4 px-10 hover:bg-[#324a10] transition-all text-sm uppercase tracking-widest">
+                            <button className="bg-[#4f6f19] text-white font-bold py-4 px-10 hover:bg-[#89b441] transition-all text-sm uppercase tracking-widest">
                                 Join the Waitlist
                             </button>
                         </div>
@@ -59,18 +59,18 @@ export default function Subscription() {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
-                                className="bg-white p-10 border border-gray-100"
+                                className="bg-white/5 backdrop-blur-sm p-10 border border-white/10"
                             >
-                                <div className="w-12 h-12 bg-[#4f6f19]/10 flex items-center justify-center mb-6">
-                                    <benefit.icon className="w-6 h-6 text-[#4f6f19]" />
+                                <div className="w-12 h-12 bg-[#4f6f19]/30 flex items-center justify-center mb-6">
+                                    <benefit.icon className="w-6 h-6 text-[#89b441]" />
                                 </div>
-                                <h4 className="text-lg font-bold font-montserrat text-gray-900 mb-4">{benefit.title}</h4>
-                                <p className="text-gray-500 font-montserrat text-sm leading-relaxed">{benefit.description}</p>
+                                <h4 className="text-lg font-bold font-montserrat text-white mb-4">{benefit.title}</h4>
+                                <p className="text-white/60 font-montserrat text-sm leading-relaxed">{benefit.description}</p>
                             </motion.div>
                         ))}
 
-                        <div className="sm:col-span-2 bg-zinc-50 p-10 border border-zinc-100">
-                            <h4 className="text-xl font-bold font-montserrat text-gray-900 mb-6">Madugai is for households that value:</h4>
+                        <div className="sm:col-span-2 bg-white/5 backdrop-blur-sm p-10 border border-white/10">
+                            <h4 className="text-xl font-bold font-montserrat text-white mb-6">Madugai is for households that value:</h4>
                             <ul className="space-y-4">
                                 {[
                                     { title: "Discipline over convenience", text: "Subscription ensures predictable handling." },
@@ -82,13 +82,13 @@ export default function Subscription() {
                                             <div className="w-2 h-2 bg-white rounded-full" />
                                         </div>
                                         <div>
-                                            <span className="font-bold text-gray-900 block">{item.title}</span>
-                                            <span className="text-gray-500 text-sm">{item.text}</span>
+                                            <span className="font-bold text-white block">{item.title}</span>
+                                            <span className="text-white/60 text-sm">{item.text}</span>
                                         </div>
                                     </li>
                                 ))}
                             </ul>
-                            <p className="mt-8 text-sm text-gray-400 italic">
+                            <p className="mt-8 text-sm text-white/40 italic">
                                 * If you are looking for occasional or ad-hoc purchases, Madugai may not be the right choice.
                             </p>
                         </div>
