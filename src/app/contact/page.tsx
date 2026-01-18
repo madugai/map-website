@@ -47,7 +47,7 @@ export default function ContactPage() {
                                         <Mail className="w-6 h-6 text-[#4f6f19]" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Email Us</p>
+                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Email us</p>
                                         <p className="text-xl font-bold">support@madugai.com</p>
                                     </div>
                                 </div>
