@@ -83,8 +83,9 @@ export default function Hero() {
 
                         {/* Heading */}
                         <div className="overflow-hidden mb-8">
-                            <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
-                                Cow Milk. <span className="text-[#4f6f19]">Without Industrial Shortcuts.</span>
+                            <h1 className="hero-animate text-3xl md:text-4xl xl:text-5xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight flex flex-col">
+                                <span>Cow Milk. <span className="text-[#4f6f19]">Without</span></span>
+                                <span className="text-[#4f6f19]">Industrial Shortcuts.</span>
                             </h1>
                         </div>
 
@@ -95,25 +96,15 @@ export default function Hero() {
                             </p>
                         </div>
 
-                        {/* Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <div className="hero-animate">
-                                <Link
-                                    href="/contact"
-                                    className="bg-[#4f6f19] text-white font-bold py-4  px-8 hover:bg-[#324a10] transition-all flex items-center justify-center gap-3 xl:text-sm text-xs uppercase tracking-widest"
-                                >
-                                    Request a Sample
-                                    <ChevronRight className="w-4 h-4" />
-                                </Link>
-                            </div>
-                            <div className="hero-animate">
-                                <Link
-                                    href="/subscription"
-                                    className="bg-gray-900 text-white font-bold py-4 px-8 hover:bg-gray-800 transition-all flex items-center justify-center xl:text-sm text-xs uppercase tracking-widest"
-                                >
-                                    Subscribe
-                                </Link>
-                            </div>
+                        {/* Button */}
+                        <div className="hero-animate">
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-3 bg-[#4f6f19] text-white font-bold py-4 px-10 rounded-full hover:bg-[#324a10] hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm uppercase tracking-widest group"
+                            >
+                                Request a Sample
+                                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            </Link>
                         </div>
                     </div>
 
@@ -138,8 +129,8 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
+            {/* Scroll Indicator - Hidden on mobile */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-2">
                 <motion.div
                     animate={{ y: [0, 8, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

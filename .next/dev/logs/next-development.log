@@ -1730,3 +1730,516 @@ It can also happen if the client has a browser extension installed which messes 
 [06:36:00.866] Browser WARN    Image with src "/images/get-it-on-google-play.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [06:36:00.866] Browser WARN    Image with src "/images/download_on_the_app_store_badge-logo_brandlogos.net_zyp2x.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [06:37:38.036] Server  LOG     ✓ Compiled in 361ms
+[07:19:33.531] Server  LOG     ✓ Compiled in 1500ms
+[07:21:22.714] Browser WARN    Image with src "/images/report.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:21:22.714] Browser WARN    Image with src "/images/internal.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:29:09.405] Server  LOG     ✓ Compiled in 303ms
+[07:30:24.997] Server  LOG     ✓ Compiled in 306ms
+[07:31:24.499] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:31:24.499] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[07:31:24.810] Browser WARN    [locatorjs]: ok
+[07:31:27.888] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[07:31:27.888] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:27.888] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:27.888] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:27.888] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:27.888] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:31:55.774] Server  LOG     ✓ Compiled in 324ms
+[07:32:45.075] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:32:45.075] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[07:32:45.237] Browser WARN    [locatorjs]: ok
+[07:32:47.505] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[07:32:47.505] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:32:47.505] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:32:47.505] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:32:47.505] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:32:47.505] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:37:13.216] Server  LOG     ✓ Compiled in 754ms
+[07:37:50.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:37:50.429] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[07:37:50.683] Browser WARN    [locatorjs]: ok
+[07:37:51.528] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[07:37:51.810] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:37:51.810] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:37:51.810] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:37:51.810] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:37:51.810] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:39:52.719] Server  LOG     ✓ Compiled in 311ms
+[07:42:11.087] Server  LOG     ✓ Compiled in 301ms
+[07:42:57.128] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:42:57.128] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[07:42:57.881] Browser WARN    [locatorjs]: ok
+[07:42:58.604] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:42:58.604] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:42:58.604] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:42:58.604] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:42:58.604] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:44:25.146] Server  LOG     ✓ Compiled in 348ms
+[07:45:20.394] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:45:20.394] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[07:45:20.758] Browser WARN    [locatorjs]: ok
+[07:45:21.526] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="ok"
+                          >
+                          ...
+                  ...
+
+[07:45:21.761] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:45:21.761] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:45:21.761] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:45:21.761] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:45:21.761] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:47:48.781] Server  LOG     ✓ Compiled in 392ms
+[07:47:50.980] Server  LOG     ✓ Compiled in 667ms
+[07:47:56.759] Server  LOG     ✓ Compiled in 659ms
+[07:47:56.905] Browser ERROR   ./src/components/Hero.tsx:88:34
+Parsing ecmascript source code failed
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+  87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without Industrial Shortcuts.</span>
+> 88 |                                 n>
+     |                                  ^
+  89 |                             </h1>
+  90 |                         </div>
+  91 |
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:03.118] Browser ERROR   ./src/components/Hero.tsx:88:34
+Parsing ecmascript source code failed
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+  87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without Industrial Shortcuts.</span>
+> 88 |                                 n>
+     |                                  ^
+  89 |                             </h1>
+  90 |                         </div>
+  91 |
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:03.253] Server  LOG     ✓ Compiled in 4s
+[07:48:09.993] Browser ERROR   ./src/components/Hero.tsx:88:34
+Parsing ecmascript source code failed
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+  87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without Industrial Shortcuts.</span>
+> 88 |                                 n>
+     |                                  ^
+  89 |                             </h1>
+  90 |                         </div>
+  91 |
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:11.538] Server  LOG     ✓ Compiled in 297ms
+[07:48:11.615] Browser ERROR   ./src/components/Hero.tsx:88:34
+Parsing ecmascript source code failed
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+  87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without Industrial Shortcuts.</span>
+> 88 |                                 n>
+     |                                  ^
+  89 |                             </h1>
+  90 |                         </div>
+  91 |
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:15.089] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:48:15.089] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[07:48:16.736] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/our-produ..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="loading: No valid renderers found."
+                          >
+                          ...
+                  ...
+
+[07:48:16.736] Browser WARN    [locatorjs]: ok
+[07:48:23.003] Server  LOG     ✓ Compiled in 284ms
+[07:48:23.115] Browser ERROR   ./src/components/Hero.tsx:87:102
+Parsing ecmascript source code failed
+  85 |                         <div className="overflow-hidden mb-8">
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+> 87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without </br>Industrial Shortcuts.</span>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  88 |
+  89 |                             </h1>
+  90 |                         </div>
+
+Expected '</', got 'jsx text (Industrial Shortcuts.)'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:30.916] Server  LOG     ✓ Compiled in 1772ms
+[07:48:31.496] Browser ERROR   ./src/components/Hero.tsx:87:102
+Parsing ecmascript source code failed
+  85 |                         <div className="overflow-hidden mb-8">
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+> 87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without </br>Industrial Shortcuts.</span>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  88 |
+  89 |                             </h1>
+  90 |                         </div>
+
+Expected '</', got 'jsx text (Industrial Shortcuts.)'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:32.764] Server  LOG     ✓ Compiled in 1070ms
+[07:48:33.205] Browser ERROR   ./src/components/Hero.tsx:87:102
+Parsing ecmascript source code failed
+  85 |                         <div className="overflow-hidden mb-8">
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+> 87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without </br>Industrial Shortcuts.</span>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  88 |
+  89 |                             </h1>
+  90 |                         </div>
+
+Expected '</', got 'jsx text (Industrial Shortcuts.)'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:35.756] Browser ERROR   ./src/components/Hero.tsx:87:102
+Parsing ecmascript source code failed
+  85 |                         <div className="overflow-hidden mb-8">
+  86 |                             <h1 className="hero-animate text-4xl lg:text-4xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight">
+> 87 |                                 <span>Cow Milk. </span><span className="text-[#4f6f19]">Without </br>Industrial Shortcuts.</span>
+     |                                                                                                      ^^^^^^^^^^^^^^^^^^^^^
+  88 |
+  89 |                             </h1>
+  90 |                         </div>
+
+Expected '</', got 'jsx text (Industrial Shortcuts.)'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Hero.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Hero.tsx [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+[07:48:36.994] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:48:36.994] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[07:48:38.725] Browser WARN    [locatorjs]: ok
+[07:48:48.871] Server  LOG     ✓ Compiled in 336ms
+[07:48:51.176] Server  LOG     ✓ Compiled in 378ms
+[07:49:04.974] Server  LOG     ✓ Compiled in 393ms
+[07:49:06.286] Server  LOG     ✓ Compiled in 405ms
+[07:49:21.162] Server  LOG     ✓ Compiled in 209ms
+[07:49:38.736] Server  LOG     ✓ Compiled in 373ms
+[07:49:51.604] Server  LOG     ✓ Compiled in 390ms
+[07:50:00.033] Server  LOG     ✓ Compiled in 1047ms
+[07:50:10.092] Server  LOG     ✓ Compiled in 235ms
+[07:50:11.850] Server  LOG     ✓ Compiled in 244ms
+[07:51:44.837] Server  LOG     ✓ Compiled in 400ms
+[07:54:18.264] Server  LOG     ✓ Compiled in 291ms
+[07:57:31.797] Server  LOG     ✓ Compiled in 1589ms
+[07:58:18.144] Browser WARN    Image with src "/images/get-it-on-google-play.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:58:18.144] Browser WARN    Image with src "/images/download_on_the_app_store_badge-logo_brandlogos.net_zyp2x.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[08:00:35.464] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[08:00:36.480] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[08:00:39.398] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[08:00:42.387] Browser WARN    [locatorjs]: No valid renderers found.
+[08:00:44.629] Server  LOG     ✓ Compiled in 458ms
+[08:00:46.400] Browser WARN    [locatorjs]: No valid renderers found.
+[08:01:07.989] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:01:07.989] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:01:07.991] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:01:08.189] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:09:27.353] Server  LOG     ✓ Compiled in 232ms
+[08:10:31.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:10:31.959] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[08:10:32.443] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/subscription" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head
+-                           data-locator-hook-status-message="loading: No valid renderers found."
+                          >
+                          ...
+                  ...
+
+[08:10:32.686] Browser WARN    [locatorjs]: ok
+[08:10:38.792] Browser WARN    Image with src "/images/get-it-on-google-play.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[08:10:38.793] Browser WARN    Image with src "/images/download_on_the_app_store_badge-logo_brandlogos.net_zyp2x.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[08:10:45.015] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[08:10:45.015] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:10:45.295] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:10:45.295] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:10:45.295] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:13:55.093] Browser WARN    GSAP target .hww-badge not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target  not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target .hww-title not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target  not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target .hww-subtitle not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target  not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target .hww-badge not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target  not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target .hww-title not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target  not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target .hww-subtitle not found. https://gsap.com
+[08:13:55.093] Browser WARN    GSAP target  not found. https://gsap.com
+[08:14:03.284] Server  LOG     ✓ Compiled in 712ms
+[08:15:37.624] Server  LOG     ✓ Compiled in 468ms
+[08:34:55.173] Server  LOG     ✓ Compiled in 1562ms

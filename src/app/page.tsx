@@ -192,7 +192,7 @@ export default function Home() {
             <div className="relative z-10"><div className="reveal-section"><AppPromo /></div></div>
 
             {/* Reviews - Light gray */}
-            <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><Reviews /></div></div>
+            {/* <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><Reviews /></div></div> */}
 
             {/* FAQ - White */}
             <div className="relative z-10 bg-white"><div className="reveal-section"><FAQ /></div></div>

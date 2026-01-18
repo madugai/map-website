@@ -8,7 +8,7 @@ const navLinks = [
     { name: "The MAP Standard", href: "/map-standard" },
     { name: "Products", href: "/our-products" },
     { name: "How We Work", href: "/how-we-work" },
-    { name: "Shop", href: "https://madugai.trakop.com/", external: true },
+    { name: "Store", href: "https://madugai.trakop.com/", external: true },
     { name: "Transparency", href: "/transparency" },
     { name: "FAQ", href: "/faq" },
     { name: "Subscription", href: "/subscription" },
