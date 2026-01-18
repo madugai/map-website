@@ -27,16 +27,17 @@ const navLinks = [
         href: "/map-standard"
     },
     {
-        name: "Our Products",
-        href: "/our-products"
+        name: "Products",
+        href: "/products"
     },
     {
         name: "How We Work",
         href: "/how-we-work"
     },
     {
-        name: "Subscription",
-        href: "/subscription"
+        name: "Shop",
+        href: "https://madugai.trakop.com/",
+        external: true
     },
     {
         name: "Transparency",
@@ -45,6 +46,10 @@ const navLinks = [
     {
         name: "FAQ",
         href: "/faq"
+    },
+    {
+        name: "Subscription",
+        href: "/subscription"
     }
 ];
 function Navbar() {
@@ -80,12 +85,12 @@ function Navbar() {
                                         priority: true
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 40,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 39,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -96,24 +101,24 @@ function Navbar() {
                                         size: 28
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 54,
                                         columnNumber: 39
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                         size: 28
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 54,
                                         columnNumber: 57
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 49,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -121,16 +126,16 @@ function Navbar() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center bg-zinc-100/50 rounded-full p-1.5 border border-zinc-200/50",
-                                    children: navLinks.slice(0, 3).map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
+                                    children: navLinks.slice(0, 4).map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                             link: link
                                         }, link.name, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 63,
                                             columnNumber: 33
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 61,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -147,77 +152,66 @@ function Navbar() {
                                             priority: true
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 70,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 69,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 68,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-4",
+                                    className: "flex items-center gap-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center bg-zinc-100/50 rounded-full p-1.5 border border-zinc-200/50",
-                                            children: navLinks.slice(3).map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
+                                            children: navLinks.slice(4).map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                                     link: link
                                                 }, link.name, false, {
                                                     fileName: "[project]/src/components/Navbar.tsx",
-                                                    lineNumber: 84,
+                                                    lineNumber: 85,
                                                     columnNumber: 37
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 83,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/contact",
-                                            className: "bg-zinc-900 text-white font-bold py-3 px-6 rounded-full hover:bg-black transition-all shadow-lg text-sm",
+                                            className: "bg-zinc-900 text-white font-bold py-3 px-8 rounded-full hover:bg-black transition-all shadow-lg text-sm",
                                             children: "Contact Us"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 87,
-                                            columnNumber: 29
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "https://madugai.trakop.com/",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            className: "bg-[#4f6f19] text-white font-bold py-3 px-6 rounded-full hover:bg-[#3d5614] transition-all shadow-lg text-sm",
-                                            children: "Shop"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Navbar.tsx",
-                                            lineNumber: 93,
+                                            lineNumber: 88,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 82,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar.tsx",
-                            lineNumber: 58,
+                            lineNumber: 59,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Navbar.tsx",
-                    lineNumber: 35,
+                    lineNumber: 36,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar.tsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -245,81 +239,71 @@ function Navbar() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Navbar.tsx",
-                                lineNumber: 116,
+                                lineNumber: 109,
                                 columnNumber: 29
                             }, this),
                             navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: link.href,
+                                    target: link.external ? "_blank" : undefined,
+                                    rel: link.external ? "noopener noreferrer" : undefined,
                                     className: "text-2xl font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100 flex items-center justify-between",
                                     onClick: ()=>setIsOpen(false),
                                     children: link.name
                                 }, link.name, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 117,
                                     columnNumber: 33
                                 }, this)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "pt-8 space-y-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/contact",
-                                        className: "bg-zinc-900 text-white font-bold py-5 px-12 block text-center text-xl",
-                                        onClick: ()=>setIsOpen(false),
-                                        children: "Contact Us"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 134,
-                                        columnNumber: 33
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "https://madugai.trakop.com/",
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        className: "bg-[#4f6f19] text-white font-bold py-5 px-12 block text-center text-xl",
-                                        onClick: ()=>setIsOpen(false),
-                                        children: "Shop"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Navbar.tsx",
-                                        lineNumber: 141,
-                                        columnNumber: 33
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                className: "pt-8",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/contact",
+                                    className: "bg-zinc-900 text-white font-bold py-5 px-12 block text-center text-xl",
+                                    onClick: ()=>setIsOpen(false),
+                                    children: "Contact Us"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Navbar.tsx",
+                                    lineNumber: 129,
+                                    columnNumber: 33
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/Navbar.tsx",
-                                lineNumber: 133,
+                                lineNumber: 128,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Navbar.tsx",
-                        lineNumber: 115,
+                        lineNumber: 108,
                         columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Navbar.tsx",
-                    lineNumber: 109,
+                    lineNumber: 102,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar.tsx",
-                lineNumber: 107,
+                lineNumber: 100,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Navbar.tsx",
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 9
     }, this);
 }
 function NavLink({ link }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         href: link.href,
+        target: link.external ? "_blank" : undefined,
+        rel: link.external ? "noopener noreferrer" : undefined,
         className: "group relative font-montserrat font-bold text-[13px] text-zinc-800 px-5 py-2 hover:bg-white hover:shadow-sm rounded-full transition-all flex items-center gap-1.5 whitespace-nowrap",
         children: link.name
     }, void 0, false, {
         fileName: "[project]/src/components/Navbar.tsx",
-        lineNumber: 161,
+        lineNumber: 147,
         columnNumber: 9
     }, this);
 }
@@ -948,85 +932,105 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-ssr] (ecmascript) <export default as ChevronDown>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript) <export default as MapPin>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-ssr] (ecmascript) <export default as ShieldCheck>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript) <export default as Clock>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$test$2d$tube$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TestTube$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/test-tube.js [app-ssr] (ecmascript) <export default as TestTube>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-ssr] (ecmascript) <export default as Zap>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.js [app-ssr] (ecmascript) <export default as Trophy>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mouse$2d$pointer$2d$click$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MousePointerClick$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mouse-pointer-click.js [app-ssr] (ecmascript) <export default as MousePointerClick>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$smartphone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Smartphone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/smartphone.js [app-ssr] (ecmascript) <export default as Smartphone>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/credit-card.js [app-ssr] (ecmascript) <export default as CreditCard>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plane$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plane$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plane.js [app-ssr] (ecmascript) <export default as Plane>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2d$pulse$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__HeartPulse$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart-pulse.js [app-ssr] (ecmascript) <export default as HeartPulse>");
 "use client";
 ;
 ;
 ;
 ;
-const faqs = [
+const faqCategories = [
     {
-        question: "Where is Madugai milk sourced?",
-        answer: "Our milk is collected daily from carefully selected local farms that strictly adhere to our MAP Standard. We maintain long-term partnerships with farmers who share our commitment to purity and animal welfare.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"]
+        category: "About Madugai",
+        faqs: [
+            {
+                question: "What is Madugai?",
+                answer: "Madugai is a farm-to-home milk delivery service that delivers fresh, pure cow milk in reusable glass bottles. We follow a strict operating discipline to ensure every litre of milk reaches you exactly as it should be — without dilution, without preservatives, and without industrial shortcuts."
+            },
+            {
+                question: "Where does Madugai operate?",
+                answer: "We currently operate in select areas of Vellore district, Tamil Nadu. Our delivery is limited to ensure we maintain full control over quality and freshness."
+            },
+            {
+                question: "Is Madugai certified?",
+                answer: "Yes. Madugai operates under a valid FSSAI license (Lic. No: 12425030000917). We follow all regulatory guidelines for milk handling and delivery."
+            }
+        ]
     },
     {
-        question: "What defines Madugai as 'Real Milk'?",
-        answer: "Real milk is milk in its most natural state. We don't dilute with water, we don't add preservatives, and we don't subject it to mass-homogenization. It's essentially farm-fresh milk, delivered as nature intended.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"]
+        category: "Milk & Quality",
+        faqs: [
+            {
+                question: "Where does the milk come from?",
+                answer: "Our milk is collected daily from selected small-scale local farms that meet our sourcing criteria. We do not source from large dairy cooperatives or bulk tankers."
+            },
+            {
+                question: "Is the milk pasteurised or homogenised?",
+                answer: "Madugai milk is gently heated — not subjected to high-temperature pasteurisation or UHT processing. The milk is not homogenised, so you will notice a layer of cream on top — this is natural and a sign of real, unprocessed milk."
+            },
+            {
+                question: "How fresh is the milk?",
+                answer: "Our milk is collected in the early morning and delivered to your doorstep the same day. The time from milking to delivery is typically under 6 hours."
+            },
+            {
+                question: "How should I store the milk?",
+                answer: "Refrigerate the milk immediately upon delivery. Consume within 2–3 days for the best taste and freshness. Always keep the bottle sealed when not in use."
+            }
+        ]
     },
     {
-        question: "How long does Madugai milk stay fresh?",
-        answer: "Because we deliver within hours of milking and maintain a strict cold chain, our milk stays fresh for 2-3 days when properly refrigerated. We recommend keeping it at or below 4°C at all times.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"]
+        category: "Delivery",
+        faqs: [
+            {
+                question: "What time is the milk delivered?",
+                answer: "Milk is delivered early every morning, typically between 5:30 AM and 7:30 AM, depending on your location."
+            },
+            {
+                question: "Can I pause or skip deliveries?",
+                answer: "Yes. You can pause your subscription or skip specific days directly from the Madugai app. Changes must be made before 9 PM the previous night."
+            },
+            {
+                question: "Do you deliver on Sundays or holidays?",
+                answer: "Yes, we deliver every day of the year. Milk is a daily essential, and our operations do not take breaks."
+            }
+        ]
     },
     {
-        question: "Is the milk certified and tested?",
-        answer: "Yes, Madugai is FSSAI certified. More importantly, every batch of milk undergoes rigorous testing for fat content, solids-not-fat (SNF), and zero adulteration before it's approved for bottling.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$test$2d$tube$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TestTube$3e$__["TestTube"]
+        category: "Payments",
+        faqs: [
+            {
+                question: "How do I pay for my subscription?",
+                answer: "Payments are made through the Madugai app wallet. You can recharge using UPI, debit/credit cards, or net banking. The daily cost is automatically deducted from your wallet balance."
+            },
+            {
+                question: "What happens if my wallet balance is low?",
+                answer: "You will receive a notification when your balance is running low. If the balance reaches zero, deliveries will be paused until the wallet is recharged."
+            }
+        ]
     },
     {
-        question: "Understanding Consistency: Why does natural milk vary?",
-        answer: "Industrial milk is homogenized to look identical every day. Madugai is natural; its consistency and taste can vary slightly depending on the season and the natural diet of the cows. This is a sign of true purity.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
-    },
-    {
-        question: "Madugai vs. Other Brands: What's the difference?",
-        answer: "Our priority is integrity, not scale. We use eco-friendly glass bottles instead of plastic, enforce a zero-shortcut policy in our processing, and focus on delivering locally to ensure the shortest time from farm to home.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"]
-    },
-    {
-        question: "How do I start my Madugai subscription?",
-        answer: "Getting started is easy. You can request a trial sample via our website CTA or download the Madugai App to set up a subscription that fits your daily needs.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mouse$2d$pointer$2d$click$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MousePointerClick$3e$__["MousePointerClick"]
-    },
-    {
-        question: "Is there an App to manage my deliveries?",
-        answer: "Yes, the Madugai App is your command center. You can pause deliveries, change quantities, track your delivery partner, and manage your payments all in one place.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$smartphone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Smartphone$3e$__["Smartphone"]
-    },
-    {
-        question: "What are the available payment methods?",
-        answer: "We support all major payment methods including UPI, Credit/Debit cards, and Net Banking. You can easily recharge your in-app wallet for seamless, automated daily billing.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$credit$2d$card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CreditCard$3e$__["CreditCard"]
-    },
-    {
-        question: "Can I pause deliveries while I'm out of town?",
-        answer: "Absolutely. Whether you're away for a day or a month, you can simply toggle the 'Vacation Mode' or pause your subscription through the app instantly.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plane$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plane$3e$__["Plane"]
-    },
-    {
-        question: "The Truth: Is this A1 or A2 milk?",
-        answer: "Our focus is on the Purity and Integrity of the milk. We source from healthy, local breeds and focus on ensuring the milk remains unprocessed and free from industrial tweaks, providing a wholesome experience for all.",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2d$pulse$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__HeartPulse$3e$__["HeartPulse"]
+        category: "Glass Bottles",
+        faqs: [
+            {
+                question: "Why do you use glass bottles?",
+                answer: "Glass is inert, reusable, and does not leach chemicals into the milk. It preserves taste and quality better than plastic or tetra packs and is environmentally sustainable."
+            },
+            {
+                question: "How does the bottle return system work?",
+                answer: "When we deliver fresh milk, we collect the empty bottles from your previous delivery. Please rinse the bottles before returning. Bottles in good condition are sanitised and reused."
+            },
+            {
+                question: "What if I lose or break a bottle?",
+                answer: "A replacement fee will be charged for lost or broken bottles. The amount will be deducted from your wallet. Please handle bottles with care."
+            }
+        ]
     }
 ];
 function FAQ() {
+    const [activeCategory, setActiveCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-[#fafafa] py-12 md:py-20",
+        className: "py-16 md:py-24",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container max-w-4xl",
+            className: "container",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
@@ -1047,7 +1051,7 @@ function FAQ() {
                             children: "Support"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ.tsx",
-                            lineNumber: 90,
+                            lineNumber: 108,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1055,149 +1059,142 @@ function FAQ() {
                             children: "Frequently Asked Questions"
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ.tsx",
-                            lineNumber: 93,
+                            lineNumber: 111,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-gray-500 font-montserrat text-base",
-                            children: "Everything you need to know about our milk and services."
+                            children: "Everything you need to know about Madugai milk and services."
                         }, void 0, false, {
                             fileName: "[project]/src/components/FAQ.tsx",
-                            lineNumber: 96,
+                            lineNumber: 114,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/FAQ.tsx",
-                    lineNumber: 84,
+                    lineNumber: 102,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "border-t border-gray-200",
-                    children: faqs.map((faq, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                            initial: {
-                                opacity: 0,
-                                y: 10
+                    className: "flex flex-wrap justify-center gap-3 mb-12",
+                    children: faqCategories.map((cat, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>{
+                                setActiveCategory(idx);
+                                setActiveIndex(null);
                             },
-                            whileInView: {
-                                opacity: 1,
-                                y: 0
-                            },
-                            viewport: {
-                                once: true
-                            },
-                            transition: {
-                                delay: index * 0.05
-                            },
-                            className: "border-b border-gray-200 overflow-hidden",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>setActiveIndex(activeIndex === index ? null : index),
-                                    className: "w-full flex items-center justify-between py-6 text-left transition-colors group",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-6",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: `w-10 h-10 flex items-center justify-center transition-all ${activeIndex === index ? 'bg-[#4f6f19] text-white' : 'bg-[#4f6f19]/5 text-[#4f6f19] group-hover:scale-110'}`,
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(faq.icon, {
-                                                        className: "w-4 h-4"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/FAQ.tsx",
-                                                        lineNumber: 118,
-                                                        columnNumber: 41
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/FAQ.tsx",
-                                                    lineNumber: 117,
-                                                    columnNumber: 37
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: `text-lg font-montserrat font-bold transition-colors ${activeIndex === index ? 'text-[#4f6f19]' : 'text-gray-900 group-hover:text-[#4f6f19]'}`,
-                                                    children: faq.question
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/FAQ.tsx",
-                                                    lineNumber: 120,
-                                                    columnNumber: 37
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/FAQ.tsx",
-                                            lineNumber: 116,
-                                            columnNumber: 33
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                            className: `w-4 h-4 text-gray-300 transition-transform duration-300 ${activeIndex === index ? 'rotate-180 text-[#4f6f19]' : ''}`
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/FAQ.tsx",
-                                            lineNumber: 124,
-                                            columnNumber: 33
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/FAQ.tsx",
-                                    lineNumber: 112,
-                                    columnNumber: 29
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                                    children: activeIndex === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        initial: {
-                                            height: 0,
-                                            opacity: 0
-                                        },
-                                        animate: {
-                                            height: "auto",
-                                            opacity: 1
-                                        },
-                                        exit: {
-                                            height: 0,
-                                            opacity: 0
-                                        },
-                                        transition: {
-                                            duration: 0.3,
-                                            ease: "easeInOut"
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "pb-8 pt-1",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "pl-16",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-gray-500 font-montserrat text-base leading-relaxed max-w-3xl",
-                                                    children: faq.answer
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/FAQ.tsx",
-                                                    lineNumber: 137,
-                                                    columnNumber: 49
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/FAQ.tsx",
-                                                lineNumber: 136,
-                                                columnNumber: 45
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/FAQ.tsx",
-                                            lineNumber: 135,
-                                            columnNumber: 41
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/FAQ.tsx",
-                                        lineNumber: 129,
-                                        columnNumber: 37
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/FAQ.tsx",
-                                    lineNumber: 127,
-                                    columnNumber: 29
-                                }, this)
-                            ]
-                        }, index, true, {
+                            className: `px-5 py-2.5 text-sm font-montserrat font-medium transition-all ${activeCategory === idx ? "bg-[#4f6f19] text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`,
+                            children: cat.category
+                        }, idx, false, {
                             fileName: "[project]/src/components/FAQ.tsx",
-                            lineNumber: 104,
+                            lineNumber: 122,
                             columnNumber: 25
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/FAQ.tsx",
-                    lineNumber: 102,
+                    lineNumber: 120,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-3xl mx-auto",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "border-t border-gray-200",
+                        children: faqCategories[activeCategory].faqs.map((faq, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 10
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    delay: index * 0.05
+                                },
+                                className: "border-b border-gray-200 overflow-hidden",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>setActiveIndex(activeIndex === index ? null : index),
+                                        className: "w-full flex items-center justify-between py-6 text-left transition-colors group",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: `text-base md:text-lg font-montserrat font-bold transition-colors pr-4 ${activeIndex === index ? 'text-[#4f6f19]' : 'text-gray-900 group-hover:text-[#4f6f19]'}`,
+                                                children: faq.question
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FAQ.tsx",
+                                                lineNumber: 154,
+                                                columnNumber: 37
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                                className: `w-5 h-5 flex-shrink-0 text-gray-400 transition-transform duration-300 ${activeIndex === index ? 'rotate-180 text-[#4f6f19]' : ''}`
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FAQ.tsx",
+                                                lineNumber: 159,
+                                                columnNumber: 37
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/FAQ.tsx",
+                                        lineNumber: 150,
+                                        columnNumber: 33
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                        children: activeIndex === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            initial: {
+                                                height: 0,
+                                                opacity: 0
+                                            },
+                                            animate: {
+                                                height: "auto",
+                                                opacity: 1
+                                            },
+                                            exit: {
+                                                height: 0,
+                                                opacity: 0
+                                            },
+                                            transition: {
+                                                duration: 0.3,
+                                                ease: "easeInOut"
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "pb-6",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-gray-500 font-montserrat text-base leading-relaxed",
+                                                    children: faq.answer
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/FAQ.tsx",
+                                                    lineNumber: 173,
+                                                    columnNumber: 49
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/FAQ.tsx",
+                                                lineNumber: 172,
+                                                columnNumber: 45
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/FAQ.tsx",
+                                            lineNumber: 166,
+                                            columnNumber: 41
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/FAQ.tsx",
+                                        lineNumber: 164,
+                                        columnNumber: 33
+                                    }, this)
+                                ]
+                            }, index, true, {
+                                fileName: "[project]/src/components/FAQ.tsx",
+                                lineNumber: 143,
+                                columnNumber: 29
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/FAQ.tsx",
+                        lineNumber: 141,
+                        columnNumber: 21
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/FAQ.tsx",
+                    lineNumber: 140,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1214,36 +1211,37 @@ function FAQ() {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-gray-500 font-montserrat",
                         children: [
-                            "Still have questions? ",
+                            "Still have questions?",
+                            " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "/contact",
                                 className: "text-[#4f6f19] font-bold hover:underline transition-colors uppercase tracking-widest text-xs",
                                 children: "Contact our support team"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/FAQ.tsx",
-                                lineNumber: 157,
-                                columnNumber: 47
+                                lineNumber: 194,
+                                columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/FAQ.tsx",
-                        lineNumber: 156,
+                        lineNumber: 192,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/FAQ.tsx",
-                    lineNumber: 150,
+                    lineNumber: 186,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/FAQ.tsx",
-            lineNumber: 82,
+            lineNumber: 100,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/FAQ.tsx",
-        lineNumber: 81,
+        lineNumber: 99,
         columnNumber: 9
     }, this);
 }

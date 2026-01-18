@@ -489,3 +489,58 @@ It can also happen if the client has a browser extension installed which messes 
 [03:18:42.127] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [03:18:42.127] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [03:24:45.753] Server  LOG     ✓ Compiled in 81ms
+[03:36:57.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:36:58.412] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-locator-client-url="chrome-extension://npbfdllefekhdplbkdigpncggmojpefi/client.bundle.js"
+                        >
+                  ...
+
+[03:36:58.412] Browser WARN    GSAP target .step-connector not found. https://gsap.com
+[03:36:58.412] Browser WARN    GSAP target  not found. https://gsap.com
+[03:36:58.412] Browser WARN    Image with src "/images/products/milk.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.412] Browser WARN    Image with src "/images/products/ghee.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.412] Browser WARN    Image with src "/images/panner_img.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.412] Browser WARN    Image with src "/images/coconut.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.412] Browser WARN    Image with src "/images/others/appmockup.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:36:59.325] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:37:00.337] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:37:03.323] Browser WARN    [locatorjs]: loading: No valid renderers found.
+[03:37:06.320] Browser WARN    [locatorjs]: No valid renderers found.
+[03:37:10.320] Browser WARN    [locatorjs]: No valid renderers found.
+[03:37:57.339] Browser WARN    Image with src "/images/internal.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:37:57.339] Browser WARN    Image with src "/images/report.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:57:44.484] Server  LOG     ✓ Compiled in 3.6s
+[03:57:44.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:44.715] Browser WARN    [locator-js] React instance (react-dom v19.3.0-canary-f93b9fd4-20251217) is not supported
+[03:57:46.743] Browser WARN    [locatorjs]: ok
