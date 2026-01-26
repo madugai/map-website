@@ -2757,3 +2757,8 @@ It can also happen if the client has a browser extension installed which messes 
 [10:05:32.370] Browser WARN    Element not found: body
 [10:05:32.370] Browser WARN    Element not found: body
 [10:10:21.010] Server  LOG     ✓ Compiled in 2.5s
+[10:25:11.713] Server  LOG     ✓ Compiled in 697ms
+[10:25:49.304] Server  LOG     ✓ Compiled in 597ms
+[10:26:12.936] Server  LOG     ✓ Compiled in 5.4s
+[10:27:37.241] Browser WARN    Image with src "/images/internal.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[10:27:37.250] Browser WARN    Image with src "/images/report.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
