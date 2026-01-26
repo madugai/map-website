@@ -131,9 +131,9 @@ export default function Navbar() {
                             <Image
                                 src="/images/others/logo.png"
                                 alt="Madugai Logo"
-                                width={48}
-                                height={48}
-                                className="h-12 w-12 rounded-full object-cover"
+                                width={140}
+                                height={46}
+                                className="h-12 w-auto"
                             />
                         </Link>
                         <button

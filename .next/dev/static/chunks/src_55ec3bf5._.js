@@ -258,9 +258,9 @@ function Navbar() {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: "/images/others/logo.png",
                                     alt: "Madugai Logo",
-                                    width: 48,
-                                    height: 48,
-                                    className: "h-12 w-12 rounded-full object-cover"
+                                    width: 140,
+                                    height: 46,
+                                    className: "h-12 w-auto"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.tsx",
                                     lineNumber: 131,
@@ -439,11 +439,11 @@ function Footer() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/images/logo.jpg",
+                                    src: "/images/others/logo.png",
                                     alt: "Madugai Logo",
-                                    width: 64,
-                                    height: 64,
-                                    className: "h-16 w-16 rounded-full object-cover mb-6"
+                                    width: 180,
+                                    height: 60,
+                                    className: "h-16 w-auto mb-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.tsx",
                                     lineNumber: 30,

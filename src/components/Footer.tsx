@@ -28,11 +28,11 @@ export default function Footer() {
                     {/* About Column */}
                     <div>
                         <Image
-                            src="/images/logo.jpg"
+                            src="/images/others/logo.png"
                             alt="Madugai Logo"
-                            width={64}
-                            height={64}
-                            className="h-16 w-16 rounded-full object-cover mb-6"
+                            width={180}
+                            height={60}
+                            className="h-16 w-auto mb-6"
                         />
                         <p className="text-white/70 font-montserrat leading-relaxed mb-6">
                             Madugai exists to provide pure, unadulterated cow milk without industrial shortcuts. We believe in quality, integrity, and the sacred promise of purity.
