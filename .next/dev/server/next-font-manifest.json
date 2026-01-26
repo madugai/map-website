@@ -3,13 +3,13 @@
     "[project]/src/app/_not-found/page": [
       "static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2"
     ],
-    "[project]/src/app/contact/page": [
+    "[project]/src/app/legal/delivery/page": [
       "static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2"
     ],
-    "[project]/src/app/faq/page": [
+    "[project]/src/app/legal/privacy/page": [
       "static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2"
     ],
-    "[project]/src/app/how-we-work/page": [
+    "[project]/src/app/legal/tou/page": [
       "static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2"
     ],
     "[project]/src/app/map-standard/page": [
@@ -19,9 +19,6 @@
       "static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2"
     ],
     "[project]/src/app/page": [
-      "static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2"
-    ],
-    "[project]/src/app/subscription/page": [
       "static/media/e8f2fbee2754df70-s.p.9b7a96b4.woff2"
     ],
     "[project]/src/app/transparency/page": [

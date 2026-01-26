@@ -28,11 +28,11 @@ export default function Footer() {
                     {/* About Column */}
                     <div>
                         <Image
-                            src="/images/others/logo.png"
+                            src="/images/logo.jpg"
                             alt="Madugai Logo"
-                            width={180}
-                            height={60}
-                            className="h-16 w-auto mb-6"
+                            width={64}
+                            height={64}
+                            className="h-16 w-16 rounded-full object-cover mb-6"
                         />
                         <p className="text-white/70 font-montserrat leading-relaxed mb-6">
                             Madugai exists to provide pure, unadulterated cow milk without industrial shortcuts. We believe in quality, integrity, and the sacred promise of purity.
@@ -59,17 +59,22 @@ export default function Footer() {
                             {[
                                 { name: "Home", href: "/" },
                                 { name: "The MAP Standard", href: "/map-standard" },
-                                { name: "Our Products", href: "/our-products" },
+                                { name: "Products", href: "/our-products" },
                                 { name: "How We Work", href: "/how-we-work" },
-                                { name: "Subscription", href: "/subscription" },
+                                { name: "Store", href: "https://madugai.trakop.com/", external: true },
                                 { name: "Transparency", href: "/transparency" },
+                                { name: "FAQ", href: "/faq" },
+                                { name: "Subscription", href: "/subscription" },
+                                { name: "Contact Us", href: "/contact" },
                             ].map((link) => (
                                 <li key={link.name}>
                                     <Link
                                         href={link.href}
+                                        target={(link as any).external ? "_blank" : undefined}
                                         className="text-white/70 hover:text-white hover:pl-2 transition-all inline-flex items-center gap-2"
                                     >
                                         {link.name}
+                                        {(link as any).external && <span className="text-xs">↗</span>}
                                     </Link>
                                 </li>
                             ))}
@@ -87,7 +92,7 @@ export default function Footer() {
                         <div className="flex flex-wrap gap-2 mb-6">
                             {/* WhatsApp */}
                             <Link
-                                href="https://wa.me/918903535222"
+                                href="https://whatsapp.com/channel/0029Vb9AmBI4inotDBsoZP0z"
                                 target="_blank"
                                 className="w-10 h-10 flex items-center justify-center text-white transition-all hover:scale-110"
                                 style={{ backgroundColor: "#25d366" }}
@@ -98,11 +103,11 @@ export default function Footer() {
                             </Link>
                             {/* Other Social Icons */}
                             {[
-                                { href: "https://facebook.com/Madugai", color: "#1877f2", icon: Facebook },
-                                { href: "https://twitter.com/Madugai", color: "#1da1f2", icon: Twitter },
-                                { href: "https://linkedin.com/company/madugai/", color: "#0077b5", icon: Linkedin },
-                                { href: "https://instagram.com/madugai/", color: "#c13584", icon: Instagram },
-                                { href: "https://youtube.com/c/Madugai", color: "#ed1d24", icon: Youtube },
+                                { href: "https://www.facebook.com/madugaimilk", color: "#1877f2", icon: Facebook },
+                                { href: "https://x.com/madugaimilk", color: "#000000", icon: Twitter },
+                                { href: "https://www.linkedin.com/company/madugaimilk", color: "#0077b5", icon: Linkedin },
+                                { href: "https://www.instagram.com/madugaimilk", color: "#c13584", icon: Instagram },
+                                { href: "https://www.youtube.com/@madugaimilk", color: "#ed1d24", icon: Youtube },
                             ].map((social, index) => (
                                 <Link
                                     key={index}
@@ -118,7 +123,7 @@ export default function Footer() {
 
                         {/* App Store Links */}
                         <div className="flex gap-3 mb-6">
-                            <Link href="https://play.google.com/store/apps/details?id=com.madugai.app" target="_blank" className="hover:scale-105 transition-transform">
+                            <Link href="https://play.google.com/store/apps/details?id=com.madugai.user&hl=en_IN" target="_blank" className="hover:scale-105 transition-transform">
                                 <Image src="/images/get-it-on-google-play.png" alt="Get it on Google Play" width={135} height={40} className="h-10 w-auto" />
                             </Link>
                             <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-105 transition-transform">
@@ -152,6 +157,7 @@ export default function Footer() {
                             <Link href="/legal/tou" className="hover:text-white transition-colors">Terms of Use</Link>
                             <Link href="/legal/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                             <Link href="/legal/refund" className="hover:text-white transition-colors">Refund Policy</Link>
+                            <Link href="/legal/delivery" className="hover:text-white transition-colors">Delivery Policy</Link>
                         </div>
                     </div>
                                     </div>

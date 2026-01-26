@@ -12,6 +12,7 @@ import AppPromo from "@/components/AppPromo";
 import Reviews from "@/components/Reviews";
 import BlogPreview from "@/components/BlogPreview";
 import FAQ from "@/components/FAQ";
+import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -171,7 +172,7 @@ export default function Home() {
             <Navbar />
             <Hero />
             {/* Features - Green brand section */}
-            <div className="relative z-10"><div className="reveal-section"><Features /></div></div>
+            <div className="relative z-10 bg-[#4f6f19]"><div className="reveal-section"><Features /></div></div>
 
             {/* About - Light gray */}
             <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><AboutSection /></div></div>
@@ -179,8 +180,11 @@ export default function Home() {
             {/* Products - White */}
             <div className="relative z-10 bg-white"><div className="reveal-section"><Products /></div></div>
 
-            {/* How We Work - Cream/beige */}
-            <div className="relative z-10 bg-[#faf8f5]"><div className="reveal-section"><HowWeWork /></div></div>
+            {/* Pricing - Cream/beige */}
+            <div className="relative z-10 bg-[#faf8f5]"><div className="reveal-section"><Pricing /></div></div>
+
+            {/* How We Work - White */}
+            <div className="relative z-10 bg-white"><div className="reveal-section"><HowWeWork /></div></div>
 
             {/* Subscription - Dark section */}
             <div className="relative z-10 bg-[#1a1a1a]"><div className="reveal-section"><Subscription /></div></div>
@@ -188,8 +192,8 @@ export default function Home() {
             {/* Purity/MAP Standard - Light section */}
             <div className="relative z-10 bg-[#f8faf5]"><div className="reveal-section"><PuritySection /></div></div>
 
-            {/* App Promo - Dark section with internal styling */}
-            <div className="relative z-10"><div className="reveal-section"><AppPromo /></div></div>
+            {/* App Promo - Dark section */}
+            <div className="relative z-10"><AppPromo /></div>
 
             {/* Reviews - Light gray */}
             {/* <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><Reviews /></div></div> */}

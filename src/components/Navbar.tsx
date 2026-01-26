@@ -53,11 +53,11 @@ export default function Navbar() {
                         <div className="lg:hidden flex items-center justify-between w-full">
                             <Link href="/" className="inline-block">
                                 <Image
-                                    src="/images/others/logo.png"
+                                    src="/images/logo.jpg"
                                     alt="Madugai Logo"
-                                    width={180}
-                                    height={60}
-                                    className="h-14 w-auto"
+                                    width={56}
+                                    height={56}
+                                    className="h-14 w-14 rounded-full object-cover"
                                     priority
                                 />
                             </Link>
@@ -89,11 +89,11 @@ export default function Navbar() {
                             <div className="flex-shrink-0 mx-8">
                                 <Link href="/" className="inline-block">
                                     <Image
-                                        src="/images/others/logo.png"
+                                        src="/images/logo.jpg"
                                         alt="Madugai Logo"
-                                        width={220}
-                                        height={73}
-                                        className="h-20 w-auto"
+                                        width={80}
+                                        height={80}
+                                        className="h-20 w-20 rounded-full object-cover"
                                         priority
                                     />
                                 </Link>
@@ -129,11 +129,11 @@ export default function Navbar() {
                     <div className="flex items-center justify-between p-4 border-b border-zinc-100">
                         <Link href="/" onClick={closeMenu}>
                             <Image
-                                src="/images/others/logo.png"
+                                src="/images/logo.jpg"
                                 alt="Madugai Logo"
-                                width={140}
-                                height={46}
-                                className="h-12 w-auto"
+                                width={48}
+                                height={48}
+                                className="h-12 w-12 rounded-full object-cover"
                             />
                         </Link>
                         <button

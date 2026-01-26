@@ -2,67 +2,69 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { Download, Play, MessageCircle, Star, Smartphone, Mail, ChevronRight } from "lucide-react";
+import { MessageCircle, Star, Smartphone, Mail, ChevronRight, Bell, Clock, Truck } from "lucide-react";
 
 export default function AppPromo() {
     return (
-        <section className="bg-zinc-950 py-12 md:py-20 overflow-hidden relative">
-            {/* Background Accents */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#4f6f19]/10 rounded-full blur-[120px] -mr-64 -mt-64" />
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#4f6f19]/5 rounded-full blur-[120px] -ml-64 -mb-64" />
-
+        <section className="bg-zinc-950 py-16 md:py-24 overflow-hidden relative">
             <div className="container relative z-10">
-                <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-                    {/* App Mockup */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="lg:w-1/2 flex justify-center relative"
-                    >
-                        <div className="relative group">
-                            {/* Decorative Glow */}
-                            <div className="absolute inset-0 bg-[#4f6f19]/20 rounded-full blur-3xl group-hover:bg-[#4f6f19]/30 transition-colors duration-500" />
+                <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
+                    {/* Left - App Mockup with Feature Cards */}
+                    <div className="lg:w-1/2 flex justify-center relative">
+                        <div className="relative">
+                            {/* App Mockup */}
+                            <Image
+                                src="/images/others/appmockup.png"
+                                alt="Madugai App"
+                                width={320}
+                                height={450}
+                                className="max-w-full h-auto relative z-10"
+                                priority
+                            />
 
-                            <div className="animate-float-gentle relative">
-                                <Image
-                                    src="/images/others/appmockup.png"
-                                    alt="Madugai App"
-                                    width={380}
-                                    height={500}
-                                    className="max-w-full h-auto"
-                                    priority
-                                />
+                            {/* Floating Card - Left */}
+                            <div className="absolute -left-4 md:-left-16 top-20 bg-white p-4 shadow-2xl z-20 hidden md:block">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-[#4f6f19]/10 flex items-center justify-center">
+                                        <Truck className="w-5 h-5 text-[#4f6f19]" />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-gray-500 font-montserrat">Today's Delivery</p>
+                                        <p className="text-sm font-bold text-gray-900 font-montserrat">Arriving by 7:30 AM</p>
+                                    </div>
+                                </div>
                             </div>
 
-                            {/* Interactive Play Indicator */}
-                            <Link
-                                href="https://www.youtube.com/watch?v=zZ9Ph_8gXqY"
-                                target="_blank"
-                                className="absolute inset-0 flex items-center justify-center group/play"
-                            >
-                                <motion.div
-                                    whileHover={{ scale: 1.1 }}
-                                    className="w-20 h-20 bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300"
-                                >
-                                    <div className="w-14 h-14 bg-white flex items-center justify-center">
-                                        <Play className="w-6 h-6 text-[#4f6f19] fill-[#4f6f19] ml-1" />
+                            {/* Floating Card - Right */}
+                            <div className="absolute -right-4 md:-right-12 top-48 bg-[#4f6f19] p-4 shadow-2xl z-20 hidden md:block">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-white/20 flex items-center justify-center">
+                                        <Bell className="w-5 h-5 text-white" />
                                     </div>
-                                </motion.div>
-                            </Link>
-                        </div>
-                    </motion.div>
+                                    <div>
+                                        <p className="text-xs text-white/70 font-montserrat">Notification</p>
+                                        <p className="text-sm font-bold text-white font-montserrat">Milk delivered!</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                    {/* Content */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="lg:w-1/2"
-                    >
+                            {/* Floating Card - Bottom */}
+                            <div className="absolute -left-4 md:-left-8 bottom-16 bg-zinc-900 border border-white/10 p-4 shadow-2xl z-20 hidden md:block">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-white/10 flex items-center justify-center">
+                                        <Clock className="w-5 h-5 text-[#4f6f19]" />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-white/50 font-montserrat">Subscription</p>
+                                        <p className="text-sm font-bold text-white font-montserrat">Paused for tomorrow</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right - Content */}
+                    <div className="lg:w-1/2">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4f6f19]/10 border border-[#4f6f19]/20 text-[#4f6f19] text-xs font-bold uppercase tracking-widest mb-8">
                             <Smartphone className="w-4 h-4" />
                             The Madugai App
@@ -101,7 +103,7 @@ export default function AppPromo() {
                         {/* Download & Rating */}
                         <div className="flex flex-col gap-10">
                             <div className="flex flex-wrap gap-8 items-center">
-                                <Link href="https://play.google.com/store/apps/details?id=com.madugai.app" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                                <Link href="https://play.google.com/store/apps/details?id=com.madugai.user&hl=en_IN" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
                                     <Image src="/images/others/play_logo.png" alt="Play Store" width={160} height={50} className="h-12 w-auto object-contain" />
                                 </Link>
                                 <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
@@ -139,7 +141,7 @@ export default function AppPromo() {
                                 </Link>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

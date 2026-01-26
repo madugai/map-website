@@ -10,7 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const products = [
     {
         title: "Pure Cow Milk",
-        image: "/images/products/milk.png",
+        image: "/images/product.jpg",
         href: "/our-products",
         description: "Collected daily from selected local farms. Chilled immediately and delivered fresh every morning in reusable glass bottles.",
         badge: "Best Seller"
