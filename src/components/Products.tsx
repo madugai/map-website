@@ -10,8 +10,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const products = [
     {
         title: "Pure Cow Milk",
-        image: "/images/products/milk.png",
-        href: "/our-milk",
+        image: "/images/product.jpg",
+        href: "/our-products",
         description: "Collected daily from selected local farms. Chilled immediately and delivered fresh every morning in reusable glass bottles.",
         badge: "Best Seller"
     },
@@ -65,19 +65,11 @@ export default function Products() {
     }, []);
 
     return (
-        <section ref={containerRef} className="bg-white py-24 md:py-32 overflow-hidden">
+        <section ref={containerRef} className="pb-24 pt-0 overflow-hidden">
             <div className="container">
                 {/* Section Header */}
                 <div className="text-center mb-20">
-                    <span className="inline-block bg-[#4f6f19]/10 text-[#4f6f19] font-bold text-[10px] uppercase tracking-[0.3em] px-6 py-2 mb-8">
-                        Our Farm Selection
-                    </span>
-                    <h2 className="text-4xl md:text-5xl font-montserrat font-black text-gray-900 leading-tight">
-                        Our <span className="text-[#4f6f19]">Products</span>
-                    </h2>
-                    <p className="text-gray-500 font-montserrat mt-8 max-w-2xl mx-auto text-lg leading-relaxed">
-                        Madugai handles a small range of daily-consumption food products. Each product follows the same discipline of sourcing, handling, and delivery defined by the MAP Standard.
-                    </p>
+
                 </div>
 
                 {/* Products Grid */}

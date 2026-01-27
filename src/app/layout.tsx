@@ -132,7 +132,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
         <script

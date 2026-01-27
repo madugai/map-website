@@ -40,7 +40,7 @@ const badges = [
 
 export default function PuritySection() {
     return (
-        <section className="bg-[#fafafa] py-12 md:py-20 overflow-hidden">
+        <section className="py-12 md:py-20 overflow-hidden">
             <div className="container">
                 {/* Header */}
                 <motion.div

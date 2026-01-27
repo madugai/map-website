@@ -34,7 +34,7 @@ const reviews = [
 
 export default function Reviews() {
     return (
-        <section className="bg-white py-12 md:py-16">
+        <section className="py-12 md:py-16">
             <div className="container">
                 {/* Section Header */}
                 <motion.div

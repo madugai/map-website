@@ -11,7 +11,7 @@ export default function ContactPage() {
             <Navbar />
 
             {/* Page Header */}
-            <section className="pt-60 pb-20 bg-[#fafafa] px-8">
+            <section className="pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-20 bg-[#1a1a1a] text-white px-6 md:px-8">
                 <div className="container max-w-4xl mx-auto text-center">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ export default function ContactPage() {
                     >
                         Get in <span className="text-[#4f6f19]">Touch</span>
                     </motion.h1>
-                    <p className="text-gray-500 text-lg md:text-xl leading-relaxed">
+                    <p className="text-white/60 text-lg md:text-xl leading-relaxed">
                         Whether you want to request a sample, join the waitlist, or just say hello — we're here.
                     </p>
                 </div>
@@ -47,7 +47,7 @@ export default function ContactPage() {
                                         <Mail className="w-6 h-6 text-[#4f6f19]" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Email Us</p>
+                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Email us</p>
                                         <p className="text-xl font-bold">support@madugai.com</p>
                                     </div>
                                 </div>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                                 href="https://wa.me/918903535222"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-16 p-8 bg-black text-white flex items-center justify-between hover:bg-zinc-800 transition-all cursor-pointer"
+                                className="mt-16 p-8 bg-[#1a1a1a] text-white flex items-center justify-between hover:bg-zinc-800 transition-all cursor-pointer"
                             >
                                 <div>
                                     <h4 className="font-bold mb-2">WhatsApp Support</h4>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                                     <label className="text-xs font-bold uppercase tracking-widest text-gray-400">Message</label>
                                     <textarea rows={5} className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder="How can we help?"></textarea>
                                 </div>
-                                <button className="w-full bg-black text-white font-black py-6 hover:bg-zinc-800 transition-all uppercase tracking-widest">
+                                <button className="w-full bg-[#1a1a1a] text-white font-black py-6 hover:bg-zinc-800 transition-all uppercase tracking-widest">
                                     Send Message
                                 </button>
                             </form>

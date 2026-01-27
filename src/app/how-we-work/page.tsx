@@ -11,7 +11,7 @@ export default function HowWeWorkPage() {
             <Navbar />
 
             {/* Page Header */}
-            <section className="pt-60 pb-20 bg-[#fafafa] px-8">
+            <section className="pt-28 md:pt-40 lg:pt-48 pb-16 md:pb-20 bg-[#1a1a1a] text-white px-6 md:px-8">
                 <div className="container max-w-4xl mx-auto text-center">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
@@ -20,14 +20,14 @@ export default function HowWeWorkPage() {
                     >
                         How We <span className="text-[#4f6f19]">Work</span>
                     </motion.h1>
-                    <p className="text-gray-500 text-lg md:text-xl leading-relaxed">
+                    <p className="text-white/60 text-lg md:text-xl leading-relaxed">
                         A defined operating discipline Governed by the MAP Standard.
                         Every litre of milk follows this routine daily.
                     </p>
                 </div>
             </section>
 
-            <HowWeWork />
+            <HowWeWork showHeader={false} />
 
             {/* Note Section */}
             <section className="py-24 bg-white border-t border-gray-100">
