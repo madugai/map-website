@@ -88,7 +88,7 @@ export default function Pricing() {
                                         </span>
                                     </div>
                                     <p className="text-gray-500 text-sm font-montserrat mt-2">
-                                        ~₹1244/month
+                                        ~₹1240/month
                                     </p>
                                 </div>
 
@@ -117,11 +117,10 @@ export default function Pricing() {
                             {/* Card 2 - Full Litre */}
                             <div className="pricing-card bg-white border border-gray-200 overflow-hidden relative">
 
-
                                 {/* Header */}
                                 <div className="p-6 border-b-4 border-[#4f6f19]">
-                                    <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-1 ">
-                                       One Litre. Full Satisfaction.
+                                    <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-1">
+                                        One litre, full satisfaction.
                                     </h3>
                                     <p className="text-gray-500 text-sm font-montserrat">
                                         Ideal for families or daily milk lovers
