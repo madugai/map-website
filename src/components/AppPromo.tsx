@@ -68,22 +68,22 @@ export default function AppPromo() {
 
                     {/* Right - Content */}
                     <div className="lg:w-1/2">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4f6f19]/10 border border-[#4f6f19]/20 text-[#4f6f19] text-xs font-bold uppercase tracking-widest mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4f6f19]/10 border border-[#4f6f19]/20 text-[#4f6f19] text-xs font-bold uppercase tracking-widest mb-6 md:mb-8">
                             <Smartphone className="w-4 h-4" />
                             {t("app.badge")}
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-white mb-8 leading-[1.1]">
-                            {t("app.title1")} <br />
+                        <h2 className="text-3xl md:text-5xl lg:text-6xl font-montserrat font-bold text-white mb-6 md:mb-8 leading-[1.1]">
+                            {t("app.title1")} <br className="hidden md:block" />
                             <span className="text-[#4f6f19]">{t("app.title2")}</span>
                         </h2>
 
-                        <p className="text-white/60 font-montserrat text-lg leading-relaxed mb-12 max-w-xl">
+                        <p className="text-white/60 font-montserrat text-base md:text-lg leading-relaxed mb-10 md:mb-12 max-w-xl">
                             {t("app.subtitle")}
                         </p>
 
                         {/* App Features Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
                             {[
                                 { icon: Smartphone, title: "app.f1.title", desc: "app.f1.desc" },
                                 { icon: MessageCircle, title: "app.f2.title", desc: "app.f2.desc" },
@@ -91,12 +91,12 @@ export default function AppPromo() {
                                 { icon: Star, title: "app.f4.title", desc: "app.f4.desc" },
                             ].map((feature, index) => (
                                 <div key={index} className="flex items-start gap-4 group">
-                                    <div className="w-12 h-12 bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-[#4f6f19] transition-all duration-300">
-                                        <feature.icon className="w-5 h-5 text-[#4f6f19] group-hover:text-white transition-colors" />
+                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-[#4f6f19] transition-all duration-300">
+                                        <feature.icon className="w-4 h-4 md:w-5 md:h-5 text-[#4f6f19] group-hover:text-white transition-colors" />
                                     </div>
                                     <div>
-                                        <div className="text-white font-bold font-montserrat text-base mb-1 tracking-tight">{t(feature.title)}</div>
-                                        <div className="text-white/40 text-sm font-montserrat">{t(feature.desc)}</div>
+                                        <div className="text-white font-bold font-montserrat text-sm md:text-base mb-1 tracking-tight">{t(feature.title)}</div>
+                                        <div className="text-white/40 text-xs md:text-sm font-montserrat leading-tight">{t(feature.desc)}</div>
                                     </div>
                                 </div>
                             ))}

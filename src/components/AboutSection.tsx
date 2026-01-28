@@ -17,7 +17,7 @@ export default function AboutSection() {
         const ctx = gsap.context(() => {
             // Text content slide in from left
             gsap.from(textRef.current, {
-                x: -100,
+                x: window.innerWidth < 768 ? -30 : -100,
                 opacity: 0,
                 duration: 1.2,
                 ease: "power3.out",
@@ -31,7 +31,7 @@ export default function AboutSection() {
             // Split text animation for heading
             gsap.from(".about-heading", {
                 opacity: 0,
-                y: 80,
+                y: window.innerWidth < 768 ? 40 : 80,
                 duration: 1,
                 ease: "power4.out",
                 scrollTrigger: {
@@ -44,7 +44,7 @@ export default function AboutSection() {
             // Paragraph fade in
             gsap.from(".about-paragraph", {
                 opacity: 0,
-                y: 40,
+                y: 30,
                 duration: 0.8,
                 delay: 0.3,
                 ease: "power3.out",
@@ -58,8 +58,8 @@ export default function AboutSection() {
             // Quote box slide up
             gsap.from(".about-quote", {
                 opacity: 0,
-                y: 60,
-                scale: 0.95,
+                y: 40,
+                scale: 0.98,
                 duration: 0.8,
                 delay: 0.5,
                 ease: "power3.out",
@@ -72,10 +72,10 @@ export default function AboutSection() {
 
             // Image parallax and scale effect
             gsap.from(imageRef.current, {
-                x: 100,
+                x: window.innerWidth < 768 ? 30 : 100,
                 opacity: 0,
-                scale: 0.8,
-                rotation: 5,
+                scale: 0.9,
+                rotation: 2,
                 duration: 1.2,
                 ease: "power3.out",
                 scrollTrigger: {

@@ -19,7 +19,7 @@ const translations: Record<Language, Record<string, string>> = {
         "nav.transparency": "Transparency",
         "nav.faq": "FAQ",
         "nav.subscription": "Subscription",
-        "nav.contact": "Contact Us",
+        "nav.contact": "Contact",
         "nav.home": "Home",
 
         // Hero

@@ -71,9 +71,9 @@ export default function PuritySection() {
                 </motion.div>
 
                 {/* Timeline */}
-                <div className="relative max-w-5xl mx-auto">
+                <div className="relative max-w-5xl mx-auto px-4 md:px-0">
                     {/* Vertical Line */}
-                    <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#4f6f19]/30 to-transparent -translate-x-1/2 hidden md:block" />
+                    <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#4f6f19]/30 to-transparent -translate-x-1/2 md:block" />
 
                     {/* Timeline Items */}
                     <div className="space-y-12 md:space-y-16">
@@ -83,39 +83,39 @@ export default function PuritySection() {
                             return (
                                 <motion.div
                                     key={index}
-                                    initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+                                    initial={{ opacity: 0, x: isEven ? -30 : 30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.6, delay: 0.1 }}
                                     className="relative grid grid-cols-1 md:grid-cols-2"
                                 >
                                     {/* Center Node - Absolutely centered on the line */}
-                                    <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                                        <div className="w-12 h-12 bg-white border-2 border-[#4f6f19]/20 flex items-center justify-center">
-                                            <Icon className="w-6 h-6 text-[#4f6f19]" />
+                                    <div className="flex absolute left-6 md:left-1/2 top-0 md:top-1/2 -translate-x-1/2 md:-translate-y-1/2 z-10">
+                                        <div className="w-10 h-10 md:w-12 md:h-12 bg-white border-2 border-[#4f6f19]/20 flex items-center justify-center rounded-sm">
+                                            <Icon className="w-5 h-5 md:w-6 md:h-6 text-[#4f6f19]" />
                                         </div>
                                     </div>
 
-                                    {/* Left Side Content */}
-                                    <div className={`${isEven ? 'md:block' : 'md:hidden'} order-2 md:order-1`}>
-                                        <div className={`md:pr-20 md:text-right ${!isEven ? 'hidden' : 'block'}`}>
-                                            <MobileHeader title={t(feature.title)} icon={Icon} />
-                                            <DesktopHeader title={t(feature.title)} />
-                                            <p className="text-gray-500 leading-relaxed text-sm md:text-base">
+                                    {/* Content Container */}
+                                    <div className={`pl-16 md:pl-0 ${isEven ? 'md:block' : 'md:hidden'} order-2 md:order-1`}>
+                                        <div className={`md:pr-20 md:text-right ${!isEven && 'md:hidden'}`}>
+                                            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 font-montserrat">
+                                                {t(feature.title)}
+                                            </h3>
+                                            <p className="text-gray-500 leading-relaxed text-sm md:text-base max-w-sm md:ml-auto">
                                                 {t(feature.description)}
                                             </p>
                                         </div>
                                     </div>
 
-                                    {/* Right Side Content */}
-                                    <div className={`${!isEven ? 'md:block' : 'md:hidden md:invisible'} md:col-start-2 order-2 md:order-2`}>
-                                        <div className={`md:pl-20 md:text-left ${isEven ? 'hidden' : 'block'}`}>
-                                            <MobileHeader title={t(feature.title)} icon={Icon} />
-                                            <DesktopHeader title={t(feature.title)} />
-                                            <p className="text-gray-500 leading-relaxed text-sm md:text-base">
-                                                {t(feature.description)}
-                                            </p>
-                                        </div>
+                                    {/* Right Side Content (Desktop) */}
+                                    <div className={`pl-16 md:pl-20 ${!isEven ? 'md:block' : 'md:hidden md:invisible'} md:col-start-2 order-2 md:order-2`}>
+                                        <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 font-montserrat">
+                                            {t(feature.title)}
+                                        </h3>
+                                        <p className="text-gray-500 leading-relaxed text-sm md:text-base max-w-sm">
+                                            {t(feature.description)}
+                                        </p>
                                     </div>
                                 </motion.div>
                             );
@@ -124,18 +124,18 @@ export default function PuritySection() {
                 </div>
 
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.7 }}
-                    className="text-center mt-12"
+                    className="text-center mt-12 md:mt-16"
                 >
                     <Link
                         href="/transparency"
-                        className="text-[#4f6f19] font-bold text-lg hover:underline inline-flex items-center gap-2"
+                        className="text-[#4f6f19] font-bold text-base md:text-lg hover:underline inline-flex items-center gap-2 group"
                     >
                         {t("purity.viewTransparency")}
-                        <ChevronRight size={20} />
+                        <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
                     </Link>
                 </motion.div>
 

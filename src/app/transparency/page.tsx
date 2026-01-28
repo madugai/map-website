@@ -150,7 +150,7 @@ export default function TransparencyPage() {
             </section>
 
             {/* Lab Reports Section */}
-            <section className="py-32 bg-zinc-50">
+            {/* <section className="py-32 bg-zinc-50">
                 <div className="container px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl font-black text-zinc-900 mb-6">{t("trans.reports.title")}</h2>
@@ -160,7 +160,7 @@ export default function TransparencyPage() {
                     </div>
 
                     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
-                        {/* Internal Lab */}
+                       
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -193,7 +193,6 @@ export default function TransparencyPage() {
                             </Link>
                         </motion.div>
 
-                        {/* CTL Lab */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -238,7 +237,7 @@ export default function TransparencyPage() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* FSSAI Note */}
             <section className="py-24 bg-white border-t border-zinc-100">

@@ -129,23 +129,23 @@ export default function HowWeWork({ showHeader = true }: { showHeader?: boolean 
                     </div>
                 )}
 
-                <div className="steps-container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div className="steps-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
                     {steps.map((step, idx) => (
                         <div
                             key={idx}
-                            className="step-card bg-[#fafafa] p-8 text-center group hover:bg-[#4f6f19] transition-colors duration-500 relative"
+                            className="step-card bg-[#fafafa] p-8 md:p-10 text-center group hover:bg-[#4f6f19] transition-colors duration-500 relative flex flex-col items-center"
                         >
-                            <div className="step-icon w-16 h-16 bg-[#4f6f19]/10 flex items-center justify-center mx-auto mb-8 group-hover:bg-white transition-colors duration-500">
-                                <step.icon className="w-8 h-8 text-[#4f6f19]" />
+                            <div className="step-icon w-14 h-14 md:w-16 md:h-16 bg-[#4f6f19]/10 flex items-center justify-center mb-6 md:mb-8 group-hover:bg-white transition-colors duration-500 rounded-sm">
+                                <step.icon className="w-7 h-7 md:w-8 md:h-8 text-[#4f6f19]" />
                             </div>
-                            <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-4 group-hover:text-white transition-colors duration-500">
+                            <h3 className="text-lg md:text-xl font-bold font-montserrat text-gray-900 mb-3 md:mb-4 group-hover:text-white transition-colors duration-500 leading-tight">
                                 {t(step.title)}
                             </h3>
-                            <p className="text-gray-500 font-montserrat text-sm leading-relaxed group-hover:text-white/80 transition-colors duration-500">
+                            <p className="text-gray-500 font-montserrat text-xs md:text-sm leading-relaxed group-hover:text-white/80 transition-colors duration-500">
                                 {t(step.description)}
                             </p>
                             {/* Step number */}
-                            <div className="absolute top-4 right-4 w-8 h-8 bg-[#4f6f19]/5 flex items-center justify-center text-[#4f6f19] font-bold text-sm group-hover:bg-white/20 group-hover:text-white transition-colors duration-500">
+                            <div className="absolute top-4 right-4 w-7 h-7 bg-[#4f6f19]/5 flex items-center justify-center text-[#4f6f19] font-bold text-xs group-hover:bg-white/20 group-hover:text-white transition-colors duration-500">
                                 {idx + 1}
                             </div>
                         </div>

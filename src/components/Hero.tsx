@@ -59,7 +59,7 @@ export default function Hero() {
         <>
             <section
                 ref={sectionRef}
-                className="hero-section fixed top-0 left-0 right-0 h-screen flex items-center overflow-hidden bg-white"
+                className="hero-section fixed top-0 left-0 right-0 min-h-[100dvh] flex items-center overflow-hidden bg-white"
                 style={{ zIndex: 0 }}
             >
                 {/* Black Overlay - fades in on scroll */}
@@ -69,21 +69,21 @@ export default function Hero() {
                 />
 
                 <div className="container mx-auto px-6 md:px-8 pt-24 pb-12 md:pt-0 md:pb-0">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
                         {/* Left Content */}
-                        <div className="order-2 lg:order-1">
+                        <div className="order-2 lg:order-1 text-left lg:text-left">
 
                             {/* Heading */}
-                            <div className="overflow-hidden mb-8">
-                                <h1 className="hero-animate text-3xl md:text-4xl xl:text-5xl font-montserrat font-black text-gray-900 leading-[1.25] tracking-tight flex flex-col">
+                            <div className="overflow-hidden mb-6 md:mb-8">
+                                <h1 className="hero-animate text-[32px] sm:text-4xl md:text-5xl xl:text-6xl font-montserrat font-black text-gray-900 leading-[1.1] md:leading-[1.25] tracking-tight flex flex-col">
                                     <span>{t("hero.title1")} <span className="text-[#4f6f19]">{t("hero.title2")}</span></span>
                                     <span className="text-[#4f6f19]">{t("hero.title3")}</span>
                                 </h1>
                             </div>
 
                             {/* Description */}
-                            <div className="hero-animate mb-10">
-                                <p className="text-gray-600 text-lg md:text-xl font-montserrat leading-relaxed">
+                            <div className="hero-animate mb-8 md:mb-10">
+                                <p className="text-gray-600 text-base md:text-lg xl:text-xl font-montserrat leading-relaxed max-w-lg">
                                     {t("hero.description")}
                                 </p>
                             </div>
@@ -92,7 +92,7 @@ export default function Hero() {
                             <div className="hero-animate">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center gap-3 bg-[#4f6f19] text-white font-bold py-4 px-10 rounded-full hover:bg-[#324a10] hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm uppercase tracking-widest group"
+                                    className="inline-flex items-center gap-3 bg-[#4f6f19] text-white font-bold py-4 px-8 md:px-10 rounded-full hover:bg-[#324a10] hover:scale-105 hover:shadow-xl transition-all duration-300 text-xs md:text-sm uppercase tracking-widest group"
                                 >
                                     {t("hero.cta")}
                                     <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -102,7 +102,7 @@ export default function Hero() {
 
                         {/* Right Video */}
                         <div className="order-1 lg:order-2 relative flex items-center justify-center w-full">
-                            <div className="relative w-full max-w-md lg:max-w-full rounded-3xl overflow-hidden">
+                            <div className="relative w-full max-w-[320px] sm:max-w-md lg:max-w-full rounded-[2rem] overflow-hidden ">
                                 <video
                                     autoPlay
                                     loop

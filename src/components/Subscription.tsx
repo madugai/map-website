@@ -48,9 +48,9 @@ export default function Subscription() {
                             <p className="text-white/60 mb-8 leading-relaxed">
                                 {t("sub.limited.desc")}
                             </p>
-                            <button className="bg-[#4f6f19] text-white font-bold py-4 px-10 hover:bg-[#89b441] transition-all text-sm uppercase tracking-widest">
+                            {/* <button className="bg-[#4f6f19] text-white font-bold py-4 px-10 hover:bg-[#89b441] transition-all text-sm uppercase tracking-widest">
                                 {t("sub.waitlist")}
-                            </button>
+                            </button> */}
                         </div>
                     </div>
 

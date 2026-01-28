@@ -42,9 +42,9 @@ export default function SubscriptionPage() {
                     <p className="text-2xl font-bold text-gray-900 leading-relaxed italic mb-10">
                         {t("sub_page.note")}
                     </p>
-                    <button className="bg-[#1a1a1a] text-white font-bold py-6 px-12 hover:bg-zinc-800 transition-all text-sm uppercase tracking-widest">
+                    {/* <button className="bg-[#1a1a1a] text-white font-bold py-6 px-12 hover:bg-zinc-800 transition-all text-sm uppercase tracking-widest">
                         {t("sub_page.checkAvailability")}
-                    </button>
+                    </button> */}
                 </div>
             </section>
 
