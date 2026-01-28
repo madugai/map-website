@@ -163,13 +163,13 @@ export default function Footer() {
             {/* Bottom Bar */}
             <div className="border-t border-white/10 py-6">
                 <div className="container px-6 md:px-8">
-                    <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                    <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-between gap-6 text-left md:text-left">
                         {/* Copyright - comes last on mobile (due to flex-col-reverse) */}
                         <p className="text-white/50 text-sm font-montserrat">
                             © {new Date().getFullYear()} Madugai MAP. {t("footer.rights")}
                         </p>
                         {/* Menu Links - stack vertically on mobile */}
-                        <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6 text-white/50 text-sm">
+                        <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-6 text-white/50 text-sm">
                             <Link href="/legal/tou" className="hover:text-white transition-colors">{t("footer.terms")}</Link>
                             <Link href="/legal/privacy" className="hover:text-white transition-colors">{t("footer.privacy")}</Link>
                             <Link href="/legal/refund" className="hover:text-white transition-colors">{t("footer.refund")}</Link>

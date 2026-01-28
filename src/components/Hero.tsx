@@ -89,7 +89,7 @@ export default function Hero() {
                             </div>
 
                             {/* Button */}
-                            <div className="hero-animate">
+                            <div className="hero-animate relative z-30">
                                 <Link
                                     href="/contact"
                                     className="inline-flex items-center gap-3 bg-[#4f6f19] text-white font-bold py-4 px-8 md:px-10 rounded-full hover:bg-[#324a10] hover:scale-105 hover:shadow-xl transition-all duration-300 text-xs md:text-sm uppercase tracking-widest group"
