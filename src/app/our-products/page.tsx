@@ -4,8 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Products from "@/components/Products";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function OurProductsPage() {
+    const { t } = useLanguage();
+
     return (
         <main className="min-h-screen bg-white font-montserrat">
             <Navbar />
@@ -18,10 +21,12 @@ export default function OurProductsPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-black mb-8"
                     >
-                        Our <span className="text-[#4f6f19]">Products</span>
+                        {t("op.title").split(' ').map((word, i) => (
+                            word === "Products" || word === "பொருட்கள்" ? <span key={i} className="text-[#4f6f19]">{word} </span> : word + " "
+                        ))}
                     </motion.h1>
                     <p className="text-white/60 text-lg md:text-xl leading-relaxed">
-                        Madugai handles a small range of daily-consumption food products. Each product follows the same discipline of sourcing, handling, and delivery defined by the MAP Standard.
+                        {t("op.desc")}
                     </p>
                 </div>
             </section>

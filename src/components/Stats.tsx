@@ -3,33 +3,34 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { Users, Milk, Store, MapPin } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const stats = [
     {
         value: 10000,
         suffix: "+",
-        label: "Happy Customers",
+        label: "stats.customers",
         icon: Users,
         image: "/images/others/home/group.png"
     },
     {
         value: 7000,
         suffix: "+",
-        label: "Liters Daily",
+        label: "stats.liters",
         icon: Milk,
         image: "/images/others/home/trolley.png"
     },
     {
         value: 45,
         suffix: "+",
-        label: "Trusted Dealers",
+        label: "stats.dealers",
         icon: Store,
         image: "/images/others/home/man.png"
     },
     {
         value: 190,
         suffix: "+",
-        label: "Areas Covered",
+        label: "stats.areas",
         icon: MapPin,
         image: "/images/others/home/location.png"
     },
@@ -67,6 +68,8 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
 }
 
 export default function Stats() {
+    const { t } = useLanguage();
+
     return (
         <section className="relative bg-gradient-to-br from-[#1a2e0d] via-[#2a4a15] to-[#1a2e0d] py-16 md:py-24 overflow-hidden">
             {/* Decorative Elements */}
@@ -85,10 +88,10 @@ export default function Stats() {
                     className="text-center mb-12 md:mb-16"
                 >
                     <span className="inline-block bg-white/10 text-[#a4d45d] font-semibold text-sm uppercase tracking-wider px-4 py-2 rounded-full mb-4 backdrop-blur-sm">
-                        Our Impact
+                        {t("stats.badge")}
                     </span>
                     <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white">
-                        Growing Together with Chennai
+                        {t("stats.title")}
                     </h2>
                 </motion.div>
 
@@ -108,7 +111,7 @@ export default function Stats() {
                                 <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 bg-gradient-to-br from-[#77a533]/30 to-[#a4d45d]/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                     <Image
                                         src={stat.image}
-                                        alt={stat.label}
+                                        alt={t(stat.label)}
                                         width={40}
                                         height={40}
                                         className="opacity-90"
@@ -122,7 +125,7 @@ export default function Stats() {
 
                                 {/* Label */}
                                 <div className="text-white/70 font-medium font-montserrat text-sm md:text-base">
-                                    {stat.label}
+                                    {t(stat.label)}
                                 </div>
                             </div>
                         </motion.div>

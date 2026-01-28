@@ -5,46 +5,49 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Scale, Thermometer, GlassWater, Lock, RefreshCcw, Truck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const operatingRules = [
-    {
-        icon: Truck,
-        title: "Selected Local Farms",
-        description: "Milk is collected only from selected local farms that meet defined handling and hygiene expectations. Volume is secondary. Consistency is mandatory."
-    },
-    {
-        icon: ShieldCheck,
-        title: "SS 304 Food-Grade Cans",
-        description: "Milk is collected and transported exclusively in SS 304 food-grade stainless steel milk cans. This prevents contamination and avoids chemical interaction."
-    },
-    {
-        icon: Thermometer,
-        title: "Immediate Chilling",
-        description: "Milk is chilled immediately after collection. There is no prolonged exposure, no waiting period, and no unnecessary movement to preserve natural quality."
-    },
-    {
-        icon: RefreshCcw,
-        title: "No Industrial Shortcuts",
-        description: "Milk is not processed for extended shelf life or mass circulation. The MAP Standard does not allow shortcuts designed for convenience."
-    },
-    {
-        icon: GlassWater,
-        title: "Glass Bottle Delivery",
-        description: "Milk is delivered only in reusable glass bottles. Plastic contact is avoided by design. Glass preserves integrity and enables controlled circulation."
-    },
-    {
-        icon: Lock,
-        title: "Controlled Supply",
-        description: "Supply is intentionally limited. Customer onboarding stops when capacity is reached to ensure consistency, accountability, and quality control."
-    },
-    {
-        icon: Scale,
-        title: "Daily Enforcement",
-        description: "The MAP Standard is enforced daily. Not selectively, not seasonally, not when convenient. These are not features; these are operating rules."
-    }
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function MAPStandardPage() {
+    const { t } = useLanguage();
+
+    const operatingRules = [
+        {
+            icon: Truck,
+            title: t("ms.rules.r1.title"),
+            description: t("ms.rules.r1.desc")
+        },
+        {
+            icon: ShieldCheck,
+            title: t("ms.rules.r2.title"),
+            description: t("ms.rules.r2.desc")
+        },
+        {
+            icon: Thermometer,
+            title: t("ms.rules.r3.title"),
+            description: t("ms.rules.r3.desc")
+        },
+        {
+            icon: RefreshCcw,
+            title: t("ms.rules.r4.title"),
+            description: t("ms.rules.r4.desc")
+        },
+        {
+            icon: GlassWater,
+            title: t("ms.rules.r5.title"),
+            description: t("ms.rules.r5.desc")
+        },
+        {
+            icon: Lock,
+            title: t("ms.rules.r6.title"),
+            description: t("ms.rules.r6.desc")
+        },
+        {
+            icon: Scale,
+            title: t("ms.rules.r7.title"),
+            description: t("ms.rules.r7.desc")
+        }
+    ];
+
     return (
         <main className="min-h-screen bg-white font-montserrat">
             <Navbar />
@@ -58,7 +61,7 @@ export default function MAPStandardPage() {
                             animate={{ opacity: 1, y: 0 }}
                             className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#4f6f19] text-white text-[10px] font-black uppercase tracking-[0.3em] mb-10"
                         >
-                            Internal Operating Discipline
+                            {t("ms.badge")}
                         </motion.div>
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}
@@ -66,7 +69,9 @@ export default function MAPStandardPage() {
                             transition={{ delay: 0.1 }}
                             className="text-5xl md:text-7xl font-black text-white mb-10 leading-none tracking-tight"
                         >
-                            The <span className="text-[#4f6f19]">MAP</span> Standard
+                            {t("ms.title").split(' ').map((word, i) => (
+                                word === "MAP" || word === "MAP" ? <span key={i} className="text-[#4f6f19]">{word} </span> : word + " "
+                            ))}
                         </motion.h1>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -74,8 +79,7 @@ export default function MAPStandardPage() {
                             transition={{ delay: 0.2 }}
                             className="text-white/60 text-lg md:text-2xl leading-relaxed max-w-3xl mx-auto font-medium"
                         >
-                            The MAP Standard defines how milk and food products are handled at Madugai.
-                            It is an internal operating discipline — <span className="text-white border-b-2 border-[#4f6f19]/30 italic">not a marketing claim.</span>
+                            {t("ms.subtitle")}
                         </motion.p>
                     </div>
                 </div>
@@ -85,7 +89,7 @@ export default function MAPStandardPage() {
             <section className="py-32 border-y border-gray-100">
                 <div className="container px-8">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl font-black mb-16 uppercase tracking-widest">The Core Principle</h2>
+                        <h2 className="text-3xl font-black mb-16 uppercase tracking-widest">{t("ms.philosophy.title")}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 text-left">
                             <motion.div
                                 initial={{ opacity: 0, x: -20 }}
@@ -93,7 +97,7 @@ export default function MAPStandardPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-xl leading-relaxed text-gray-600">
-                                    Milk quality is not determined at the shelf. It is determined by how strictly it is handled before it reaches the customer.
+                                    {t("ms.philosophy.p1")}
                                 </p>
                             </motion.div>
                             <motion.div
@@ -102,7 +106,7 @@ export default function MAPStandardPage() {
                                 viewport={{ once: true }}
                             >
                                 <p className="text-xl leading-relaxed text-gray-600">
-                                    The MAP Standard exists to remove shortcuts, excess handling, and compromises that dilute integrity. Every decision follows this standard without exception.
+                                    {t("ms.philosophy.p2")}
                                 </p>
                             </motion.div>
                         </div>
@@ -140,7 +144,7 @@ export default function MAPStandardPage() {
                             href="/transparency"
                             className="inline-flex items-center gap-4 text-black font-black text-sm uppercase tracking-[0.3em] hover:text-[#4f6f19] transition-colors group"
                         >
-                            View Transparency
+                            {t("ms.viewTransparency")}
                             <div className="w-10 h-10 border border-black flex items-center justify-center group-hover:border-[#4f6f19] group-hover:bg-[#4f6f19] group-hover:text-white transition-all duration-300">
                                 <Scale className="w-5 h-5" />
                             </div>
@@ -159,10 +163,10 @@ export default function MAPStandardPage() {
                     >
                         <div className="w-16 h-1 bg-[#4f6f19] mx-auto mb-16" />
                         <h4 className="text-3xl md:text-5xl font-black text-gray-900 mb-12 leading-tight">
-                            "If it isn't pure enough for our families, it isn't pure enough for yours."
+                            {t("ms.ethics.quote")}
                         </h4>
                         <p className="text-gray-400 font-bold uppercase tracking-[0.4em] text-sm">
-                            Madugai. Milk, made right.
+                            {t("ms.ethics.tagline")}
                         </p>
                     </motion.div>
                 </div>

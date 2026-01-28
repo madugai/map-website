@@ -6,39 +6,41 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/context/LanguageContext";
 
 const products = [
     {
-        title: "Pure Cow Milk",
+        title: "products.milk.title",
         image: "/images/product.jpg",
         href: "/our-products",
-        description: "Collected daily from selected local farms. Chilled immediately and delivered fresh every morning in reusable glass bottles.",
-        badge: "Best Seller"
+        description: "products.milk.desc",
+        badge: "products.badge.bestSeller"
     },
     {
-        title: "Pure Cow Ghee",
+        title: "products.ghee.title",
         image: "/images/products/ghee.jpg",
         href: "/our-products/pure-cow-ghee",
-        description: "Prepared from carefully handled milk under controlled conditions. No artificial additives. No enhancement. No shortcuts. Clarity and consistency over volume.",
+        description: "products.ghee.desc",
         badge: null
     },
     {
-        title: "Fresh Paneer",
+        title: "products.paneer.title",
         image: "/images/panner_img.png",
         href: "/our-products/fresh-paneer",
-        description: "Prepared in small batches and handled under clean, controlled conditions. Freshness and hygiene are prioritised at every step.",
-        badge: "New"
+        description: "products.paneer.desc",
+        badge: "products.badge.new"
     },
     {
-        title: "Tender Coconut",
+        title: "products.coconut.title",
         image: "/images/coconut.png",
         href: "/our-products/tender-coconut",
-        description: "Sourced fresh and delivered as-is. No processing. No alteration. No intervention.",
-        badge: "Seasonal"
+        description: "products.coconut.desc",
+        badge: "products.badge.seasonal"
     }
 ];
 
 export default function Products() {
+    const { t } = useLanguage();
     const containerRef = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(() => {
@@ -88,7 +90,7 @@ export default function Products() {
                                     <div className="product-bottle-gsap relative w-64 h-64">
                                         <Image
                                             src={product.image}
-                                            alt={product.title}
+                                            alt={t(product.title)}
                                             fill
                                             className="object-contain transition-transform duration-700 group-hover:scale-110"
                                         />
@@ -102,21 +104,21 @@ export default function Products() {
                                 <div className="flex flex-col flex-grow px-4">
                                     <div className="flex items-center justify-between mb-5">
                                         <h3 className="text-2xl font-bold font-montserrat text-gray-900 group-hover:text-[#4f6f19] transition-colors leading-tight">
-                                            {product.title}
+                                            {t(product.title)}
                                         </h3>
                                         {product.badge && (
                                             <span className="text-[9px] font-black uppercase tracking-widest text-[#4f6f19] bg-[#4f6f19]/10 px-4 py-1.5">
-                                                {product.badge}
+                                                {t(product.badge)}
                                             </span>
                                         )}
                                     </div>
                                     <p className="text-gray-500 font-montserrat text-base leading-relaxed mb-10 flex-grow">
-                                        {product.description}
+                                        {t(product.description)}
                                     </p>
 
                                     <div className="pt-8 border-t border-gray-100">
                                         <span className="inline-flex items-center gap-4 text-[#4f6f19] font-bold text-[10px] uppercase tracking-[0.2em] group-hover:gap-6 transition-all">
-                                            View Details
+                                            {t("products.viewDetails")}
                                             <ArrowRight className="w-5 h-5" />
                                         </span>
                                     </div>
@@ -132,7 +134,7 @@ export default function Products() {
                         href="/our-products"
                         className="inline-flex items-center gap-5 bg-black text-white font-bold px-12 py-6 hover:bg-zinc-800 transition-all group text-sm uppercase tracking-widest"
                     >
-                        Explore All Products
+                        {t("products.exploreAll")}
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-3 transition-transform" />
                     </Link>
                 </div>

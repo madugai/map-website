@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Youtube, ArrowUp, Smartphone, Mail, Phone } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const XIcon = ({ size = 24 }: { size?: number | string }) => (
     <svg
@@ -17,6 +18,7 @@ const XIcon = ({ size = 24 }: { size?: number | string }) => (
 );
 
 export default function Footer() {
+    const { t } = useLanguage();
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
@@ -30,7 +32,7 @@ export default function Footer() {
                     className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors group"
                 >
                     <ArrowUp size={16} className="group-hover:-translate-y-1 transition-transform" />
-                    Return to Top
+                    {t("footer.returnTop")}
                 </button>
             </div>
 
@@ -47,7 +49,7 @@ export default function Footer() {
                             className="h-16 w-auto mb-6"
                         />
                         <p className="text-white/70 font-montserrat leading-relaxed mb-6">
-                            Madugai exists to provide pure, unadulterated cow milk without industrial shortcuts. We believe in quality, integrity, and the sacred promise of purity.
+                            {t("footer.about")}
                         </p>
                         <Image
                             src="/images/footer_brand_logo.png"
@@ -57,7 +59,7 @@ export default function Footer() {
                             className="h-12 w-auto mb-2"
                         />
                         <div className="text-[#a4d45d] font-bold text-lg font-montserrat italic">
-                            "Milk, made right."
+                            {t("footer.tagline")}
                         </div>
                     </div>
 
@@ -65,19 +67,19 @@ export default function Footer() {
                     <div>
                         <h5 className="text-white text-lg font-bold font-montserrat mb-6 flex items-center gap-2">
                             <span className="w-8 h-1 bg-gradient-to-r from-[#4f6f19] to-[#a4d45d]" />
-                            Quick Links
+                            {t("footer.quickLinks")}
                         </h5>
                         <ul className="space-y-3 font-montserrat text-sm">
                             {[
-                                { name: "Home", href: "/" },
-                                { name: "The MAP Standard", href: "/map-standard" },
-                                { name: "Products", href: "/our-products" },
-                                { name: "How We Work", href: "/how-we-work" },
-                                { name: "Store", href: "https://madugai.trakop.com/", external: true },
-                                { name: "Transparency", href: "/transparency" },
-                                { name: "FAQ", href: "/faq" },
-                                { name: "Subscription", href: "/subscription" },
-                                { name: "Contact Us", href: "/contact" },
+                                { name: "nav.home", href: "/" },
+                                { name: "nav.mapStandard", href: "/map-standard" },
+                                { name: "nav.products", href: "/our-products" },
+                                { name: "nav.howWeWork", href: "/how-we-work" },
+                                { name: "nav.store", href: "https://madugai.trakop.com/", external: true },
+                                { name: "nav.transparency", href: "/transparency" },
+                                { name: "nav.faq", href: "/faq" },
+                                { name: "nav.subscription", href: "/subscription" },
+                                { name: "nav.contact", href: "/contact" },
                             ].map((link) => (
                                 <li key={link.name}>
                                     <Link
@@ -85,7 +87,7 @@ export default function Footer() {
                                         target={(link as any).external ? "_blank" : undefined}
                                         className="text-white/70 hover:text-white hover:pl-2 transition-all inline-flex items-center gap-2"
                                     >
-                                        {link.name}
+                                        {t(link.name)}
                                         {(link as any).external && <span className="text-xs">↗</span>}
                                     </Link>
                                 </li>
@@ -97,7 +99,7 @@ export default function Footer() {
                     <div>
                         <h5 className="text-white text-lg font-bold font-montserrat mb-6 flex items-center gap-2">
                             <span className="w-8 h-1 bg-gradient-to-r from-[#4f6f19] to-[#a4d45d]" />
-                            Connect With Us
+                            {t("footer.connect")}
                         </h5>
 
                         {/* Social Icons */}
@@ -163,13 +165,13 @@ export default function Footer() {
                 <div className="container">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
                         <p className="text-white/50 text-sm font-montserrat">
-                            © {new Date().getFullYear()} Madugai MAP. All rights reserved.
+                            © {new Date().getFullYear()} Madugai MAP. {t("footer.rights")}
                         </p>
                         <div className="flex items-center gap-6 text-white/50 text-sm">
-                            <Link href="/legal/tou" className="hover:text-white transition-colors">Terms of Use</Link>
-                            <Link href="/legal/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                            <Link href="/legal/refund" className="hover:text-white transition-colors">Refund Policy</Link>
-                            <Link href="/legal/delivery" className="hover:text-white transition-colors">Delivery Policy</Link>
+                            <Link href="/legal/tou" className="hover:text-white transition-colors">{t("footer.terms")}</Link>
+                            <Link href="/legal/privacy" className="hover:text-white transition-colors">{t("footer.privacy")}</Link>
+                            <Link href="/legal/refund" className="hover:text-white transition-colors">{t("footer.refund")}</Link>
+                            <Link href="/legal/delivery" className="hover:text-white transition-colors">{t("footer.delivery")}</Link>
                         </div>
                     </div>
                 </div>

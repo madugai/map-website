@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -131,7 +132,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <head suppressHydrationWarning>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
@@ -143,9 +144,11 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} font-montserrat antialiased`}
       >
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+        <LanguageProvider>
+          <SmoothScroll>
+            {children}
+          </SmoothScroll>
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
+    const { t } = useLanguage();
     const sectionRef = useRef<HTMLDivElement>(null);
     const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -73,16 +75,16 @@ export default function Hero() {
 
                             {/* Heading */}
                             <div className="overflow-hidden mb-8">
-                                <h1 className="hero-animate text-3xl md:text-4xl xl:text-5xl font-montserrat font-black text-gray-900 leading-[1.1] tracking-tight flex flex-col">
-                                    <span>Cow Milk. <span className="text-[#4f6f19]">Without</span></span>
-                                    <span className="text-[#4f6f19]">Industrial Shortcuts.</span>
+                                <h1 className="hero-animate text-3xl md:text-4xl xl:text-5xl font-montserrat font-black text-gray-900 leading-[1.25] tracking-tight flex flex-col">
+                                    <span>{t("hero.title1")} <span className="text-[#4f6f19]">{t("hero.title2")}</span></span>
+                                    <span className="text-[#4f6f19]">{t("hero.title3")}</span>
                                 </h1>
                             </div>
 
                             {/* Description */}
                             <div className="hero-animate mb-10">
                                 <p className="text-gray-600 text-lg md:text-xl font-montserrat leading-relaxed">
-                                    Collected daily. Chilled immediately. Delivered fresh in glass bottles. No dilution. No preservatives. No mass processing.
+                                    {t("hero.description")}
                                 </p>
                             </div>
 
@@ -92,7 +94,7 @@ export default function Hero() {
                                     href="/contact"
                                     className="inline-flex items-center gap-3 bg-[#4f6f19] text-white font-bold py-4 px-10 rounded-full hover:bg-[#324a10] hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm uppercase tracking-widest group"
                                 >
-                                    Request a Sample
+                                    {t("hero.cta")}
                                     <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </Link>
                             </div>
@@ -125,7 +127,7 @@ export default function Hero() {
                     >
                         <div className="w-1.5 h-1.5 bg-[#4f6f19] rounded-full" />
                     </motion.div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">Scroll</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">{t("hero.scroll")}</span>
                 </div>
             </section>
 

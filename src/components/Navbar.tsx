@@ -3,18 +3,21 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/context/LanguageContext";
 
 const navLinks = [
-    { name: "The MAP Standard", href: "/map-standard" },
-    { name: "Products", href: "/our-products" },
-    { name: "How We Work", href: "/how-we-work" },
-    { name: "Store", href: "https://madugai.trakop.com/", external: true },
-    { name: "Transparency", href: "/transparency" },
-    { name: "FAQ", href: "/faq" },
-    { name: "Subscription", href: "/subscription" },
+    { name: "nav.mapStandard", href: "/map-standard" },
+    { name: "nav.products", href: "/our-products" },
+    { name: "nav.howWeWork", href: "/how-we-work" },
+    { name: "nav.store", href: "https://madugai.trakop.com/", external: true },
+    { name: "nav.transparency", href: "/transparency" },
+    { name: "nav.faq", href: "/faq" },
+    { name: "nav.subscription", href: "/subscription" },
 ];
 
 export default function Navbar() {
+    const { t } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -43,9 +46,8 @@ export default function Navbar() {
     return (
         <div>
             <nav
-                className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${
-                    scrolled ? "bg-white/95 backdrop-blur-md shadow-md py-2" : "bg-white py-4"
-                }`}
+                className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-md py-2" : "bg-white py-4"
+                    }`}
             >
                 <div className="container">
                     <div className="flex items-center justify-between">
@@ -81,7 +83,7 @@ export default function Navbar() {
                                         rel={link.external ? "noopener noreferrer" : undefined}
                                         className="font-montserrat font-bold text-[13px] text-zinc-800 px-5 py-2 hover:bg-white hover:shadow-sm rounded-full transition-all whitespace-nowrap"
                                     >
-                                        {link.name}
+                                        {t(link.name)}
                                     </Link>
                                 ))}
                             </div>
@@ -107,7 +109,7 @@ export default function Navbar() {
                                             href={link.href}
                                             className="font-montserrat font-bold text-[13px] text-zinc-800 px-5 py-2 hover:bg-white hover:shadow-sm rounded-full transition-all whitespace-nowrap"
                                         >
-                                            {link.name}
+                                            {t(link.name)}
                                         </Link>
                                     ))}
                                 </div>
@@ -115,8 +117,9 @@ export default function Navbar() {
                                     href="/contact"
                                     className="bg-zinc-900 text-white font-bold py-3 px-8 rounded-full hover:bg-black transition-all shadow-lg text-sm"
                                 >
-                                    Contact Us
+                                    {t("nav.contact")}
                                 </Link>
+                                <LanguageSwitcher />
                             </div>
                         </div>
                     </div>
@@ -151,7 +154,7 @@ export default function Navbar() {
                             className="block text-lg font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100"
                             onClick={closeMenu}
                         >
-                            Home
+                            {t("nav.home")}
                         </Link>
                         {navLinks.map((link) => (
                             <Link
@@ -162,20 +165,23 @@ export default function Navbar() {
                                 className="block text-lg font-montserrat font-bold text-zinc-900 py-4 border-b border-zinc-100"
                                 onClick={closeMenu}
                             >
-                                {link.name}
+                                {t(link.name)}
                                 {link.external && (
                                     <span className="text-xs text-[#4f6f19] ml-2">↗</span>
                                 )}
                             </Link>
                         ))}
-                        <div className="pt-6">
+                        <div className="pt-6 space-y-4">
                             <Link
                                 href="/contact"
                                 className="bg-[#4f6f19] text-white font-bold py-4 px-8 block text-center text-base"
                                 onClick={closeMenu}
                             >
-                                Contact Us
+                                {t("nav.contact")}
                             </Link>
+                            <div className="flex justify-center">
+                                <LanguageSwitcher />
+                            </div>
                         </div>
                     </div>
                 </div>

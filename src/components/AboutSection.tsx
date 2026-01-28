@@ -3,8 +3,10 @@ import React, { useLayoutEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function AboutSection() {
+    const { t } = useLanguage();
     const sectionRef = useRef<HTMLElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
     const imageRef = useRef<HTMLDivElement>(null);
@@ -103,17 +105,16 @@ export default function AboutSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div ref={textRef}>
                         <h2 className="about-heading text-3xl md:text-4xl lg:text-[42px] font-montserrat font-bold text-gray-900 leading-tight mb-8">
-                            Milk today is designed for scale, shelf life, and convenience — <span className="text-[#4f6f19]">not integrity.</span>
+                            {t("about.heading1")} <span className="text-[#4f6f19]">{t("about.heading2")}</span>
                         </h2>
 
                         <p className="about-paragraph text-gray-600 text-lg md:text-xl leading-relaxed font-montserrat mb-8">
-                            Madugai exists to do the opposite. We operate with discipline and restraint,
-                            because real quality cannot be rushed, diluted, or industrialized.
+                            {t("about.body")}
                         </p>
 
                         <div className="about-quote bg-[#4f6f19]/5 border-l-4 border-[#4f6f19] p-6 mb-8">
                             <p className="text-[#4f6f19] font-bold text-lg font-montserrat italic">
-                                "Try Madugai once. Let the quality speak for itself."
+                                {t("about.quote")}
                             </p>
                         </div>
                     </div>

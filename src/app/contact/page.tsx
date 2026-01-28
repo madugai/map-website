@@ -4,8 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ContactPage() {
+    const { t } = useLanguage();
+
     return (
         <main className="min-h-screen bg-white font-montserrat">
             <Navbar />
@@ -18,10 +21,12 @@ export default function ContactPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-black mb-8"
                     >
-                        Get in <span className="text-[#4f6f19]">Touch</span>
+                        {t("contact.title").split(' ').map((word, i) => (
+                            word === "Touch" || word === "கொள்ள" ? <span key={i} className="text-[#4f6f19]">{word} </span> : word + " "
+                        ))}
                     </motion.h1>
                     <p className="text-white/60 text-lg md:text-xl leading-relaxed">
-                        Whether you want to request a sample, join the waitlist, or just say hello — we're here.
+                        {t("contact.desc")}
                     </p>
                 </div>
             </section>
@@ -31,14 +36,14 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
                         {/* Contact Info */}
                         <div>
-                            <h2 className="text-3xl font-black mb-12">Madugai Desk</h2>
+                            <h2 className="text-3xl font-black mb-12">{t("contact.desk.title")}</h2>
                             <div className="space-y-10">
                                 <div className="flex items-start gap-6">
                                     <div className="w-14 h-14 bg-[#4f6f19]/10 flex items-center justify-center flex-shrink-0">
                                         <Phone className="w-6 h-6 text-[#4f6f19]" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Call Us</p>
+                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">{t("contact.desk.call")}</p>
                                         <p className="text-xl font-bold">+91 8903535222</p>
                                     </div>
                                 </div>
@@ -47,7 +52,7 @@ export default function ContactPage() {
                                         <Mail className="w-6 h-6 text-[#4f6f19]" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Email us</p>
+                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">{t("contact.desk.email")}</p>
                                         <p className="text-xl font-bold">support@madugai.com</p>
                                     </div>
                                 </div>
@@ -56,7 +61,7 @@ export default function ContactPage() {
                                         <MapPin className="w-6 h-6 text-[#4f6f19]" />
                                     </div>
                                     <div>
-                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">Visit Us</p>
+                                        <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">{t("contact.desk.visit")}</p>
                                         <p className="text-xl font-bold">Madugai Agro Product</p>
                                         <p className="text-gray-600">No.176A, Padasalai Street, Padiyampakkam</p>
                                         <p className="text-gray-600">Walajapet, Ranipet, Tamil Nadu - 632513.</p>
@@ -71,8 +76,8 @@ export default function ContactPage() {
                                 className="mt-16 p-8 bg-[#1a1a1a] text-white flex items-center justify-between hover:bg-zinc-800 transition-all cursor-pointer"
                             >
                                 <div>
-                                    <h4 className="font-bold mb-2">WhatsApp Support</h4>
-                                    <p className="text-white/60 text-sm">Instant response for our subscribers.</p>
+                                    <h4 className="font-bold mb-2">{t("contact.wa.title")}</h4>
+                                    <p className="text-white/60 text-sm">{t("contact.wa.desc")}</p>
                                 </div>
                                 <MessageCircle className="w-10 h-10 text-[#25D366]" />
                             </a>
@@ -83,28 +88,28 @@ export default function ContactPage() {
                             <form className="space-y-8">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                     <div className="space-y-3">
-                                        <label className="text-xs font-bold uppercase tracking-widest text-gray-400">FullName</label>
-                                        <input type="text" className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder="Your name" />
+                                        <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.name")}</label>
+                                        <input type="text" className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder={t("contact.form.namePlaceholder")} />
                                     </div>
                                     <div className="space-y-3">
-                                        <label className="text-xs font-bold uppercase tracking-widest text-gray-400">Phone</label>
-                                        <input type="tel" className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder="Your phone" />
+                                        <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.phone")}</label>
+                                        <input type="tel" className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder={t("contact.form.phonePlaceholder")} />
                                     </div>
                                 </div>
                                 <div className="space-y-3">
-                                    <label className="text-xs font-bold uppercase tracking-widest text-gray-400">Subject</label>
+                                    <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.subject")}</label>
                                     <select className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]">
-                                        <option>Request a Sample</option>
-                                        <option>Join the Waitlist</option>
-                                        <option>General Inquiry</option>
+                                        <option>{t("contact.form.s1")}</option>
+                                        <option>{t("contact.form.s2")}</option>
+                                        <option>{t("contact.form.s3")}</option>
                                     </select>
                                 </div>
                                 <div className="space-y-3">
-                                    <label className="text-xs font-bold uppercase tracking-widest text-gray-400">Message</label>
-                                    <textarea rows={5} className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder="How can we help?"></textarea>
+                                    <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.message")}</label>
+                                    <textarea rows={5} className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder={t("contact.form.messagePlaceholder")}></textarea>
                                 </div>
                                 <button className="w-full bg-[#1a1a1a] text-white font-black py-6 hover:bg-zinc-800 transition-all uppercase tracking-widest">
-                                    Send Message
+                                    {t("contact.form.send")}
                                 </button>
                             </form>
                         </div>
@@ -116,7 +121,7 @@ export default function ContactPage() {
             <section className="relative">
                 <div className="bg-[#4f6f19] py-12 px-8">
                     <div className="container max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Locate Us</h2>
+                        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">{t("contact.map.title")}</h2>
                         <p className="text-white/80">
                             No.176A, Padasalai Street, Padiyampakkam, Walajapet, Ranipet, Tamil Nadu - 632513
                         </p>

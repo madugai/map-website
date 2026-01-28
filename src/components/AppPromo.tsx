@@ -3,8 +3,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Star, Smartphone, Mail, ChevronRight, Bell, Clock, Truck } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function AppPromo() {
+    const { t } = useLanguage();
+
     return (
         <section className="bg-zinc-950 py-16 md:py-24 overflow-hidden relative">
             <div className="container relative z-10">
@@ -29,8 +32,8 @@ export default function AppPromo() {
                                         <Truck className="w-5 h-5 text-[#4f6f19]" />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-gray-500 font-montserrat">Today's Delivery</p>
-                                        <p className="text-sm font-bold text-gray-900 font-montserrat">Arriving by 7:30 AM</p>
+                                        <p className="text-xs text-gray-500 font-montserrat">{t("app.float1.label")}</p>
+                                        <p className="text-sm font-bold text-gray-900 font-montserrat">{t("app.float1.value")}</p>
                                     </div>
                                 </div>
                             </div>
@@ -42,8 +45,8 @@ export default function AppPromo() {
                                         <Bell className="w-5 h-5 text-white" />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-white/70 font-montserrat">Notification</p>
-                                        <p className="text-sm font-bold text-white font-montserrat">Milk delivered!</p>
+                                        <p className="text-xs text-white/70 font-montserrat">{t("app.float2.label")}</p>
+                                        <p className="text-sm font-bold text-white font-montserrat">{t("app.float2.value")}</p>
                                     </div>
                                 </div>
                             </div>
@@ -55,8 +58,8 @@ export default function AppPromo() {
                                         <Clock className="w-5 h-5 text-[#4f6f19]" />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-white/50 font-montserrat">Subscription</p>
-                                        <p className="text-sm font-bold text-white font-montserrat">Paused for tomorrow</p>
+                                        <p className="text-xs text-white/50 font-montserrat">{t("app.float3.label")}</p>
+                                        <p className="text-sm font-bold text-white font-montserrat">{t("app.float3.value")}</p>
                                     </div>
                                 </div>
                             </div>
@@ -67,34 +70,33 @@ export default function AppPromo() {
                     <div className="lg:w-1/2">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#4f6f19]/10 border border-[#4f6f19]/20 text-[#4f6f19] text-xs font-bold uppercase tracking-widest mb-8">
                             <Smartphone className="w-4 h-4" />
-                            The Madugai App
+                            {t("app.badge")}
                         </div>
 
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-white mb-8 leading-[1.1]">
-                            Control your daily <br />
-                            <span className="text-[#4f6f19]">milk subscription.</span>
+                            {t("app.title1")} <br />
+                            <span className="text-[#4f6f19]">{t("app.title2")}</span>
                         </h2>
 
                         <p className="text-white/60 font-montserrat text-lg leading-relaxed mb-12 max-w-xl">
-                            Experience the future of milk delivery. Manage orders, track deliveries in real-time,
-                            and maintain your account with a tap. Purity meets convenience.
+                            {t("app.subtitle")}
                         </p>
 
                         {/* App Features Grid */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
                             {[
-                                { icon: Smartphone, title: "Effortless Control", desc: "Pause or adjust daily" },
-                                { icon: MessageCircle, title: "Real-time Alerts", desc: "Know when it arrives" },
-                                { icon: Mail, title: "Smart Billing", desc: "Detailed digital receipts" },
-                                { icon: Star, title: "Priority Support", desc: "Dedicated help desk" },
+                                { icon: Smartphone, title: "app.f1.title", desc: "app.f1.desc" },
+                                { icon: MessageCircle, title: "app.f2.title", desc: "app.f2.desc" },
+                                { icon: Mail, title: "app.f3.title", desc: "app.f3.desc" },
+                                { icon: Star, title: "app.f4.title", desc: "app.f4.desc" },
                             ].map((feature, index) => (
                                 <div key={index} className="flex items-start gap-4 group">
                                     <div className="w-12 h-12 bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-[#4f6f19] transition-all duration-300">
                                         <feature.icon className="w-5 h-5 text-[#4f6f19] group-hover:text-white transition-colors" />
                                     </div>
                                     <div>
-                                        <div className="text-white font-bold font-montserrat text-base mb-1 tracking-tight">{feature.title}</div>
-                                        <div className="text-white/40 text-sm font-montserrat">{feature.desc}</div>
+                                        <div className="text-white font-bold font-montserrat text-base mb-1 tracking-tight">{t(feature.title)}</div>
+                                        <div className="text-white/40 text-sm font-montserrat">{t(feature.desc)}</div>
                                     </div>
                                 </div>
                             ))}
@@ -124,7 +126,7 @@ export default function AppPromo() {
                                         {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-3 h-3 fill-current" />)}
                                     </div>
                                     <div className="text-white/60 font-montserrat tracking-wide">
-                                        Loved by <span className="text-white font-bold">50,000+</span> households
+                                        {t("app.social")}
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +138,7 @@ export default function AppPromo() {
                                     className="inline-flex items-center gap-2 text-white/40 hover:text-[#4f6f19] transition-colors text-sm font-montserrat group"
                                 >
                                     <MessageCircle className="w-4 h-4" />
-                                    <span>Get download link via SMS</span>
+                                    <span>{t("app.sms")}</span>
                                     <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                                 </Link>
                             </div>

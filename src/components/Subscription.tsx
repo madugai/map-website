@@ -2,51 +2,54 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, CheckCircle, Users, BarChart } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const benefits = [
     {
-        title: "Predictable Collection",
-        description: "Allows us to source only what is needed, ensuring zero wastage and maximum freshness.",
+        title: "sub.b1.title",
+        description: "sub.b1.desc",
         icon: Calendar
     },
     {
-        title: "Immediate Handling",
-        description: "Strict timelines for chilling and bottling without any industrial delays.",
+        title: "sub.b2.title",
+        description: "sub.b2.desc",
         icon: CheckCircle
     },
     {
-        title: "Controlled Volumes",
-        description: "We only handle what we can manage perfectly. Quality over quantity.",
+        title: "sub.b3.title",
+        description: "sub.b3.desc",
         icon: BarChart
     },
     {
-        title: "Consistent Quality",
-        description: "The same high standards every single morning. Not seasonally, not selectively.",
+        title: "sub.b4.title",
+        description: "sub.b4.desc",
         icon: Users
     }
 ];
 
 export default function Subscription() {
+    const { t } = useLanguage();
+
     return (
         <section id="subscription" className="py-24 md:py-32 overflow-hidden">
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <div>
-                        <span className="text-[#89b441] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">Our Model</span>
+                        <span className="text-[#89b441] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">{t("sub.badge")}</span>
                         <h2 className="text-4xl md:text-5xl font-montserrat font-black text-white leading-tight mb-8">
-                            Why We Use <span className="text-[#89b441]">Subscription</span>
+                            {t("sub.title1")}<span className="text-[#89b441]">{t("sub.title2")}</span>
                         </h2>
                         <p className="text-white/70 font-montserrat text-lg leading-relaxed mb-10">
-                            Madugai operates on a subscription model by design. This allows us to control sourcing, handling, and delivery without compromise. Quality cannot be maintained through spot buying or irregular demand.
+                            {t("sub.desc")}
                         </p>
 
                         <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-8 md:p-12">
-                            <h3 className="text-2xl font-bold mb-6 text-white">Limited Households</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-white">{t("sub.limited.title")}</h3>
                             <p className="text-white/60 mb-8 leading-relaxed">
-                                Madugai serves a limited number of households. Not because we can't grow — but because we refuse to lower standards. When capacity is full, onboarding stops.
+                                {t("sub.limited.desc")}
                             </p>
                             <button className="bg-[#4f6f19] text-white font-bold py-4 px-10 hover:bg-[#89b441] transition-all text-sm uppercase tracking-widest">
-                                Join the Waitlist
+                                {t("sub.waitlist")}
                             </button>
                         </div>
                     </div>
@@ -64,32 +67,32 @@ export default function Subscription() {
                                 <div className="w-12 h-12 bg-[#4f6f19]/30 flex items-center justify-center mb-6">
                                     <benefit.icon className="w-6 h-6 text-[#89b441]" />
                                 </div>
-                                <h4 className="text-lg font-bold font-montserrat text-white mb-4">{benefit.title}</h4>
-                                <p className="text-white/60 font-montserrat text-sm leading-relaxed">{benefit.description}</p>
+                                <h4 className="text-lg font-bold font-montserrat text-white mb-4">{t(benefit.title)}</h4>
+                                <p className="text-white/60 font-montserrat text-sm leading-relaxed">{t(benefit.description)}</p>
                             </motion.div>
                         ))}
 
                         <div className="sm:col-span-2 bg-white/5 backdrop-blur-sm p-10 border border-white/10">
-                            <h4 className="text-xl font-bold font-montserrat text-white mb-6">Madugai is for households that value:</h4>
+                            <h4 className="text-xl font-bold font-montserrat text-white mb-6">{t("sub.valueTitle")}</h4>
                             <ul className="space-y-4">
                                 {[
-                                    { title: "Discipline over convenience", text: "Subscription ensures predictable handling." },
-                                    { title: "Consistency over variety", text: "We focus on a small, perfect range." },
-                                    { title: "Quality over discounts", text: "Integrity cannot be discounted." }
+                                    { title: "sub.v1.title", text: "sub.v1.text" },
+                                    { title: "sub.v2.title", text: "sub.v2.text" },
+                                    { title: "sub.v3.title", text: "sub.v3.text" }
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-4">
                                         <div className="w-5 h-5 bg-[#4f6f19] flex-shrink-0 mt-1 flex items-center justify-center">
                                             <div className="w-2 h-2 bg-white rounded-full" />
                                         </div>
                                         <div>
-                                            <span className="font-bold text-white block">{item.title}</span>
-                                            <span className="text-white/60 text-sm">{item.text}</span>
+                                            <span className="font-bold text-white block">{t(item.title)}</span>
+                                            <span className="text-white/60 text-sm">{t(item.text)}</span>
                                         </div>
                                     </li>
                                 ))}
                             </ul>
                             <p className="mt-8 text-sm text-white/40 italic">
-                                * If you are looking for occasional or ad-hoc purchases, Madugai may not be the right choice.
+                                {t("sub.note")}
                             </p>
                         </div>
                     </div>

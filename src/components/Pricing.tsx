@@ -5,15 +5,17 @@ import Link from "next/link";
 import { Check } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/context/LanguageContext";
 
 const features = [
-    "Free Home delivery",
-    "Assured delivery time by 7.30am",
-    "100% cow's milk",
-    "Free from hormones"
+    "pricing.feature1",
+    "pricing.feature2",
+    "pricing.feature3",
+    "pricing.feature4"
 ];
 
 export default function Pricing() {
+    const { t } = useLanguage();
     const sectionRef = useRef<HTMLElement>(null);
 
     useLayoutEffect(() => {
@@ -72,10 +74,10 @@ export default function Pricing() {
                                 {/* Header */}
                                 <div className="p-6 border-b-4 border-[#4f6f19]">
                                     <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-1">
-                                        Half a litre. Full of goodness.
+                                        {t("pricing.card1.title")}
                                     </h3>
                                     <p className="text-gray-500 text-sm font-montserrat">
-                                        Perfect for light users or solo sippers
+                                        {t("pricing.card1.subtitle")}
                                     </p>
                                 </div>
 
@@ -84,11 +86,11 @@ export default function Pricing() {
                                     <div className="flex items-start">
                                         <span className="text-[#4f6f19] text-xl font-medium mt-1">₹</span>
                                         <span className="text-6xl md:text-7xl font-black text-[#4f6f19] font-montserrat leading-none">
-                                            40
+                                            {t("pricing.card1.price")}
                                         </span>
                                     </div>
                                     <p className="text-gray-500 text-sm font-montserrat mt-2">
-                                        ~₹1240/month
+                                        {t("pricing.card1.monthly")}
                                     </p>
                                 </div>
 
@@ -99,7 +101,7 @@ export default function Pricing() {
                                             <li key={i} className="flex items-center gap-3 pb-4 border-b border-gray-100 last:border-0 last:pb-0">
                                                 <Check className="w-5 h-5 text-[#4f6f19] flex-shrink-0" strokeWidth={2.5} />
                                                 <span className="text-gray-700 font-montserrat text-sm">
-                                                    {feature}
+                                                    {t(feature)}
                                                 </span>
                                             </li>
                                         ))}
@@ -109,7 +111,7 @@ export default function Pricing() {
                                         href="/subscription"
                                         className="block w-full bg-[#4f6f19] text-white font-bold py-4 text-center rounded-full hover:bg-[#3d5614] transition-all font-montserrat text-sm"
                                     >
-                                        Book a free trial
+                                        {t("pricing.cta")}
                                     </Link>
                                 </div>
                             </div>
@@ -120,10 +122,10 @@ export default function Pricing() {
                                 {/* Header */}
                                 <div className="p-6 border-b-4 border-[#4f6f19]">
                                     <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-1">
-                                        One litre, full satisfaction.
+                                        {t("pricing.card2.title")}
                                     </h3>
                                     <p className="text-gray-500 text-sm font-montserrat">
-                                        Ideal for families or daily milk lovers
+                                        {t("pricing.card2.subtitle")}
                                     </p>
                                 </div>
 
@@ -132,11 +134,11 @@ export default function Pricing() {
                                     <div className="flex items-start">
                                         <span className="text-[#4f6f19] text-xl font-medium mt-1">₹</span>
                                         <span className="text-6xl md:text-7xl font-black text-[#4f6f19] font-montserrat leading-none">
-                                            76
+                                            {t("pricing.card2.price")}
                                         </span>
                                     </div>
                                     <p className="text-gray-500 text-sm font-montserrat mt-2">
-                                        ~₹2356/month
+                                        {t("pricing.card2.monthly")}
                                     </p>
                                 </div>
 
@@ -147,7 +149,7 @@ export default function Pricing() {
                                             <li key={i} className="flex items-center gap-3 pb-4 border-b border-gray-100 last:border-0 last:pb-0">
                                                 <Check className="w-5 h-5 text-[#4f6f19] flex-shrink-0" strokeWidth={2.5} />
                                                 <span className="text-gray-700 font-montserrat text-sm">
-                                                    {feature}
+                                                    {t(feature)}
                                                 </span>
                                             </li>
                                         ))}
@@ -157,7 +159,7 @@ export default function Pricing() {
                                         href="/subscription"
                                         className="block w-full bg-[#4f6f19] text-white font-bold py-4 text-center rounded-full hover:bg-[#3d5614] transition-all font-montserrat text-sm"
                                     >
-                                        Book a free trial
+                                        {t("pricing.cta")}
                                     </Link>
                                 </div>
                             </div>
@@ -165,7 +167,7 @@ export default function Pricing() {
 
                         {/* Bottom Note */}
                         <p className="text-center text-gray-500 font-montserrat mt-8 text-sm">
-                            Subscriptions are prepaid and billed monthly. Simple, transparent, and flexible.
+                            {t("pricing.bottom")}
                         </p>
                     </div>
                 </div>

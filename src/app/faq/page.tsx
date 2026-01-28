@@ -4,8 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function FAQPage() {
+    const { t } = useLanguage();
+
     return (
         <main className="min-h-screen bg-white font-montserrat">
             <Navbar />
@@ -18,10 +21,12 @@ export default function FAQPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-black mb-8"
                     >
-                        Questions & <span className="text-[#4f6f19]">Answers</span>
+                        {t("faq_page.title").split(' ').map((word, i) => (
+                            word === "Answers" || word === "பதில்கள்" ? <span key={i} className="text-[#4f6f19]">{word} </span> : word + " "
+                        ))}
                     </motion.h1>
                     <p className="text-white/60 text-lg md:text-xl leading-relaxed">
-                        Clarity on how we maintain the MAP Standard and deliver integrity to your doorstep.
+                        {t("faq_page.desc")}
                     </p>
                 </div>
             </section>

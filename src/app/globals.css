@@ -469,3 +469,9 @@ h6 {
   height: 4px;
   background: linear-gradient(90deg, #77a533, #a4d45d, #77a533);
 }
+
+@media (min-width: 1530px) {
+  .container {
+    max-width: 1530px !important;
+  }
+}

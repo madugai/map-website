@@ -6,25 +6,27 @@ import { motion } from "framer-motion";
 import { Shield, ClipboardList, Activity, FlaskConical, Beaker, CheckCircle2, Download, ChevronRight, ShieldCheck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const compositionData = [
-    { label: "Fat Content", value: "4.6%", desc: "Rich and creamy texture", icon: Beaker },
-    { label: "SNF (Solids-Not-Fat)", value: "8.0%", desc: "Essential proteins & minerals", icon: Activity },
-    { label: "pH Level", value: "6.7", desc: "Perfectly balanced alkalinity", icon: FlaskConical },
-];
-
-const safetyTests = [
-    "Urea", "Nitrate", "Starch", "Sugar",
-    "Glucose", "Salt", "Neutralizer", "Hydrogen Peroxide"
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function TransparencyPage() {
+    const { t } = useLanguage();
     const today = new Date();
     const formattedDate = today.toLocaleDateString('en-GB', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric'
     }).replace(/\//g, '-');
+
+    const compositionData = [
+        { label: t("trans.metrics.fat.label"), value: "4.6%", desc: t("trans.metrics.fat.desc"), icon: Beaker },
+        { label: t("trans.metrics.snf.label"), value: "8.0%", desc: t("trans.metrics.snf.desc"), icon: Activity },
+        { label: t("trans.metrics.ph.label"), value: "6.7", desc: t("trans.metrics.ph.desc"), icon: FlaskConical },
+    ];
+
+    const safetyTests = [
+        "Urea", "Nitrate", "Starch", "Sugar",
+        "Glucose", "Salt", "Neutralizer", "Hydrogen Peroxide"
+    ];
 
     return (
         <main className="min-h-screen bg-white font-montserrat">
@@ -39,7 +41,7 @@ export default function TransparencyPage() {
                         className="inline-flex items-center gap-2 px-4 py-2 bg-[#4f6f19]/20 text-[#6db33f] text-xs font-bold uppercase tracking-widest mb-8"
                     >
                         <ShieldCheck className="w-4 h-4" />
-                        Verification Over Trust
+                        {t("trans.badge")}
                     </motion.div>
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
@@ -47,11 +49,12 @@ export default function TransparencyPage() {
                         transition={{ delay: 0.1 }}
                         className="text-4xl md:text-6xl font-black mb-8"
                     >
-                        Absolute <span className="text-[#4f6f19]">Transparency</span>
+                        {t("trans.title").split(' ').map((word, i) => (
+                            word === "Transparency" || word === "வெளிப்படைத்தன்மை" ? <span key={i} className="text-[#4f6f19]">{word} </span> : word + " "
+                        ))}
                     </motion.h1>
                     <p className="text-white/60 text-lg md:text-xl leading-relaxed">
-                        We provide real-time metric and independent lab validation
-                        for every batch we handle. Transparent operations are at the heart of the MAP Standard.
+                        {t("trans.desc")}
                     </p>
                 </div>
             </section>
@@ -89,22 +92,22 @@ export default function TransparencyPage() {
                                         </svg>
                                         <div className="absolute inset-0 flex flex-col items-center justify-center">
                                             <span className="text-5xl font-black text-zinc-900">PURE</span>
-                                            <span className="text-[10px] text-[#4f6f19] font-black tracking-[0.2em] uppercase mt-1">Verified</span>
+                                            <span className="text-[10px] text-[#4f6f19] font-black tracking-[0.2em] uppercase mt-1">{t("trans.dashboard.verified")}</span>
                                         </div>
                                     </div>
                                     <div className="mt-10">
                                         <div className="text-3xl font-black text-zinc-900">{formattedDate}</div>
-                                        <div className="text-xs text-zinc-400 font-bold uppercase tracking-widest mt-2">Today's Batch Status</div>
+                                        <div className="text-xs text-zinc-400 font-bold uppercase tracking-widest mt-2">{t("trans.dashboard.batchStatus")}</div>
                                     </div>
                                 </div>
 
                                 {/* Adulteration Tests Grid */}
                                 <div className="flex-1 w-full">
                                     <div className="flex items-center justify-between mb-10 pb-6 border-b border-zinc-100">
-                                        <h3 className="text-2xl font-black text-zinc-900">Adulteration Safety Suite</h3>
+                                        <h3 className="text-2xl font-black text-zinc-900">{t("trans.dashboard.safetySuite")}</h3>
                                         <div className="flex items-center gap-2 text-[#4f6f19]">
                                             <CheckCircle2 className="w-5 h-5" />
-                                            <span className="text-xs font-bold uppercase tracking-wider">All Tests Passed</span>
+                                            <span className="text-xs font-bold uppercase tracking-wider">{t("trans.dashboard.testsPassed")}</span>
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -113,7 +116,7 @@ export default function TransparencyPage() {
                                                 <div className="text-[10px] text-zinc-400 mb-2 font-bold uppercase tracking-widest">{test}</div>
                                                 <div className="text-[11px] font-black text-[#4f6f19] flex items-center justify-center gap-1.5">
                                                     <div className="w-1.5 h-1.5 bg-[#4f6f19] rounded-full animate-pulse" />
-                                                    NEGATIVE
+                                                    {t("trans.dashboard.negative")}
                                                 </div>
                                             </div>
                                         ))}
@@ -150,10 +153,9 @@ export default function TransparencyPage() {
             <section className="py-32 bg-zinc-50">
                 <div className="container px-8">
                     <div className="text-center mb-24">
-                        <h2 className="text-4xl font-black text-zinc-900 mb-6">Verification Reports</h2>
+                        <h2 className="text-4xl font-black text-zinc-900 mb-6">{t("trans.reports.title")}</h2>
                         <p className="text-zinc-500 max-w-2xl mx-auto text-lg">
-                            We invite independent scrutiny. Every batch is tested both internally
-                            and at third-party certified laboratories.
+                            {t("trans.reports.desc")}
                         </p>
                     </div>
 
@@ -167,8 +169,8 @@ export default function TransparencyPage() {
                         >
                             <div className="mb-10 flex items-center justify-between">
                                 <div>
-                                    <span className="text-[10px] font-black text-[#4f6f19] uppercase tracking-[0.2em] bg-[#4f6f19]/10 px-4 py-1.5 rounded-full">Self Analysis</span>
-                                    <h3 className="text-2xl font-black text-zinc-900 mt-5 uppercase">UB Internal Lab</h3>
+                                    <span className="text-[10px] font-black text-[#4f6f19] uppercase tracking-[0.2em] bg-[#4f6f19]/10 px-4 py-1.5 rounded-full">{t("trans.reports.internal.badge")}</span>
+                                    <h3 className="text-2xl font-black text-zinc-900 mt-5 uppercase">{t("trans.reports.internal.title")}</h3>
                                 </div>
                                 <Shield className="w-8 h-8 text-zinc-200" />
                             </div>
@@ -186,7 +188,7 @@ export default function TransparencyPage() {
                                 target="_blank"
                                 className="inline-flex items-center gap-3 text-[#4f6f19] font-black text-sm uppercase tracking-widest hover:gap-6 transition-all"
                             >
-                                Open Detailed Analysis
+                                {t("trans.reports.internal.cta")}
                                 <ChevronRight className="w-5 h-5" />
                             </Link>
                         </motion.div>
@@ -201,8 +203,8 @@ export default function TransparencyPage() {
                         >
                             <div className="mb-10 flex items-center justify-between">
                                 <div>
-                                    <span className="text-[10px] font-black text-[#4f6f19] uppercase tracking-[0.2em] bg-[#4f6f19]/10 px-4 py-1.5 rounded-full">External Audit</span>
-                                    <h3 className="text-2xl font-black text-zinc-900 mt-5 uppercase">CTL Independent Lab</h3>
+                                    <span className="text-[10px] font-black text-[#4f6f19] uppercase tracking-[0.2em] bg-[#4f6f19]/10 px-4 py-1.5 rounded-full">{t("trans.reports.external.badge")}</span>
+                                    <h3 className="text-2xl font-black text-zinc-900 mt-5 uppercase">{t("trans.reports.external.title")}</h3>
                                 </div>
                                 <Activity className="w-8 h-8 text-zinc-200" />
                             </div>
@@ -220,7 +222,7 @@ export default function TransparencyPage() {
                                 target="_blank"
                                 className="inline-flex items-center gap-3 text-[#4f6f19] font-black text-sm uppercase tracking-widest hover:gap-6 transition-all"
                             >
-                                View NABL Accreditation
+                                {t("trans.reports.external.cta")}
                                 <ChevronRight className="w-5 h-5" />
                             </Link>
                         </motion.div>
@@ -232,7 +234,7 @@ export default function TransparencyPage() {
                             className="inline-flex items-center gap-6 px-14 py-8 bg-zinc-900 text-white font-black text-sm uppercase tracking-[0.2em] hover:bg-black transition-all group active:scale-95"
                         >
                             <Download className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
-                            Download Analysis Package
+                            {t("trans.reports.download")}
                         </Link>
                     </div>
                 </div>
@@ -244,11 +246,9 @@ export default function TransparencyPage() {
                     <div className="w-20 h-20 bg-[#4f6f19]/10 flex items-center justify-center mx-auto mb-10">
                         <ShieldCheck className="w-10 h-10 text-[#4f6f19]" />
                     </div>
-                    <h2 className="text-3xl font-black mb-8 uppercase tracking-tight">FSSAI Licensed Facility</h2>
+                    <h2 className="text-3xl font-black mb-8 uppercase tracking-tight">{t("trans.fssai.title")}</h2>
                     <p className="text-zinc-500 leading-relaxed text-lg">
-                        Our storage and handling facility is fully licensed and follows strict
-                        operating disciplines defined by the Food Safety and Standards Authority of India.
-                        We maintain clean-handling and cold-chain integrity without exception.
+                        {t("trans.fssai.desc")}
                     </p>
                 </div>
             </section>

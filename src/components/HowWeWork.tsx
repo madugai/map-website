@@ -3,36 +3,38 @@ import React, { useLayoutEffect, useRef } from "react";
 import { Truck, RotateCcw, ShieldCheck, Zap, ThermometerSnowflake } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/context/LanguageContext";
 
 const steps = [
     {
-        title: "Daily Collection",
-        description: "Milk is collected daily from selected local farms in SS 304 food-grade stainless steel cans.",
+        title: "hww.s1.title",
+        description: "hww.s1.desc",
         icon: Truck
     },
     {
-        title: "Immediate Chilling",
-        description: "Chilled immediately after collection. No prolonged exposure, no waiting periods.",
+        title: "hww.s2.title",
+        description: "hww.s2.desc",
         icon: ThermometerSnowflake
     },
     {
-        title: "Clean Handling",
-        description: "Handled under strict, clean, and controlled conditions. No industrial shortcuts.",
+        title: "hww.s3.title",
+        description: "hww.s3.desc",
         icon: ShieldCheck
     },
     {
-        title: "Glass Delivery",
-        description: "Delivered fresh every morning exclusively in reusable glass bottles. No plastic contact.",
+        title: "hww.s4.title",
+        description: "hww.s4.desc",
         icon: Zap
     },
     {
-        title: "Empty Collection",
-        description: "Empty bottles are collected during the next delivery for cleaning and reuse.",
+        title: "hww.s5.title",
+        description: "hww.s5.desc",
         icon: RotateCcw
     }
 ];
 
 export default function HowWeWork({ showHeader = true }: { showHeader?: boolean }) {
+    const { t } = useLanguage();
     const sectionRef = useRef<HTMLElement>(null);
 
     useLayoutEffect(() => {
@@ -107,7 +109,7 @@ export default function HowWeWork({ showHeader = true }: { showHeader?: boolean 
                 }
             });
 
-            }, sectionRef);
+        }, sectionRef);
 
         return () => ctx.revert();
     }, []);
@@ -117,12 +119,12 @@ export default function HowWeWork({ showHeader = true }: { showHeader?: boolean 
             <div className="container">
                 {showHeader && (
                     <div className="text-center mb-20">
-                        <span className="hww-badge text-[#4f6f19] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">Our Process</span>
+                        <span className="hww-badge text-[#4f6f19] font-black text-[10px] uppercase tracking-[0.3em] mb-6 block">{t("hww.badge")}</span>
                         <h2 className="hww-title text-4xl md:text-5xl font-montserrat font-black text-gray-900 leading-tight">
-                            How We <span className="text-[#4f6f19]">Work</span>
+                            {t("hww.title1")} <span className="text-[#4f6f19]">{t("hww.title2")}</span>
                         </h2>
                         <p className="hww-subtitle text-gray-500 font-montserrat mt-8 max-w-2xl mx-auto text-lg">
-                            A defined operating discipline Governed by the MAP Standard. Every single day.
+                            {t("hww.subtitle")}
                         </p>
                     </div>
                 )}
@@ -137,10 +139,10 @@ export default function HowWeWork({ showHeader = true }: { showHeader?: boolean 
                                 <step.icon className="w-8 h-8 text-[#4f6f19]" />
                             </div>
                             <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-4 group-hover:text-white transition-colors duration-500">
-                                {step.title}
+                                {t(step.title)}
                             </h3>
                             <p className="text-gray-500 font-montserrat text-sm leading-relaxed group-hover:text-white/80 transition-colors duration-500">
-                                {step.description}
+                                {t(step.description)}
                             </p>
                             {/* Step number */}
                             <div className="absolute top-4 right-4 w-8 h-8 bg-[#4f6f19]/5 flex items-center justify-center text-[#4f6f19] font-bold text-sm group-hover:bg-white/20 group-hover:text-white transition-colors duration-500">
