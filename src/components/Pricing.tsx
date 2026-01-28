@@ -56,9 +56,9 @@ export default function Pricing() {
             <div className="container">
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                     {/* Left - Image Only */}
-                    <div className="pricing-left lg:w-[40%] flex items-center justify-center">
+                    <div className="pricing-left lg:w-[35%] flex items-start justify-center">
                         <Image
-                            src="/images/product.jpg"
+                            src="/images/product.png"
                             alt="Madugai Pure Milk"
                             width={500}
                             height={600}
@@ -67,7 +67,7 @@ export default function Pricing() {
                     </div>
 
                     {/* Right - Pricing Cards */}
-                    <div className="lg:w-[60%]">
+                    <div className="lg:w-[65%]">
                         <div className="pricing-cards grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Card 1 - Half Litre */}
                             <div className="pricing-card bg-white border border-gray-200 overflow-hidden">
