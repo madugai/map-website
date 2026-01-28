@@ -1,10 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/legal/delivery/page": "app/legal/delivery/page.js",
-  "/legal/privacy/page": "app/legal/privacy/page.js",
-  "/legal/tou/page": "app/legal/tou/page.js",
-  "/map-standard/page": "app/map-standard/page.js",
-  "/our-products/page": "app/our-products/page.js",
-  "/page": "app/page.js",
-  "/transparency/page": "app/transparency/page.js"
+  "/page": "app/page.js"
 }

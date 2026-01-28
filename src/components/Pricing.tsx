@@ -84,11 +84,11 @@ export default function Pricing() {
                                     <div className="flex items-start">
                                         <span className="text-[#4f6f19] text-xl font-medium mt-1">₹</span>
                                         <span className="text-6xl md:text-7xl font-black text-[#4f6f19] font-montserrat leading-none">
-                                            42
+                                            40
                                         </span>
                                     </div>
                                     <p className="text-gray-500 text-sm font-montserrat mt-2">
-                                        ~₹1302/monthly
+                                        ~₹1244/month
                                     </p>
                                 </div>
 
@@ -116,17 +116,12 @@ export default function Pricing() {
 
                             {/* Card 2 - Full Litre */}
                             <div className="pricing-card bg-white border border-gray-200 overflow-hidden relative">
-                                {/* Best Value Badge */}
-                                <div className="absolute top-0 right-0">
-                                    <div className="bg-[#4f6f19] text-white text-[9px] font-black uppercase tracking-wider px-4 py-2">
-                                        Best Value
-                                    </div>
-                                </div>
+
 
                                 {/* Header */}
                                 <div className="p-6 border-b-4 border-[#4f6f19]">
-                                    <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-1 pr-20">
-                                        Full litre, full satisfaction.
+                                    <h3 className="text-xl font-bold font-montserrat text-gray-900 mb-1 ">
+                                       One Litre. Full Satisfaction.
                                     </h3>
                                     <p className="text-gray-500 text-sm font-montserrat">
                                         Ideal for families or daily milk lovers
@@ -138,11 +133,11 @@ export default function Pricing() {
                                     <div className="flex items-start">
                                         <span className="text-[#4f6f19] text-xl font-medium mt-1">₹</span>
                                         <span className="text-6xl md:text-7xl font-black text-[#4f6f19] font-montserrat leading-none">
-                                            79
+                                            76
                                         </span>
                                     </div>
                                     <p className="text-gray-500 text-sm font-montserrat mt-2">
-                                        ~₹2449/monthly
+                                        ~₹2356/month
                                     </p>
                                 </div>
 
