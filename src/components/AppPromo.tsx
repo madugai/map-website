@@ -16,53 +16,13 @@ export default function AppPromo() {
                     <div className="lg:w-1/2 flex justify-center relative">
                         <div className="relative">
                             {/* App Mockup */}
-                            <Image
-                                src="/images/others/appmockup.png"
+                            <img
+                                src="/images/products.png"
                                 alt="Madugai App"
-                                width={320}
-                                height={450}
+                                
                                 className="max-w-full h-auto relative z-10"
-                                priority
+                          
                             />
-
-                            {/* Floating Card - Left */}
-                            <div className="absolute -left-4 md:-left-16 top-20 bg-white p-4 shadow-2xl z-20 hidden md:block">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 bg-[#4f6f19]/10 flex items-center justify-center">
-                                        <Truck className="w-5 h-5 text-[#4f6f19]" />
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-gray-500 font-montserrat">{t("app.float1.label")}</p>
-                                        <p className="text-sm font-bold text-gray-900 font-montserrat">{t("app.float1.value")}</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Floating Card - Right */}
-                            <div className="absolute -right-4 md:-right-12 top-48 bg-[#4f6f19] p-4 shadow-2xl z-20 hidden md:block">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 bg-white/20 flex items-center justify-center">
-                                        <Bell className="w-5 h-5 text-white" />
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-white/70 font-montserrat">{t("app.float2.label")}</p>
-                                        <p className="text-sm font-bold text-white font-montserrat">{t("app.float2.value")}</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Floating Card - Bottom */}
-                            <div className="absolute -left-4 md:-left-8 bottom-16 bg-zinc-900 border border-white/10 p-4 shadow-2xl z-20 hidden md:block">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 bg-white/10 flex items-center justify-center">
-                                        <Clock className="w-5 h-5 text-[#4f6f19]" />
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-white/50 font-montserrat">{t("app.float3.label")}</p>
-                                        <p className="text-sm font-bold text-white font-montserrat">{t("app.float3.value")}</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
