@@ -178,13 +178,13 @@ export default function Home() {
             <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><AboutSection /></div></div>
 
             {/* Products - White */}
-            <div className="relative z-10 bg-white"><div className="reveal-section"><Products /></div></div>
+            {/* <div className="relative z-10 bg-white"><div className="reveal-section"><Products /></div></div> */}
 
             {/* Pricing - Cream/beige */}
-            <div className="relative z-10 bg-[#faf8f5]"><div className="reveal-section"><Pricing /></div></div>
+            <div id="pricing" className="relative z-10 bg-[#fff]"><div className="reveal-section"><Pricing /></div></div>
 
             {/* How We Work - White */}
-            <div className="relative z-10 bg-white"><div className="reveal-section"><HowWeWork /></div></div>
+            <div className="relative z-10 bg-[#f5f5f5]"><div className="reveal-section"><HowWeWork /></div></div>
 
             {/* Subscription - Dark section */}
             <div className="relative z-10 bg-[#1a1a1a]"><div className="reveal-section"><Subscription /></div></div>

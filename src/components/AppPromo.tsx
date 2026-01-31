@@ -73,7 +73,7 @@ export default function AppPromo() {
                                 </Link>
                             </div>
 
-                            <div className="flex items-center gap-6">
+                            {/* <div className="flex items-center gap-6">
                                 <div className="flex -space-x-3">
                                     {[1, 2, 3, 4].map((i) => (
                                         <div key={i} className="w-10 h-10 rounded-full border-2 border-zinc-950 bg-zinc-800 flex items-center justify-center overflow-hidden">
@@ -89,7 +89,7 @@ export default function AppPromo() {
                                         {t("app.social")}
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* SMS Option */}
                             <div className="pt-4 border-t border-white/5">

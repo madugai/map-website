@@ -13,7 +13,7 @@ const translations: Record<Language, Record<string, string>> = {
     en: {
         // Navbar
         "nav.mapStandard": "The MAP Standard",
-        "nav.products": "Products",
+        "nav.pricing": "Pricing",
         "nav.howWeWork": "How We Work",
         "nav.store": "Store",
         "nav.transparency": "Transparency",
@@ -319,7 +319,7 @@ const translations: Record<Language, Record<string, string>> = {
     ta: {
         // Navbar
         "nav.mapStandard": "MAP தரநிலை",
-        "nav.products": "பொருட்கள்",
+        "nav.pricing": "விலை",
         "nav.howWeWork": "செயல்படுதல்",
         "nav.store": "கடை",
         "nav.transparency": "வெளிப்படைத்தன்மை",
