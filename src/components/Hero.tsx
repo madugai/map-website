@@ -71,7 +71,7 @@ export default function Hero() {
                 <div className="container mx-auto px-6 md:px-8 pt-24 pb-12 md:pt-0 md:pb-0">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
                         {/* Left Content */}
-                        <div className="order-1 lg:order-1 text-left lg:text-left">
+                        <div className="order-1 lg:order-1 text-center lg:text-left">
 
                             {/* Heading */}
                             <div className="overflow-hidden mb-6 md:mb-8">
