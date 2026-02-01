@@ -73,7 +73,7 @@ export default function Footer() {
                             {[
                                 { name: "nav.home", href: "/" },
                                 { name: "nav.mapStandard", href: "/map-standard" },
-                                { name: "nav.products", href: "/our-products" },
+                                { name: "nav.pricing", href: "/pricing" },
                                 { name: "nav.howWeWork", href: "/how-we-work" },
                                 { name: "nav.store", href: "https://madugai.trakop.com/", external: true },
                                 { name: "nav.transparency", href: "/transparency" },

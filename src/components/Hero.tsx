@@ -108,6 +108,8 @@ export default function Hero() {
                                     loop
                                     muted
                                     playsInline
+                                    disablePictureInPicture
+                                    controlsList="nodownload noplaybackrate"
                                     className="w-full h-auto object-cover"
                                 >
                                     <source src="https://ik.imagekit.io/bcol8qyjc/Untitled%20design%20(5).mp4" type="video/mp4" />
