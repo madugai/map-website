@@ -71,7 +71,7 @@ export default function Hero() {
                 <div className="container mx-auto px-6 md:px-8 pt-24 pb-12 md:pt-0 md:pb-0">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
                         {/* Left Content */}
-                        <div className="order-1 lg:order-1 text-center lg:text-left">
+                        <div className="order-2 lg:order-1 text-center lg:text-left">
 
                             {/* Heading */}
                             <div className="overflow-hidden mb-6 md:mb-8">
@@ -101,7 +101,7 @@ export default function Hero() {
                         </div>
 
                         {/* Right Video */}
-                        <div className="order-2 lg:order-2 relative flex items-center justify-center w-full">
+                        <div className="order-1 lg:order-2 relative flex items-center justify-center w-full">
                             <div className="relative w-full max-w-[320px] sm:max-w-md lg:max-w-full rounded-[2rem] overflow-hidden ">
                                 <video
                                     autoPlay
