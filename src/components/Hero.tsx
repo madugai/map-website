@@ -117,17 +117,18 @@ export default function Hero() {
                                     disablePictureInPicture
                                     disableRemotePlayback
                                     controlsList="nodownload noplaybackrate nofullscreen"
-                                    className="hero-video w-full h-auto object-cover pointer-events-none scale-[1.02]"
+                                    className="hero-video w-full h-auto object-cover pointer-events-none"
                                     style={{
                                         borderRadius: '2rem',
                                         backfaceVisibility: 'hidden',
                                         WebkitBackfaceVisibility: 'hidden',
-                                        transform: 'translateZ(0) scale(1.02)',
                                         outline: 'none',
-                                        border: 'none'
+                                        border: 'none',
+                                        // Using box-shadow to hide the sub-pixel "line" gap without scaling
+                                        boxShadow: '0 0 0 2px white'
                                     }}
                                 >
-                                    <source src="https://ik.imagekit.io/bcol8qyjc/Untitled%20design%20(5).mp4" type="video/mp4" />
+                                    <source src="https://ik.imagekit.io/mapmediakit/map-hero-banner.mp4?updatedAt=1770142952611" type="video/mp4" />
                                     Your browser does not support the video.
                                 </video>
                             </div>
