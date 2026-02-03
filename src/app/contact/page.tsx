@@ -1,13 +1,61 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle, Loader2, CheckCircle, XCircle } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function ContactPage() {
     const { t } = useLanguage();
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        subject: "",
+        message: ""
+    });
+    const [isLoading, setIsLoading] = useState(false);
+    const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+    const [statusMessage, setStatusMessage] = useState("");
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+        setFormData(prev => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setStatus("idle");
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus("success");
+                setStatusMessage(t("contact.form.success") || "Message sent successfully! We'll get back to you soon.");
+                setFormData({ name: "", phone: "", subject: "", message: "" });
+            } else {
+                setStatus("error");
+                setStatusMessage(data.error || t("contact.form.error") || "Failed to send message. Please try again.");
+            }
+        } catch {
+            setStatus("error");
+            setStatusMessage(t("contact.form.error") || "Failed to send message. Please try again.");
+        } finally {
+            setIsLoading(false);
+        }
+    };
 
     return (
         <main className="min-h-screen bg-white font-montserrat">
@@ -53,7 +101,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="text-sm text-gray-400 uppercase tracking-widest mb-1">{t("contact.desk.email")}</p>
-                                        <p className="text-xl font-bold">support@madugai.com</p>
+                                        <p className="text-xl font-bold">info@madugai.com</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-6">
@@ -85,31 +133,88 @@ export default function ContactPage() {
 
                         {/* Form */}
                         <div className="bg-white p-10 border border-gray-100">
-                            <form className="space-y-8">
+                            <form onSubmit={handleSubmit} className="space-y-8">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                     <div className="space-y-3">
                                         <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.name")}</label>
-                                        <input type="text" className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder={t("contact.form.namePlaceholder")} />
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
+                                            className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]"
+                                            placeholder={t("contact.form.namePlaceholder")}
+                                        />
                                     </div>
                                     <div className="space-y-3">
                                         <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.phone")}</label>
-                                        <input type="tel" className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder={t("contact.form.phonePlaceholder")} />
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            required
+                                            className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]"
+                                            placeholder={t("contact.form.phonePlaceholder")}
+                                        />
                                     </div>
                                 </div>
                                 <div className="space-y-3">
                                     <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.subject")}</label>
-                                    <select className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]">
-                                        <option>{t("contact.form.s1")}</option>
-                                        <option>{t("contact.form.s2")}</option>
-                                        <option>{t("contact.form.s3")}</option>
+                                    <select
+                                        name="subject"
+                                        value={formData.subject}
+                                        onChange={handleChange}
+                                        required
+                                        className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]"
+                                    >
+                                        <option value="">{t("contact.form.selectSubject") || "Select a subject"}</option>
+                                        <option value={t("contact.form.s1")}>{t("contact.form.s1")}</option>
+                                        <option value={t("contact.form.s2")}>{t("contact.form.s2")}</option>
+                                        <option value={t("contact.form.s3")}>{t("contact.form.s3")}</option>
                                     </select>
                                 </div>
                                 <div className="space-y-3">
                                     <label className="text-xs font-bold uppercase tracking-widest text-gray-400">{t("contact.form.message")}</label>
-                                    <textarea rows={5} className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]" placeholder={t("contact.form.messagePlaceholder")}></textarea>
+                                    <textarea
+                                        rows={5}
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                        className="w-full bg-[#fafafa] border-none p-5 focus:ring-2 focus:ring-[#4f6f19]"
+                                        placeholder={t("contact.form.messagePlaceholder")}
+                                    ></textarea>
                                 </div>
-                                <button className="w-full bg-[#1a1a1a] text-white font-black py-6 hover:bg-zinc-800 transition-all uppercase tracking-widest">
-                                    {t("contact.form.send")}
+
+                                {/* Status Messages */}
+                                {status === "success" && (
+                                    <div className="flex items-center gap-3 p-4 bg-green-50 text-green-700 rounded-lg">
+                                        <CheckCircle className="w-5 h-5" />
+                                        <p>{statusMessage}</p>
+                                    </div>
+                                )}
+                                {status === "error" && (
+                                    <div className="flex items-center gap-3 p-4 bg-red-50 text-red-700 rounded-lg">
+                                        <XCircle className="w-5 h-5" />
+                                        <p>{statusMessage}</p>
+                                    </div>
+                                )}
+
+                                <button
+                                    type="submit"
+                                    disabled={isLoading}
+                                    className="w-full bg-[#1a1a1a] text-white font-black py-6 hover:bg-zinc-800 transition-all uppercase tracking-widest disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+                                >
+                                    {isLoading ? (
+                                        <>
+                                            <Loader2 className="w-5 h-5 animate-spin" />
+                                            {t("contact.form.sending") || "Sending..."}
+                                        </>
+                                    ) : (
+                                        t("contact.form.send")
+                                    )}
                                 </button>
                             </form>
                         </div>
@@ -145,3 +250,4 @@ export default function ContactPage() {
         </main>
     );
 }
+

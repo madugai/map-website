@@ -102,7 +102,10 @@ export default function Hero() {
 
                         {/* Right Video */}
                         <div className="order-1 lg:order-2 relative flex items-center justify-center w-full">
-                            <div className="relative w-full max-w-[320px] sm:max-w-md lg:max-w-full rounded-[2rem] overflow-hidden">
+                            <div
+                                className="relative w-full max-w-[320px] sm:max-w-md lg:max-w-full rounded-[2rem] overflow-hidden"
+                                style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+                            >
                                 {/* Overlay to cover browser video controls */}
                                 <div className="absolute top-0 left-0 right-0 h-12 z-10 bg-transparent pointer-events-none"
                                     style={{ background: 'linear-gradient(to bottom, rgba(255,255,255,0.01) 0%, transparent 100%)' }} />
@@ -114,7 +117,15 @@ export default function Hero() {
                                     disablePictureInPicture
                                     disableRemotePlayback
                                     controlsList="nodownload noplaybackrate nofullscreen"
-                                    className="hero-video w-full h-auto object-cover pointer-events-none"
+                                    className="hero-video w-full h-auto object-cover pointer-events-none scale-[1.02]"
+                                    style={{
+                                        borderRadius: '2rem',
+                                        backfaceVisibility: 'hidden',
+                                        WebkitBackfaceVisibility: 'hidden',
+                                        transform: 'translateZ(0) scale(1.02)',
+                                        outline: 'none',
+                                        border: 'none'
+                                    }}
                                 >
                                     <source src="https://ik.imagekit.io/bcol8qyjc/Untitled%20design%20(5).mp4" type="video/mp4" />
                                     Your browser does not support the video.

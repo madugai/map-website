@@ -516,6 +516,9 @@ video::-moz-media-controls {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .hero-video::-webkit-media-controls {
