@@ -31,3 +31,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# strapi
+/strapi-cms/node_modules
+/strapi-cms/.tmp
+/strapi-cms/.cache
+/strapi-cms/build
+/strapi-cms/exports
+/strapi-cms/public/uploads
+/strapi-cms/.env
+/strapi-cms/database/*.db
+/strapi-cms/database/*.db-journal
