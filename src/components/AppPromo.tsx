@@ -9,7 +9,7 @@ export default function AppPromo() {
     const { t } = useLanguage();
 
     return (
-        <section className="bg-zinc-950 py-16 md:py-24 overflow-hidden relative">
+        <section className="bg-[#4b6e48] py-16 md:py-24 overflow-hidden relative">
             <div className="container relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
                     {/* Left - App Mockup with Feature Cards */}
@@ -35,7 +35,7 @@ export default function AppPromo() {
 
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-montserrat font-bold text-white mb-6 md:mb-8 leading-[1.1]">
                             {t("app.title1")} <br className="hidden md:block" />
-                            <span className="text-[#4f6f19]">{t("app.title2")}</span>
+                            <span>{t("app.title2")}</span>
                         </h2>
 
                         <p className="text-white/60 font-montserrat text-base md:text-lg leading-relaxed mb-10 md:mb-12 max-w-xl">
@@ -51,8 +51,8 @@ export default function AppPromo() {
                                 { icon: Star, title: "app.f4.title", desc: "app.f4.desc" },
                             ].map((feature, index) => (
                                 <div key={index} className="flex items-start gap-4 group">
-                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-[#4f6f19] transition-all duration-300">
-                                        <feature.icon className="w-4 h-4 md:w-5 md:h-5 text-[#4f6f19] group-hover:text-white transition-colors" />
+                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-white flex items-center justify-center flex-shrink-0  transition-all duration-300">
+                                        <feature.icon className="w-4 h-4 md:w-5 md:h-5 text-[#4b6e48]  transition-colors" />
                                     </div>
                                     <div>
                                         <div className="text-white font-bold font-montserrat text-sm md:text-base mb-1 tracking-tight">{t(feature.title)}</div>
@@ -73,23 +73,7 @@ export default function AppPromo() {
                                 </Link>
                             </div>
 
-                            {/* <div className="flex items-center gap-6">
-                                <div className="flex -space-x-3">
-                                    {[1, 2, 3, 4].map((i) => (
-                                        <div key={i} className="w-10 h-10 rounded-full border-2 border-zinc-950 bg-zinc-800 flex items-center justify-center overflow-hidden">
-                                            <div className="text-[10px] text-white/40">{i}0k+</div>
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="text-sm">
-                                    <div className="flex text-yellow-500 mb-1">
-                                        {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="w-3 h-3 fill-current" />)}
-                                    </div>
-                                    <div className="text-white/60 font-montserrat tracking-wide">
-                                        {t("app.social")}
-                                    </div>
-                                </div>
-                            </div> */}
+                           
 
                             {/* SMS Option */}
                             <div className="pt-4 border-t border-white/5">
