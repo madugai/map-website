@@ -42,7 +42,7 @@ const translations: Record<Language, Record<string, string>> = {
         "pricing.card2.title": "One litre, full satisfaction.",
         "pricing.card2.subtitle": "Ideal for families or daily milk lovers",
         "pricing.card2.price": "77",
-        "pricing.card2.monthly": "~₹2356/month",
+        "pricing.card2.monthly": "~2,387/month",
         "pricing.cta": "Book a free trial",
         "pricing.bottom": "Subscriptions are prepaid and billed monthly. Simple, transparent, and flexible.",
 
