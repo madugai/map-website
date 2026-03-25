@@ -11,6 +11,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/app',
+        destination: 'https://play.google.com/store/apps/details?id=com.madugai.user',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
