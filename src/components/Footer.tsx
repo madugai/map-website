@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, Youtube, ArrowUp, Smartphone, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube, ArrowUp, Smartphone, Mail, Phone, Download } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const XIcon = ({ size = 24 }: { size?: number | string }) => (
@@ -136,13 +136,23 @@ export default function Footer() {
                         </div>
 
                         {/* App Store Links */}
-                        <div className="flex gap-3 mb-6">
-                            <Link href="https://play.google.com/store/apps/details?id=com.madugai.user&hl=en_IN" target="_blank" className="hover:scale-105 transition-transform">
-                                <Image src="/images/get-it-on-google-play.png" alt="Get it on Google Play" width={135} height={40} className="h-10 w-auto" />
-                            </Link>
-                            <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-105 transition-transform">
-                                <Image src="/images/download_on_the_app_store_badge-logo_brandlogos.net_zyp2x.png" alt="Download on App Store" width={120} height={40} className="h-10 w-auto" />
-                            </Link>
+                        <div className="flex flex-col gap-3 mb-6">
+                            <div className="flex gap-3">
+                                <Link href="https://play.google.com/store/apps/details?id=com.madugai.user&hl=en_IN" target="_blank" className="hover:scale-105 transition-transform">
+                                    <Image src="/images/get-it-on-google-play.png" alt="Get it on Google Play" width={135} height={40} className="h-10 w-auto" />
+                                </Link>
+                                <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-105 transition-transform">
+                                    <Image src="/images/download_on_the_app_store_badge-logo_brandlogos.net_zyp2x.png" alt="Download on App Store" width={120} height={40} className="h-10 w-auto" />
+                                </Link>
+                            </div>
+                            <a
+                                href="/Mobile AMCU.apk"
+                                download
+                                className="flex items-center gap-2 text-white/50 hover:text-white transition-colors text-xs font-montserrat font-bold pt-1"
+                            >
+                                <Download size={14} className="text-[#4f6f19]" />
+                                {t("app.amcuDownload")}
+                            </a>
                         </div>
 
                         {/* Contact Info */}

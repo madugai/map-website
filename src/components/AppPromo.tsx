@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle, Star, Smartphone, Mail, ChevronRight, Bell, Clock, Truck } from "lucide-react";
+import { MessageCircle, Star, Smartphone, Mail, ChevronRight, Bell, Clock, Truck, Download } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function AppPromo() {
@@ -19,9 +19,9 @@ export default function AppPromo() {
                             <img
                                 src="/images/products.png"
                                 alt="Madugai App"
-                                
+
                                 className="max-w-full h-auto relative z-10"
-                          
+
                             />
                         </div>
                     </div>
@@ -71,9 +71,22 @@ export default function AppPromo() {
                                 <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
                                     <Image src="/images/others/ios.png" alt="App Store" width={160} height={50} className="h-12 w-auto object-contain" />
                                 </Link>
+
+                                {/* AMCU Download Button */}
+                                <a
+                                    href="/Mobile AMCU.apk"
+                                    download
+                                    className="group flex items-center gap-3 bg-white/5 hover:bg-white text-white hover:text-[#4b6e48] border border-white/10 hover:border-white px-6 py-2.5 transition-all duration-300 backdrop-blur-sm"
+                                >
+                                    <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                                    <div className="flex flex-col items-start leading-none text-left">
+                                        <span className="text-[10px] uppercase tracking-wider mb-1 opacity-60 group-hover:opacity-80 transition-opacity">{t("app.directDownload")}</span>
+                                        <span className="text-sm font-bold">{t("app.amcuDownload")}</span>
+                                    </div>
+                                </a>
                             </div>
 
-                           
+
 
                             {/* SMS Option */}
                             <div className="pt-4 border-t border-white/5">
