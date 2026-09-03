@@ -234,7 +234,7 @@ export default function ContactPage() {
                 </div>
                 <div className="w-full h-[500px]">
                     <iframe
-                        src="https://www.google.com/maps?q=Padiyampakkam,+Walajapet,+Ranipet,+Tamil+Nadu+632513&output=embed"
+                        src="https://www.google.com/maps?q=12.957904964435782,79.42202283186052&z=17&hl=en&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
