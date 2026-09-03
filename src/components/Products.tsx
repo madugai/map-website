@@ -9,21 +9,21 @@ import { useLanguage } from "@/context/LanguageContext";
 const products = [
     {
         title: "products.milk.title",
-        image: "/images/products/p-1.jpeg",
+        image: "/images/products/p-1.png",
         href: "/our-products",
         description: "products.milk.desc",
         badge: "products.badge.bestSeller"
     },
     {
         title: "products.ghee.title",
-        image: "/images/products/p-2.jpeg",
+        image: "/images/products/p-2.png",
         href: "/our-products/pure-cow-ghee",
         description: "products.ghee.desc",
         badge: null
     },
     {
         title: "products.paneer.title",
-        image: "/images/products/p-3.jpeg",
+        image: "/images/products/p-3.png",
         href: "/our-products/fresh-paneer",
         description: "products.paneer.desc",
         badge: "products.badge.new"
@@ -75,9 +75,6 @@ export default function Products() {
                             <Link href={product.href} className="flex flex-col h-full">
                                 {/* Product Image Container */}
                                 <div className="relative mb-10 flex justify-center items-center h-80 bg-transparent group/image">
-                                    {/* Removed shadow under the bottle for cleaner look */}
-                                    <div className="absolute inset-0 bg-transparent group-hover/image:bg-[#4f6f19]/5 transition-colors duration-700" />
-
                                     <div className="product-bottle-gsap relative w-64 h-64">
                                         <Image
                                             src={product.image}
@@ -86,9 +83,6 @@ export default function Products() {
                                             className="object-contain transition-transform duration-700 group-hover:scale-110"
                                         />
                                     </div>
-
-                                    {/* Subtle brand glow on hover */}
-                                    <div className="absolute inset-0 bg-radial-gradient from-[#4f6f19]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                                 </div>
 
                                 {/* Product Info */}
