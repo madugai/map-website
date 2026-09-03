@@ -15,6 +15,13 @@ const products = [
         badge: "products.badge.bestSeller"
     },
     {
+        title: "products.curd.title",
+        image: "/images/products/p-4.png",
+        href: "/our-products/natural-creamy-curd",
+        description: "products.curd.desc",
+        badge: "products.badge.new"
+    },
+    {
         title: "products.ghee.title",
         image: "/images/products/p-2.png",
         href: "/our-products/pure-cow-ghee",
@@ -26,7 +33,7 @@ const products = [
         image: "/images/products/p-3.png",
         href: "/our-products/fresh-paneer",
         description: "products.paneer.desc",
-        badge: "products.badge.new"
+        badge: null
     }
 ];
 
@@ -66,7 +73,7 @@ export default function Products() {
                 </div>
 
                 {/* Products Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
                     {products.map((product, index) => (
                         <div
                             key={product.title}
@@ -74,8 +81,8 @@ export default function Products() {
                         >
                             <Link href={product.href} className="flex flex-col h-full">
                                 {/* Product Image Container */}
-                                <div className="relative mb-10 flex justify-center items-center h-80 bg-transparent group/image">
-                                    <div className="product-bottle-gsap relative w-64 h-64">
+                                <div className="relative mb-10 flex justify-center items-center h-72 xl:h-80 bg-transparent group/image">
+                                    <div className="product-bottle-gsap relative w-56 h-56 xl:w-64 xl:h-64">
                                         <Image
                                             src={product.image}
                                             alt={t(product.title)}
