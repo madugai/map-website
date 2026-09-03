@@ -176,7 +176,7 @@ export default function Footer() {
                     <div className="flex flex-col-reverse md:flex-row items-start md:items-center justify-between gap-6 text-left md:text-left">
                         {/* Copyright - comes last on mobile (due to flex-col-reverse) */}
                         <p className="text-white/50 text-sm font-montserrat">
-                            © {new Date().getFullYear()} Madugai MAP. {t("footer.rights")}
+                            © {new Date().getFullYear()} Madugai Agro Product. {t("footer.rights")}
                         </p>
                         {/* Menu Links - stack vertically on mobile */}
                         <div className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-6 text-white/50 text-sm">
