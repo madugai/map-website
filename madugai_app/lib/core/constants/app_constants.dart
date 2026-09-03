@@ -11,8 +11,9 @@ class AppConstants {
   static const String fssaiLicense = '12425030000917';
   static const String websiteUrl = 'https://madugaimilk.in';
   static const String playStoreUrl =
-      'https://play.google.com/store/apps/details?id=com.madugai.user&hl=en_IN';
-  static const String appStoreUrl = 'https://apps.apple.com/in/app/madugai';
+      'https://play.google.com/store/apps/details?id=com.madugai.user';
+  static const String appStoreUrl =
+      'https://apps.apple.com/in/app/madugai/id6800743100';
   static const String whatsappUrl = 'https://wa.me/918903535222';
   static const String contactApiUrl = 'https://api.web3forms.com/submit';
   static const String heroVideoUrl =

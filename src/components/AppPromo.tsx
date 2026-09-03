@@ -65,10 +65,10 @@ export default function AppPromo() {
                         {/* Download & Rating */}
                         <div className="flex flex-col gap-10">
                             <div className="flex flex-wrap gap-8 items-center">
-                                <Link href="https://play.google.com/store/apps/details?id=com.madugai.user&hl=en_IN" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                                <Link href="https://play.google.com/store/apps/details?id=com.madugai.user" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
                                     <Image src="/images/others/play_logo.png" alt="Play Store" width={160} height={50} className="h-12 w-auto object-contain" />
                                 </Link>
-                                <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                                <Link href="https://apps.apple.com/in/app/madugai/id6800743100" target="_blank" className="hover:scale-110 transition-transform opacity-60 hover:opacity-100">
                                     <Image src="/images/others/ios.png" alt="App Store" width={160} height={50} className="h-12 w-auto object-contain" />
                                 </Link>
 

@@ -138,10 +138,10 @@ export default function Footer() {
                         {/* App Store Links */}
                         <div className="flex flex-col gap-3 mb-6">
                             <div className="flex gap-3">
-                                <Link href="https://play.google.com/store/apps/details?id=com.madugai.user&hl=en_IN" target="_blank" className="hover:scale-105 transition-transform">
+                                <Link href="https://play.google.com/store/apps/details?id=com.madugai.user" target="_blank" className="hover:scale-105 transition-transform">
                                     <Image src="/images/get-it-on-google-play.png" alt="Get it on Google Play" width={135} height={40} className="h-10 w-auto" />
                                 </Link>
-                                <Link href="https://apps.apple.com/in/app/madugai" target="_blank" className="hover:scale-105 transition-transform">
+                                <Link href="https://apps.apple.com/in/app/madugai/id6800743100" target="_blank" className="hover:scale-105 transition-transform">
                                     <Image src="/images/download_on_the_app_store_badge-logo_brandlogos.net_zyp2x.png" alt="Download on App Store" width={120} height={40} className="h-10 w-auto" />
                                 </Link>
                             </div>
