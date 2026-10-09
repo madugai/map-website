@@ -443,7 +443,7 @@ class HomeScreen extends StatelessWidget {
                       _ProductMiniCard(
                         imagePath: 'assets/images/milk.jpg',
                         title: lang.t('products.milk.title'),
-                        price: '₹76/L',
+                        price: '₹63/L',
                         badge: lang.t('products.badge.bestSeller'),
                         color: const Color(0xFFF0F7EB),
                       ),
@@ -494,7 +494,7 @@ class HomeScreen extends StatelessWidget {
                     Expanded(
                       child: _PricingMiniCard(
                         volume: '500ml',
-                        price: '₹40',
+                        price: '₹33',
                         perMonth: lang.t('pricing.card1.monthly'),
                         isPopular: false,
                       ),
@@ -503,7 +503,7 @@ class HomeScreen extends StatelessWidget {
                     Expanded(
                       child: _PricingMiniCard(
                         volume: '1 Litre',
-                        price: '₹76',
+                        price: '₹63',
                         perMonth: lang.t('pricing.card2.monthly'),
                         isPopular: true,
                       ),

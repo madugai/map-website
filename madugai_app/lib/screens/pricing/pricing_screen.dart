@@ -118,7 +118,7 @@ class PricingScreen extends StatelessWidget {
                   children: [
                     _PricingRowCard(
                       volume: '500ml',
-                      price: '40',
+                      price: '33',
                       perMonth: lang.t('pricing.card1.monthly'),
                       subtitle: lang.t('pricing.card1.subtitle'),
                       isPopular: false,
@@ -126,7 +126,7 @@ class PricingScreen extends StatelessWidget {
                     const SizedBox(height: 16),
                     _PricingRowCard(
                       volume: '1 Litre',
-                      price: '76',
+                      price: '63',
                       perMonth: lang.t('pricing.card2.monthly'),
                       subtitle: lang.t('pricing.card2.subtitle'),
                       isPopular: true,
